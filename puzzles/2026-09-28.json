@@ -137,6 +137,7 @@
    {
     "num": 3,
     "text": "What a crocodile may shed? Upset predator",
+    "plain": "Drop of liquid shed from the eye",
     "enum": "(8)",
     "cells": [
      7,
@@ -152,6 +153,7 @@
    {
     "num": 4,
     "text": "Cycle round established base",
+    "plain": "Base supporting a statue",
     "enum": "(8)",
     "cells": [
      19,
@@ -169,6 +171,7 @@
    {
     "num": 1,
     "text": "Chippy to moan, then come in",
+    "plain": "Woodworker",
     "enum": "(9)",
     "cells": [
      0,
@@ -185,6 +188,7 @@
    {
     "num": 2,
     "text": "Frank had one standing",
+    "plain": "Person standing for election",
     "enum": "(9)",
     "cells": [
      2,

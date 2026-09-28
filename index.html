@@ -38,7 +38,7 @@
         <span id="timer-val">0:00</span>
       </button>
     </div>
-    <button class="icon-btn" id="btn-menu" type="button" aria-label="Help: check, reveal and scoring" aria-haspopup="true">
+    <button class="icon-btn" id="btn-menu" type="button" aria-label="Help: check, reveal, hints and scoring" aria-haspopup="true">
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.5" cy="12" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="18.5" cy="12" r="1.7"/></svg>
     </button>
   </header>
@@ -119,6 +119,15 @@
         <button type="button" class="opt danger" data-action="reveal-grid"><b>Grid</b><span class="cost">0 pts</span></button>
       </div>
     </div>
+    <div class="sheet-section" id="menu-plain" hidden>
+      <span class="sheet-label">Hint</span>
+      <div class="sheet-row">
+        <button type="button" class="opt hint-opt" id="opt-plain" data-action="plain-clue">
+          <span class="hint-main"><b>Plain clue</b><span class="hint-for" id="plain-for"></span></span>
+          <span class="cost" id="plain-cost">−2</span>
+        </button>
+      </div>
+    </div>
     <div class="sheet-row tools">
       <button type="button" class="opt plain" data-action="rules">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>
@@ -145,6 +154,7 @@
         <tr><th>Check a letter</th><td>−1</td></tr>
         <tr><th>Check a word</th><td>−3</td></tr>
         <tr><th>Check the grid</th><td>−5</td></tr>
+        <tr><th>Show a plain clue</th><td>−2 a clue</td></tr>
         <tr><th>Reveal a letter</th><td>−5</td></tr>
         <tr><th>Reveal a word</th><td>−5 a letter, max −15</td></tr>
         <tr><th>Reveal the grid</th><td>ends on 0</td></tr>
@@ -153,6 +163,7 @@
     <ul class="rules-notes">
       <li>Reveals only charge for letters they fill in or correct. If your letters were already right, it costs the same as a check instead.</li>
       <li>Revealed and confirmed letters are never charged twice, and a check with nothing new to check is free.</li>
+      <li>A plain clue adds a straight, quick-crossword definition under the cryptic clue. It’s charged once per clue, stays shown, and isn’t offered for a word you’ve already solved.</li>
       <li>Wrong entries cost nothing, and neither does the glow when you complete a word correctly.</li>
       <li>The score can’t go below 0, and clearing the grid or reloading doesn’t restore points.</li>
     </ul>

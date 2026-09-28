@@ -4,7 +4,8 @@
 
   var STORE_PREFIX = 'crosshatch:v1:';   // unchanged key: older saves load and are migrated in place
   var START_SCORE = 100;
-  var COST = { 'check-letter': 1, 'check-word': 3, 'check-grid': 5, 'reveal-letter': 5, 'reveal-word-each': 5, 'reveal-word-max': 15 };
+  var COST = { 'check-letter': 1, 'check-word': 3, 'check-grid': 5, 'reveal-letter': 5, 'reveal-word-each': 5, 'reveal-word-max': 15,
+    'plain-clue': 2 };
   var LABEL = {
     'check-letter': 'Letter check',
     'check-word': 'Word check',
@@ -12,6 +13,7 @@
     'reveal-letter': 'Letter reveal',
     'reveal-word': 'Word reveal',
     'reveal-grid': 'Grid revealed',
+    'plain-clue': 'Plain clue',
     'legacy-reveal': 'Revealed letters (pre-scoring)',
     'legacy-check': 'Checked letters (pre-scoring)'
   };
@@ -55,7 +57,8 @@
   var index = [];
   var P = null;          // puzzle JSON (format unchanged)
   var S = null;          // saved progress
-  var words = [];        // [{dir,num,text,enumeration,cells,el}]
+  var words = [];        // [{dir,num,text,plain,enumeration,cells,el,li,hint}]
+  var hasPlain = false;  // puzzle carries plain ('quick') clues (older puzzle files don't)
   var cellWords = [];
   var cellEls = [];
   var goodWords = {};    // word index -> true when the word is complete and correct (free, not a check)
@@ -70,7 +73,7 @@
   function storeKey(date) { return STORE_PREFIX + date; }
   function blankState(n) {
     var st = { v: 2, letters: [], revealed: [], checked: [], elapsed: 0, completed: false, solved: false,
-      completedAt: null, deductions: [], gaveUp: false };
+      completedAt: null, deductions: [], gaveUp: false, plain: [] };
     for (var i = 0; i < n; i++) { st.letters.push(''); st.revealed.push(false); st.checked.push(0); }
     return st;
   }
@@ -91,6 +94,7 @@
       st.gaveUp = false;
     }
     st.gaveUp = !!st.gaveUp;
+    if (!Array.isArray(st.plain)) st.plain = [];   // clue keys ('3A', '1D') whose plain clue was bought
     st.v = 2;
     return st;
   }
@@ -121,10 +125,10 @@
     (st.deductions || []).forEach(function (d) { sum += d.c; });
     return Math.max(0, START_SCORE - sum);
   }
-  function deduct(type, cost) {
+  function deduct(type, cost, extra) {
     if (cost <= 0) return;
     var before = scoreOf(S);
-    S.deductions.push({ t: type, c: cost, at: Date.now() });
+    S.deductions.push(Object.assign({ t: type, c: cost, at: Date.now() }, extra || {}));
     saveState();
     renderScore(before);
   }
@@ -270,8 +274,11 @@
   function buildPuzzle() {
     words = [];
     ['across', 'down'].forEach(function (d) {
-      P.clues[d].forEach(function (c) { words.push({ dir: d, num: c.num, text: c.text, enumeration: c.enum, cells: c.cells }); });
+      P.clues[d].forEach(function (c) {
+        words.push({ dir: d, num: c.num, text: c.text, plain: (typeof c.plain === 'string' ? c.plain.trim() : ''), enumeration: c.enum, cells: c.cells });
+      });
     });
+    hasPlain = words.some(function (w) { return !!w.plain; });
     cellWords = P.cells.map(function () { return { across: null, down: null }; });
     words.forEach(function (w, wi) { w.cells.forEach(function (ci) { cellWords[ci][w.dir] = wi; }); });
 
@@ -305,17 +312,31 @@
       words.forEach(function (w, wi) {
         if (w.dir !== d) return;
         var li = document.createElement('li');
+        li.className = 'clue-item';
         var b = document.createElement('button');
         b.type = 'button';
         b.className = 'clue';
         b.dataset.w = wi;
-        b.innerHTML = '<span class="cnum"></span><span class="cbody"><span class="ctext"></span> <span class="enum"></span></span>' + TICK;
+        b.innerHTML = '<span class="cnum"></span><span class="cbody"><span class="ctext"></span> <span class="enum"></span>' +
+          '<span class="cplain" hidden><span class="plain-tag">Plain:</span> <span class="ptext"></span> <span class="penum"></span></span></span>' + TICK;
         b.querySelector('.cnum').textContent = w.num;
         b.querySelector('.ctext').textContent = w.text;
         b.querySelector('.enum').textContent = w.enumeration;
         li.appendChild(b);
+        if (w.plain) {
+          var h = document.createElement('button');
+          h.type = 'button';
+          h.className = 'hint-btn';
+          h.dataset.w = wi;
+          h.hidden = true;
+          h.innerHTML = '<span>Plain clue</span> <span class="hint-cost">· −' + COST['plain-clue'] + '</span>';
+          h.setAttribute('aria-label', 'Show a plain clue for ' + w.num + ' ' + w.dir + ' (costs ' + COST['plain-clue'] + ' points)');
+          li.appendChild(h);
+          w.hint = h;
+        }
         ul.appendChild(li);
         w.el = b;
+        w.li = li;
       });
     });
     dir = words[0].dir;
@@ -382,9 +403,24 @@
     chip.className = 'chip';
     chip.textContent = w.num + (w.dir === 'across' ? 'A' : 'D');
     var txt = document.createElement('span');
-    txt.textContent = w.text + ' ' + w.enumeration;
+    txt.className = 'bar-lines';
+    var main = document.createElement('span');
+    main.className = 'bar-cryptic';
+    main.textContent = w.text + ' ' + w.enumeration;
+    txt.appendChild(main);
+    if (plainShown(w)) {
+      var pl = document.createElement('span');
+      pl.className = 'bar-plain';
+      var tag = document.createElement('span');
+      tag.className = 'plain-tag';
+      tag.textContent = 'Plain:';
+      pl.appendChild(tag);
+      pl.appendChild(document.createTextNode(' ' + w.plain + ' ' + w.enumeration));
+      txt.appendChild(pl);
+    }
     bar.appendChild(chip);
     bar.appendChild(txt);
+    renderPlain();
 
     var dock = $('dock');
     if (dock.classList.contains('complete') !== !!S.completed) {
@@ -404,6 +440,72 @@
     renderTimer();
     $('menu').classList.toggle('is-complete', !!S.completed);
   }
+  // ---------------------------------------------------------------- plain clue (paid hint)
+  function wordKey(w) { return w.num + (w.dir === 'across' ? 'A' : 'D'); }
+  function plainShown(w) { return !!(w && w.plain && S && S.plain.indexOf(wordKey(w)) >= 0); }
+  function wordSolved(wi) {
+    // complete and correct (the free word-complete detection), or every letter revealed/confirmed
+    return !!goodWords[wi] || words[wi].cells.every(function (ci) { return locked(ci); });
+  }
+  function plainStatus(wi) {
+    var w = words[wi];
+    if (!w || !w.plain) return 'none';
+    if (plainShown(w)) return 'shown';
+    if (S.completed || wordSolved(wi)) return 'solved';
+    return 'available';
+  }
+  function renderPlain() {
+    if (!P || !S) return;
+    var cur = words.indexOf(currentWord());
+    words.forEach(function (w, wi) {
+      var box = w.el.querySelector('.cplain');
+      var shown = plainShown(w);
+      if (shown && box.hidden) {
+        box.querySelector('.ptext').textContent = w.plain;
+        box.querySelector('.penum').textContent = w.enumeration;
+      }
+      box.hidden = !shown;
+      if (w.hint) {
+        var offer = !S.completed && wi === cur && plainStatus(wi) === 'available';
+        w.hint.hidden = !offer;
+        w.li.classList.toggle('with-hint', offer);
+      }
+    });
+  }
+  function renderMenu() {
+    var sec = $('menu-plain');
+    sec.hidden = !hasPlain;
+    if (!hasPlain || !P) return;
+    var w = currentWord(), wi = words.indexOf(w), st = plainStatus(wi);
+    var b = $('opt-plain');
+    var name = w.num + ' ' + (w.dir === 'across' ? 'Across' : 'Down');
+    $('plain-for').textContent = st === 'none' ? 'Not available for ' + name
+      : st === 'solved' ? name + ' is already solved'
+      : st === 'shown' ? 'Shown for ' + name
+      : 'For ' + name;
+    $('plain-cost').textContent = st === 'shown' ? 'free' : st === 'available' ? '−' + COST['plain-clue'] : '';
+    var off = st === 'none' || st === 'solved';
+    b.classList.toggle('is-disabled', off);
+    b.classList.toggle('is-shown', st === 'shown');
+    b.setAttribute('aria-disabled', off ? 'true' : 'false');
+  }
+  function usePlain(wi) {
+    if (!P || S.completed) return;
+    var w = words[wi], st = plainStatus(wi);
+    if (st === 'none') { toast('No plain clue for this one'); return; }
+    if (st === 'solved') { toast('Already solved – no plain clue needed'); return; }
+    if (st === 'shown') { toast('Plain clue already shown – no charge'); flashPlain(); return; }
+    S.plain.push(wordKey(w));
+    deduct('plain-clue', COST['plain-clue'], { w: wordKey(w) });
+    render();
+    flashPlain();
+  }
+  function flashPlain() {
+    var el = document.querySelector('#clue-bar-text .bar-plain');
+    if (!el || reduceMotion) return;
+    el.classList.remove('fresh'); void el.offsetWidth; el.classList.add('fresh');
+  }
+
   function scrollClueIntoView() {
     var w = currentWord();
     if (w && w.el && w.el.scrollIntoView) {
@@ -534,6 +636,7 @@
         if (myGen !== gen || !res.every(Boolean) || goodWords[wi]) return;
         goodWords[wi] = true;
         w.el.classList.add('good');
+        renderPlain();
         if (animate) celebrateWord(w);
       });
     });
@@ -969,6 +1072,11 @@
       if (c && !userPaused) selectCell(+c.dataset.i);
     });
     $('clues').addEventListener('click', function (e) {
+      var h = e.target.closest('.hint-btn');
+      if (h) {
+        if (!userPaused) usePlain(+h.dataset.w);
+        return;
+      }
       var b = e.target.closest('.clue');
       if (b) {
         selectWord(+b.dataset.w);
@@ -989,6 +1097,7 @@
     $('btn-archive-back').addEventListener('click', function () { location.hash = P ? '#/p/' + P.date : ''; });
     $('btn-menu').addEventListener('click', function () {
       if (S && S.completed) { openRules(); return; }
+      renderMenu();
       $('menu').hidden = false;
       overlayOpenedAt = performance.now();
     });
@@ -1007,6 +1116,7 @@
       if (S.completed) { toast('Puzzle already complete'); return; }
       if (userPaused) setPaused(false);
       if (a === 'reset') return confirmThen('Clear the grid?', 'This clears your unconfirmed letters. Your score and time are kept.', 'Clear', clearGrid);
+      if (a === 'plain-clue') return usePlain(words.indexOf(currentWord()));
       if (a === 'reveal-grid') return confirmThen('Reveal the grid?', 'This shows every answer and ends the puzzle with 0 points.', 'Reveal', function () { reveal('grid'); });
       var parts = a.split('-');
       if (parts[0] === 'check') check(parts[1]);
@@ -1064,7 +1174,7 @@
 
   // tiny hook for automated tests (never exposes answers)
   window.__crosshatch = {
-    state: function () { return { sel: sel, dir: dir, S: S, date: P && P.date, running: running(), score: scoreOf(S), good: Object.keys(goodWords).map(Number) }; },
+    state: function () { return { sel: sel, dir: dir, S: S, date: P && P.date, running: running(), score: scoreOf(S), good: Object.keys(goodWords).map(Number), hasPlain: hasPlain }; },
     shareText: function () { return S ? shareText() : ''; }
   };
 })();
