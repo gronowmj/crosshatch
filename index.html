@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Crosshatch">
+<meta name="application-name" content="Crosshatch">
+<meta name="theme-color" content="#f5f2eb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16181d" media="(prefers-color-scheme: dark)">
+<meta name="description" content="A small daily cryptic crossword: four clues, one hash.">
+<title>Crosshatch – daily cryptic</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <button class="icon-btn" id="btn-archive" type="button" aria-label="Archive">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>
+    </button>
+    <div class="title-block">
+      <h1 id="app-title">Crosshatch</h1>
+      <div id="subtitle" class="subtitle"></div>
+    </div>
+    <button class="timer" id="timer" type="button" aria-label="Pause timer">0:00</button>
+    <button class="icon-btn" id="btn-menu" type="button" aria-label="Check, reveal and other options" aria-haspopup="true">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>
+    </button>
+  </header>
+
+  <main id="view-puzzle" class="view">
+    <div id="grid-wrap">
+      <div id="grid" role="grid" aria-label="Crossword grid"></div>
+      <div id="paused" class="paused" hidden>
+        <p>Paused</p>
+        <button type="button" class="primary" id="btn-resume">Resume</button>
+      </div>
+    </div>
+    <section id="clues" aria-label="Clues">
+      <div class="clue-group">
+        <h2>Across</h2>
+        <ul id="clues-across" class="clue-list"></ul>
+      </div>
+      <div class="clue-group">
+        <h2>Down</h2>
+        <ul id="clues-down" class="clue-list"></ul>
+      </div>
+    </section>
+    <p id="load-error" class="load-error" hidden></p>
+  </main>
+
+  <main id="view-archive" class="view" hidden>
+    <h2 class="archive-title">Archive</h2>
+    <ul id="archive-list" class="archive-list"></ul>
+    <p class="archive-note">Your progress on each puzzle is saved on this device.</p>
+  </main>
+
+  <footer id="dock">
+    <div id="clue-bar">
+      <button type="button" class="bar-btn" id="btn-prev" aria-label="Previous clue">‹</button>
+      <div id="clue-bar-text" aria-live="polite"></div>
+      <button type="button" class="bar-btn" id="btn-next" aria-label="Next clue">›</button>
+    </div>
+    <div id="keyboard" aria-label="Keyboard"></div>
+    <div id="done-bar" hidden>
+      <span id="done-text"></span>
+      <button type="button" id="btn-done-archive">Archive</button>
+    </div>
+  </footer>
+</div>
+
+<div id="menu" class="sheet-backdrop" hidden>
+  <div class="sheet" role="menu" aria-label="Options">
+    <div class="sheet-row">
+      <span class="sheet-label">Check</span>
+      <button type="button" data-action="check-letter">Letter</button>
+      <button type="button" data-action="check-word">Word</button>
+      <button type="button" data-action="check-grid">Grid</button>
+    </div>
+    <div class="sheet-row">
+      <span class="sheet-label">Reveal</span>
+      <button type="button" data-action="reveal-letter">Letter</button>
+      <button type="button" data-action="reveal-word">Word</button>
+      <button type="button" data-action="reveal-grid">Grid</button>
+    </div>
+    <div class="sheet-row">
+      <span class="sheet-label">Clear</span>
+      <button type="button" data-action="clear-word">Word</button>
+      <button type="button" data-action="reset">Reset puzzle</button>
+    </div>
+    <button type="button" class="sheet-close" data-action="close">Close</button>
+  </div>
+</div>
+
+<div id="modal" class="modal-backdrop" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <h2 id="modal-title"></h2>
+    <p id="modal-body"></p>
+    <div class="modal-actions" id="modal-actions"></div>
+  </div>
+</div>
+
+<div id="toast" class="toast" role="status" hidden></div>
+<script src="sha256.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

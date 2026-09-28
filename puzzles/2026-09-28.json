@@ -1,0 +1,237 @@
+{
+ "format": 1,
+ "date": "2026-09-28",
+ "title": "Crosshatch No. 1",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 10,
+ "height": 10,
+ "cells": [
+  {
+   "r": 0,
+   "c": 3,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 3
+  },
+  {
+   "r": 1,
+   "c": 6,
+   "n": 2
+  },
+  {
+   "r": 2,
+   "c": 3
+  },
+  {
+   "r": 2,
+   "c": 6
+  },
+  {
+   "r": 3,
+   "c": 3
+  },
+  {
+   "r": 3,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 2,
+   "n": 3
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 7
+  },
+  {
+   "r": 4,
+   "c": 8
+  },
+  {
+   "r": 4,
+   "c": 9
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 6
+  },
+  {
+   "r": 7,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 7,
+   "c": 1
+  },
+  {
+   "r": 7,
+   "c": 2
+  },
+  {
+   "r": 7,
+   "c": 3
+  },
+  {
+   "r": 7,
+   "c": 4
+  },
+  {
+   "r": 7,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 6
+  },
+  {
+   "r": 7,
+   "c": 7
+  },
+  {
+   "r": 8,
+   "c": 3
+  },
+  {
+   "r": 8,
+   "c": 6
+  },
+  {
+   "r": 9,
+   "c": 6
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "What a crocodile may shed? Upset predator",
+    "enum": "(8)",
+    "cells": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Cycle round established base",
+    "enum": "(8)",
+    "cells": [
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Chippy to moan, then come in",
+    "enum": "(9)",
+    "cells": [
+     0,
+     1,
+     3,
+     5,
+     8,
+     15,
+     17,
+     22,
+     27
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Frank had one standing",
+    "enum": "(9)",
+    "cells": [
+     2,
+     4,
+     6,
+     11,
+     16,
+     18,
+     25,
+     28,
+     29
+    ]
+   }
+  ]
+ },
+ "salt": "68ad7bbc8889819c",
+ "check": [
+  "17101541697b84a9d27f015df4b31ad4ac0e506de9ab03913e1844f77bcf010f",
+  "b0fba0480e090d003344d048ef8b1b756a37e807271a4a0bcc7826df7443a964",
+  "a6947dfb859e43eff1b362ccaaa802fa058caf17cc0c7799957d577608cdd77b",
+  "4ee8b8db987b19ee85a287b44d74251ee3a146f10eafa806f35373fb945f9506",
+  "7eb4d3d34d10e0b0308e49fcdc880528bf785629efeb9c23c769f6e2221a510e",
+  "d543506542a4ac023c6ef9448c1801ba542b4cf8f6422f12f43061ee25e21863",
+  "84d0667a18f4c1ea43a8cb0fcac643f9883e59ac82b997770c1f0950242adce3",
+  "57fb69dba99d450e5e11057614d2e11e1ba2bf38b3003e456a15512ef3d92b0f",
+  "93490b85d45e7b4dbd8336d0f7c25f304e64db9a74b4c4524613901d1db5e9f8",
+  "5ed4dc6b59c70e8bcd9f0020963d301855a5c197197a909e28d72304d0758017",
+  "d054204410e15764626111a90c150a59be1da499155b6dde10fba4c3b22e5088",
+  "df81b15aff5a0bd4c6095c754a876f67f6b132493185f7229b32066f2e102acd",
+  "4f5c5742d26d82d7384bffceca827da35c595a5a9384f9a9d2c913fe79820b8b",
+  "20ca4c57f6793b4da2bcc40ccfd4c4195e926e4def9e67904d19a4269095d399",
+  "d338dc068f6439c68863ad98065665c00f632b42af279cac982d70f527cfa667",
+  "352686d7d4a923c479ba2265a6dd3eaeeb80ca929c83e2a47ae5ea1947fad5af",
+  "e3d4143674bf75958e7ad9bdd5c3430270bc3acc439d6d8b20c6a08fe9312357",
+  "e44cff594c201d0a640b82607ce1a74f11b996613c8cbf331becfe178e89ae5e",
+  "9a8e3d4229001e61bd0a1d23ea9f25ba86ac6914c7a19c937b5fdb365067d298",
+  "9aca84aadebd4a50fd35a70247d19764cdd79f01ae3f51e3d2237a5b7298fa2c",
+  "ed06c9c0dc1f555f74d677f419cfeef7e073a968bde826a86821104fa1171eb9",
+  "b5e51b6bd4d76ec7416aa6d2cb4fd8f2862d6c9cf26faa00342e73584549a6ea",
+  "319c6d2bcb99754182a897c80e6bf5626448d028d19be745fe3e27b16f5b3438",
+  "448759383f15983a2de6850ca8ec473e52e9d2e762a7fd47adef6554c65a2050",
+  "8acdb5ff0937ab9fe811ed7ca564f42c16b03aa78e566127436ea983c0dd252c",
+  "47fea135bbf5d08137d48cdfc7f32da2523a62c5bcc0c4c792aef7c45928946f",
+  "a82a61af14aa9554436c1b72ebfb34be2c0c28481d708225fe346dbd66523f9b",
+  "44492eb7843968757bff0f7f3ac5f0321f8f064b68ce8663f4534b8f3fd11345",
+  "81992c2c50897aa043208bfc751ba95987812a1e2e9ff4af9697fe37bfcf905f",
+  "61d29c33efca4013a9487ad15a16b5b92e42a8da26d81bb10f887b705f974997"
+ ],
+ "reveal": "c9abbe8f9e98e1d72821503fa90aa8d4a58c1764c9661c6d8715d9cfd1e5"
+}
