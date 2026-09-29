@@ -1,0 +1,229 @@
+{
+ "format": 1,
+ "date": "2026-09-29",
+ "title": "Crosshatch No. 2",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 8,
+ "height": 10,
+ "cells": [
+  {
+   "r": 0,
+   "c": 2,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 0,
+   "n": 2
+  },
+  {
+   "r": 2,
+   "c": 1
+  },
+  {
+   "r": 2,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 3
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 5,
+   "n": 3
+  },
+  {
+   "r": 2,
+   "c": 6
+  },
+  {
+   "r": 2,
+   "c": 7
+  },
+  {
+   "r": 3,
+   "c": 2
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 7
+  },
+  {
+   "r": 6,
+   "c": 2
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 2
+  },
+  {
+   "r": 7,
+   "c": 5
+  },
+  {
+   "r": 8,
+   "c": 5
+  },
+  {
+   "r": 9,
+   "c": 5
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 2,
+    "text": "Diet of shattered Eng cross",
+    "plain": "Formal meeting of representatives",
+    "enum": "(8)",
+    "cells": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Predicament — and in quarry losing river",
+    "plain": "State of perplexity",
+    "enum": "(8)",
+    "cells": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Empty tomb found in force not a phantom",
+    "plain": "Monument to people buried elsewhere",
+    "enum": "(8)",
+    "cells": [
+     0,
+     1,
+     4,
+     10,
+     12,
+     16,
+     22,
+     24
+    ]
+   },
+   {
+    "num": 3,
+    "text": "Trained fruit tree wrecked in sea peril",
+    "plain": "Fruit tree trained on a lattice",
+    "enum": "(8)",
+    "cells": [
+     7,
+     11,
+     13,
+     19,
+     23,
+     25,
+     26,
+     27
+    ]
+   }
+  ]
+ },
+ "salt": "34644d871bf8215d",
+ "check": [
+  "2f5e6a35d6164fd4d99f831601040657aad77c80639be0725c30458fdeec9d1f",
+  "f8b9cff160547ee202d0e82e588166bf4a770b5d397855956e24a128c004dc8d",
+  "e808094afb5050911c8ca21c754ddec88e13a899962623afdd1e9659b1a24971",
+  "bed268aac1630ce2e1867a72e17c2c57e1a89889593137b866800dfe900deaf6",
+  "77061db0baea955d5084b746ebad5e621aadb506b2eac43dbc17a879461f8385",
+  "d4eb304fa890efadfa522f7936f7fa73f13d03caea8a1bcd3d54e75d604d459e",
+  "7cd1b3e3ffcbd9b2054f82a51a4589821e5dc034dd7fa7335693fbb9f5d8de5f",
+  "7c9898a424da3793a8bc4343b5aa8d218da3304a7ec581b158e60eb6254efe57",
+  "758ce98588b082c7b78340711156758f207c43436bd308cb034d0e23785c0a67",
+  "72a74c0514b44341772d3dbfb4771139aaf810fc97551539764e1b8816f3d07a",
+  "6cafb4656f42f46a84faf2ae58ea7ed2551f6c1474d374f5f9fd028129c888c2",
+  "344cc1d50d17d7b290beb7ad1f0302e0e384920346f6b2fb6440846bb4cfc7da",
+  "1b7f9065451bbe049d8b6f752d7cf47e8b895230467e08e6b1e3f8dcc879efcf",
+  "afa1506576ffcaafd0d00060059126bed6e569a0713194d85d7831e862951b80",
+  "2defafe27a920a62145806d94986d6fa27ac66a36e129af0adbb6f2b8da6ffbd",
+  "c2c006e596187035bcb201f7a3913505f5bdd7ee9fcdea77cfc4b9fc6be2c143",
+  "286ab99120901f116c16293161ef1f616e9b415a91edc5fa4f7abb5efc061901",
+  "3d0289a839d68c3d642d11ee4aea8edda718fc2a9fc36a553fb13cde030095f5",
+  "ce2c910e0dca3d994643c3abf71d1db1afd9dda18c4362d399db2cd0425d81bd",
+  "c8572e9597d72bb5b74a05edd0c37fbea57dc360267d1bc5766b9b68255b5019",
+  "8916167940215ecc7f0c95c6319826cc360b564ad7c8291afac52bafecc99c55",
+  "c3661bffb51d4ca58da93f189864064da037d712d67dfb87672a986f3bd831b7",
+  "044e3ddc9db5cd209400278be942e8a2ded7870ba6fcfed2d5426e16229142a3",
+  "7408f0b1b2be9d58b6fa61948e2ee43c2df5d191423dd3277a8ca66878a9aa3e",
+  "e2a8a0eacfbbac2be2c9e0099f598ac1b1be2c216309b79ad50d5804fb96cfbe",
+  "199b7638cfc0d6a4a66e970dd1767fb5ee4a1d7592b0d949c6e40f68ad98420d",
+  "2a58cf39527fb57a6221c48ee234969c2e88cff03ae3a460f47f85f90fa79e4d",
+  "16a334026468dd6912cab8e7ef54b72d3658eb184d3f297261de13c95327fef9"
+ ],
+ "reveal": "5af7b09b3967555d211291845500a02f4a5dbb90486786643821ebd1"
+}
