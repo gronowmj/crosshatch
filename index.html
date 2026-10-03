@@ -10,7 +10,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Crosshatch">
 <meta name="application-name" content="Crosshatch">
-<meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#ebe4f6" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0f1217" media="(prefers-color-scheme: dark)">
 <meta name="description" content="A small daily cryptic crossword: four clues, one hash.">
 <title>Crosshatch – daily cryptic</title>
@@ -101,22 +101,23 @@
     <div class="sheet-grabber"></div>
     <div class="sheet-head">
       <h2>Help</h2>
-      <p>Each use lowers your score. Wrong entries are free.</p>
+      <p>Check a finished word once for 5 points. Reveals and plain clues cost more. Wrong entries are free.</p>
     </div>
     <div class="sheet-section">
       <span class="sheet-label">Check</span>
       <div class="sheet-row">
-        <button type="button" class="opt" data-action="check-letter"><b>Letter</b><span class="cost">−1</span></button>
-        <button type="button" class="opt" data-action="check-word"><b>Word</b><span class="cost">−3</span></button>
-        <button type="button" class="opt" data-action="check-grid"><b>Grid</b><span class="cost">−5</span></button>
+        <button type="button" class="opt hint-opt" id="opt-check" data-action="check-word">
+          <span class="hint-main"><b>Word</b><span class="hint-for" id="check-for">Fill the word first</span></span>
+          <span class="cost" id="check-cost">−5</span>
+        </button>
       </div>
     </div>
     <div class="sheet-section">
       <span class="sheet-label">Reveal</span>
       <div class="sheet-row">
-        <button type="button" class="opt" data-action="reveal-letter"><b>Letter</b><span class="cost">−5</span></button>
-        <button type="button" class="opt" data-action="reveal-word"><b>Word</b><span class="cost">up to −15</span></button>
-        <button type="button" class="opt danger" data-action="reveal-grid"><b>Grid</b><span class="cost">0 pts</span></button>
+        <button type="button" class="opt" data-action="reveal-first"><b>First letter</b><span class="cost" id="first-cost">−8</span></button>
+        <button type="button" class="opt" data-action="reveal-word"><b>Word</b><span class="cost">−20</span></button>
+        <button type="button" class="opt danger" data-action="reveal-grid"><b>Grid</b><span class="cost">Ends on 0</span></button>
       </div>
     </div>
     <div class="sheet-section" id="menu-plain" hidden>
@@ -124,7 +125,7 @@
       <div class="sheet-row">
         <button type="button" class="opt hint-opt" id="opt-plain" data-action="plain-clue">
           <span class="hint-main"><b>Plain clue</b><span class="hint-for" id="plain-for"></span></span>
-          <span class="cost" id="plain-cost">−2</span>
+          <span class="cost" id="plain-cost">−10</span>
         </button>
       </div>
     </div>
@@ -151,19 +152,20 @@
     </div>
     <table class="rules-table">
       <tbody>
-        <tr><th>Check a letter</th><td>−1</td></tr>
-        <tr><th>Check a word</th><td>−3</td></tr>
-        <tr><th>Check the grid</th><td>−5</td></tr>
-        <tr><th>Show a plain clue</th><td>−2 a clue</td></tr>
-        <tr><th>Reveal a letter</th><td>−5</td></tr>
-        <tr><th>Reveal a word</th><td>−5 a letter, max −15</td></tr>
+        <tr><th>Check a word</th><td>−5 once full</td></tr>
+        <tr><th>Show a plain clue</th><td>−10 a clue</td></tr>
+        <tr><th>Reveal the first letter</th><td>−8</td></tr>
+        <tr><th>Reveal a word</th><td>−20</td></tr>
         <tr><th>Reveal the grid</th><td>ends on 0</td></tr>
       </tbody>
     </table>
     <ul class="rules-notes">
-      <li>Reveals only charge for letters they fill in or correct. If your letters were already right, it costs the same as a check instead.</li>
-      <li>Revealed and confirmed letters are never charged twice, and a check with nothing new to check is free.</li>
-      <li>A plain clue adds a straight, quick-crossword definition under the cryptic clue. It’s charged once per clue, stays shown, and isn’t offered for a word you’ve already solved.</li>
+      <li>There is no single-letter check, and no check for the whole grid.</li>
+      <li>You can check a word only after every letter is filled. That costs 5 points, once. An unfinished word stays disabled and is not charged.</li>
+      <li>Checking that same word again costs nothing. A word that is already fully revealed or confirmed is not charged.</li>
+      <li>Revealing a word costs 20 points once. If every letter was already right, it costs nothing and just confirms them.</li>
+      <li>Revealing the first letter of the selected clue costs 8, once. If that cell is already correct or revealed, it costs nothing.</li>
+      <li>A plain clue adds a straight, quick-crossword definition under the cryptic clue. It’s charged once per clue (−10), stays shown, and isn’t offered for a word you’ve already solved.</li>
       <li>Wrong entries cost nothing, and neither does the glow when you complete a word correctly.</li>
       <li>The score can’t go below 0, and clearing the grid or reloading doesn’t restore points.</li>
     </ul>
@@ -183,7 +185,7 @@
 
 <!-- Finish screen -->
 <div id="finish" class="finish" hidden>
-  <canvas id="confetti" aria-hidden="true"></canvas>
+  <canvas id="fireworks" aria-hidden="true"></canvas>
   <div class="finish-card" role="dialog" aria-modal="true" aria-labelledby="finish-title">
     <div class="finish-kicker" id="finish-kicker"></div>
     <h2 id="finish-title">Solved!</h2>

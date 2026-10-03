@@ -3,19 +3,20 @@
   'use strict';
 
   var STORE_PREFIX = 'crosshatch:v1:';   // unchanged key: older saves load and are migrated in place
+  var SAVE_VERSION = 3;
   var START_SCORE = 100;
-  var COST = { 'check-letter': 1, 'check-word': 3, 'check-grid': 5, 'reveal-letter': 5, 'reveal-word-each': 5, 'reveal-word-max': 15,
-    'plain-clue': 2 };
+  // A word can be checked only once it is full, for −5, and only the first time.
+  // There is no letter check and no grid check. Reveal word is a flat −20 once
+  // per word. First letter of the selected clue is −8 once. A plain clue is −10
+  // once. Time never counts.
+  var COST = { 'check-word': 5, 'reveal-first': 8, 'reveal-word': 20, 'plain-clue': 10 };
   var LABEL = {
-    'check-letter': 'Letter check',
     'check-word': 'Word check',
-    'check-grid': 'Grid check',
-    'reveal-letter': 'Letter reveal',
-    'reveal-word': 'Word reveal',
+    'reveal-letter': 'First letter',
+    'reveal-first': 'First letter',
+    'reveal-word': 'Revealed word',
     'reveal-grid': 'Grid revealed',
-    'plain-clue': 'Plain clue',
-    'legacy-reveal': 'Revealed letters (pre-scoring)',
-    'legacy-check': 'Checked letters (pre-scoring)'
+    'plain-clue': 'Plain clue'
   };
   var $ = function (id) { return document.getElementById(id); };
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -72,49 +73,158 @@
 
   function storeKey(date) { return STORE_PREFIX + date; }
   function blankState(n) {
-    var st = { v: 2, letters: [], revealed: [], checked: [], elapsed: 0, completed: false, solved: false,
+    var st = { v: SAVE_VERSION, letters: [], revealed: [], checked: [], elapsed: 0, completed: false, solved: false,
       completedAt: null, deductions: [], gaveUp: false, plain: [] };
     for (var i = 0; i < n; i++) { st.letters.push(''); st.revealed.push(false); st.checked.push(0); }
     return st;
   }
-  function migrate(st, n) {
-    // Older saves have letters/revealed/checked/elapsed/completed/solved but no score data.
+  // Saves written before v3 (no score data, or the live harsh migration of 5 per revealed
+  // letter and 1 per checked letter) are re-scored ONCE from the letter flags:
+  //   each word that owns any revealed letter costs the new reveal-word price (−20), not per letter;
+  //   stray checked letters are NOT a word check (the old save cannot prove one) unless a
+  //   deduction already names the word; plain clues already recorded cost −10 each.
+  // First-letter (−8) did not exist, so it is not invented on top of the −20.
+  // A crossing is charged on the word with the most revealed letters, so it is not billed twice.
+  var entryCache = {};
+  function entriesOf(puz) {
+    var out = [];
+    ['across', 'down'].forEach(function (d) {
+      ((puz.clues || {})[d] || []).forEach(function (c) {
+        out.push({ k: c.num + (d === 'across' ? 'A' : 'D'), cells: c.cells || [] });
+      });
+    });
+    return out;
+  }
+  function isLegacyDeduction(d) {
+    return d && (d.t === 'legacy-reveal' || d.t === 'legacy-check' || d.t === 'migrated-reveal' || d.t === 'migrated-check');
+  }
+  function needsRescore(st) {
+    if (!Array.isArray(st.deductions)) return true;
+    if (st.deductions.some(isLegacyDeduction)) return true;
+    return st.v !== SAVE_VERSION;
+  }
+  function revealedWordKeys(revealed, entries) {
+    var n = revealed.length, i;
+    var ents = (entries || []).map(function (e) {
+      return { k: e.k, cells: (e.cells || []).filter(function (ci) { return ci >= 0 && ci < n; }) };
+    }).filter(function (e) { return e.cells.length; });
+    var R = [];
+    for (i = 0; i < n; i++) R.push(!!revealed[i]);
+    var rCount = ents.map(function (e) { return e.cells.filter(function (ci) { return R[ci]; }).length; });
+    var inEntry = [];
+    for (i = 0; i < n; i++) inEntry.push([]);
+    ents.forEach(function (e, ei) { e.cells.forEach(function (ci) { inEntry[ci].push(ei); }); });
+    var assigned = ents.map(function () { return 0; });
+    for (i = 0; i < n; i++) {
+      if (!R[i]) continue;
+      var best = -1;
+      inEntry[i].forEach(function (ei) {
+        if (best < 0 || rCount[ei] > rCount[best] || (rCount[ei] === rCount[best] && ei < best)) best = ei;
+      });
+      if (best >= 0) assigned[best]++;
+    }
+    var keys = [];
+    ents.forEach(function (e, ei) { if (assigned[ei]) keys.push(e.k); });
+    return keys;
+  }
+  function rescoreOld(st, entries) {
+    var at = Date.now();
+    var gaveUp = !!st.gaveUp || (st.deductions || []).some(function (d) { return d.t === 'reveal-grid'; });
+    var plain = [];
+    (Array.isArray(st.plain) ? st.plain : []).forEach(function (k) { if (plain.indexOf(k) < 0) plain.push(k); });
+    (st.deductions || []).forEach(function (d) {
+      if (d && d.t === 'plain-clue' && d.w && plain.indexOf(d.w) < 0) plain.push(d.w);
+    });
+    var deds = [];
+    var revealedKeys = revealedWordKeys(st.revealed, entries);
+    revealedKeys.forEach(function (k) {
+      deds.push({ t: 'reveal-word', c: COST['reveal-word'], n: 1, w: k, at: at });
+    });
+    // Per-cell checked flags (and a single legacy-check total) cannot prove the player
+    // used "check word" on a completed entry rather than checking letters one by one.
+    // Only an old deduction that already names the word (t: check-word, w: "3A") counts,
+    // and not when that word was fully revealed.
+    var seenCheck = {};
+    (st.deductions || []).forEach(function (d) {
+      if (!d || d.t !== 'check-word' || !d.w || seenCheck[d.w]) return;
+      var ent = null;
+      (entries || []).forEach(function (e) { if (e.k === d.w) ent = e; });
+      if (!ent || !ent.cells.length) return;
+      var filled = ent.cells.every(function (ci) { return !!(st.letters && st.letters[ci]); });
+      var fullyRevealed = ent.cells.every(function (ci) { return !!(st.revealed && st.revealed[ci]); });
+      if (!filled || fullyRevealed) return;
+      seenCheck[d.w] = true;
+      deds.push({ t: 'check-word', c: COST['check-word'], n: 1, w: d.w, at: at });
+    });
+    plain.forEach(function (k) {
+      deds.push({ t: 'plain-clue', c: COST['plain-clue'], n: 1, w: k, at: at });
+    });
+    st.plain = plain;
+    st.gaveUp = gaveUp;
+    if (gaveUp) {
+      var sum = 0;
+      deds.forEach(function (d) { sum += d.c; });
+      deds.push({ t: 'reveal-grid', c: Math.max(0, START_SCORE - sum), at: at });
+    }
+    st.deductions = deds;
+    st.v = SAVE_VERSION;
+    return st;
+  }
+  function migrate(st, n, entries) {
     if (!Array.isArray(st.revealed) || st.revealed.length !== n) st.revealed = st.letters.map(function () { return false; });
     if (!Array.isArray(st.checked) || st.checked.length !== n) st.checked = st.letters.map(function () { return 0; });
     st.elapsed = +st.elapsed || 0;
-    if (!Array.isArray(st.deductions)) {
-      st.deductions = [];
-      var nR = 0, nC = 0;
-      for (var i = 0; i < n; i++) {
-        if (st.revealed[i]) nR++;
-        else if (st.checked[i]) nC++;
-      }
-      if (nR) st.deductions.push({ t: 'legacy-reveal', c: nR * COST['reveal-letter'], n: nR });
-      if (nC) st.deductions.push({ t: 'legacy-check', c: nC * COST['check-letter'], n: nC });
-      st.gaveUp = false;
+    if (!Array.isArray(st.plain)) st.plain = [];
+    if (!needsRescore(st)) {
+      st.gaveUp = !!st.gaveUp;
+      st.v = SAVE_VERSION;
+      return st;
     }
-    st.gaveUp = !!st.gaveUp;
-    if (!Array.isArray(st.plain)) st.plain = [];   // clue keys ('3A', '1D') whose plain clue was bought
-    st.v = 2;
-    return st;
+    // Without the puzzle's words a revealed crossing can't be grouped; leave the save
+    // untouched (and unversioned) until the word list is available, then score it once.
+    if (!entries || !entries.length) return st;
+    return rescoreOld(st, entries);
   }
   function loadState(date, n) {
     var st = null;
     try { st = JSON.parse(localStorage.getItem(storeKey(date)) || 'null'); } catch (e) { st = null; }
     if (!st || !Array.isArray(st.letters) || st.letters.length !== n) return blankState(n);
-    return migrate(st, n);
+    return migrate(st, n, entryCache[date]);
   }
   function saveState() {
     if (!P || !S) return;
     var copy = Object.assign({}, S, { elapsed: Math.round(elapsed()), score: scoreOf(S), updated: new Date().toISOString() });
     try { localStorage.setItem(storeKey(P.date), JSON.stringify(copy)); } catch (e) { /* private mode / full */ }
   }
-  function peekState(date) {
+  function rawState(date) {
     try {
       var st = JSON.parse(localStorage.getItem(storeKey(date)) || 'null');
-      if (st && Array.isArray(st.letters)) return migrate(st, st.letters.length);
+      if (st && Array.isArray(st.letters)) return st;
     } catch (e) { /* ignore */ }
     return null;
+  }
+  function peekState(date) {
+    var st = rawState(date);
+    return st ? migrate(st, st.letters.length, entryCache[date]) : null;
+  }
+  function migrateStored(dates) {
+    var todo = dates.filter(function (d) {
+      if (P && S && P.date === d) return false;
+      var st = rawState(d);
+      return st && needsRescore(st);
+    });
+    return Promise.all(todo.map(function (d) {
+      var ready = entryCache[d] ? Promise.resolve() : fetchJSON('puzzles/' + d + '.json').then(function (puz) {
+        entryCache[d] = entriesOf(puz);
+      });
+      return ready.then(function () {
+        var st = rawState(d);
+        if (!st || !needsRescore(st) || !entryCache[d]) return;
+        migrate(st, st.letters.length, entryCache[d]);
+        st.score = scoreOf(st);
+        try { localStorage.setItem(storeKey(d), JSON.stringify(st)); } catch (e) { /* ignore */ }
+      }).catch(function () { /* offline: shown again once the puzzle itself is opened */ });
+    }));
   }
 
   // ---------------------------------------------------------------- scoring
@@ -224,7 +334,7 @@
   }
   function closeOverlays() {
     ['menu', 'rules', 'modal', 'finish'].forEach(function (id) { $(id).hidden = true; });
-    stopConfetti();
+    stopFireworks();
   }
   function showError(msg) {
     showPuzzleView();
@@ -249,6 +359,7 @@
     return fetchJSON('puzzles/' + date + '.json').then(function (puz) {
       P = puz;
       keystreamCache = null;
+      entryCache[P.date] = entriesOf(P);
       S = loadState(P.date, P.cells.length);
       saveState();   // persist any migration immediately
       $('load-error').hidden = true;
@@ -472,9 +583,48 @@
       }
     });
   }
+  function wordFilled(w) {
+    return !!(w && w.cells.every(function (ci) { return !!S.letters[ci]; }));
+  }
+  function wordFullyLocked(w) {
+    return !!(w && w.cells.length && w.cells.every(function (ci) { return locked(ci); }));
+  }
+  // incomplete | confirmed | again | ready
+  function checkWordState(w) {
+    w = w || currentWord();
+    if (!P || !S || !w) return { state: 'incomplete', reason: 'Fill the word first', cost: '−' + COST['check-word'], disabled: true };
+    if (!wordFilled(w)) return { state: 'incomplete', reason: 'Fill the word first', cost: '−' + COST['check-word'], disabled: true };
+    if (wordFullyLocked(w)) return { state: 'confirmed', reason: 'Already confirmed', cost: 'free', disabled: true };
+    if (chargedWord('check-word', wordKey(w))) return { state: 'again', reason: 'Already checked', cost: 'free', disabled: false };
+    return { state: 'ready', reason: 'Word is full', cost: '−' + COST['check-word'], disabled: false };
+  }
+  function firstLetterFree() {
+    if (!P || !S) return false;
+    var w = currentWord();
+    return !!(S.completed || locked(w.cells[0]));
+  }
   function renderMenu() {
     var sec = $('menu-plain');
     sec.hidden = !hasPlain;
+    var fc = $('first-cost'), fb = document.querySelector('[data-action="reveal-first"]');
+    if (fc && P && S) {
+      var free = firstLetterFree();
+      fc.textContent = free ? 'free' : '−' + COST['reveal-first'];
+      if (fb) {
+        fb.classList.toggle('is-disabled', free);
+        fb.setAttribute('aria-disabled', free ? 'true' : 'false');
+      }
+    }
+    var cb = $('opt-check');
+    if (cb && P && S) {
+      var cw = checkWordState();
+      $('check-for').textContent = cw.reason;
+      $('check-cost').textContent = cw.cost;
+      $('check-cost').classList.toggle('free', cw.cost === 'free');
+      cb.classList.toggle('is-disabled', cw.disabled);
+      cb.setAttribute('aria-disabled', cw.disabled ? 'true' : 'false');
+      cb.setAttribute('aria-label', 'Check word (' + cw.reason + ', ' + cw.cost + ')');
+    }
     if (!hasPlain || !P) return;
     var w = currentWord(), wi = words.indexOf(w), st = plainStatus(wi);
     var b = $('opt-plain');
@@ -675,40 +825,72 @@
     if (scope === 'word') return currentWord().cells.slice();
     return P.cells.map(function (_, i) { return i; });
   }
+  function chargedWord(type, key) {
+    return (S.deductions || []).some(function (d) { return d.t === type && d.w === key; });
+  }
   function check(scope) {
-    var cells = targetCells(scope).filter(function (i) { return S.letters[i] && !locked(i); });
-    if (!cells.length) { toast(scope === 'letter' && !S.letters[sel] ? 'Type a letter first' : 'Nothing new to check – no charge'); return Promise.resolve(); }
-    deduct('check-' + scope, COST['check-' + scope]);
+    // Letter checks and grid checks are gone. Only a completed word can be checked.
+    if (scope !== 'word') return Promise.resolve();
+    var w = currentWord();
+    var stt = checkWordState(w);
+    if (stt.state === 'incomplete') { toast('Fill every letter of the word first – no charge'); return Promise.resolve(); }
+    if (stt.state === 'confirmed') { toast('Already confirmed – no charge'); return Promise.resolve(); }
+    var cells = w.cells.filter(function (i) { return S.letters[i] && !locked(i); });
+    if (!cells.length) { toast('Nothing new to check – no charge'); return Promise.resolve(); }
+    if (stt.state === 'ready') deduct('check-word', COST['check-word'], { w: wordKey(w), n: 1 });
+    else toast('Already checked this word – no further charge');
     return Promise.all(cells.map(cellCorrect)).then(function (res) {
       var wrong = 0;
       cells.forEach(function (ci, k) { S.checked[ci] = res[k] ? 1 : -1; if (!res[k]) wrong++; });
-      toast(wrong ? plural(wrong, 'letter') + ' wrong' : (scope === 'letter' ? 'That letter is right' : 'All correct so far'));
+      toast(wrong ? plural(wrong, 'letter') + ' wrong' : 'All correct');
       afterChange([]);
     });
   }
+  function revealFirst() {
+    var w = currentWord(), i = w.cells[0], key = wordKey(w);
+    if (locked(i)) { toast('Already revealed – no charge'); return Promise.resolve(); }
+    return keystream().then(function (ks) {
+      var l = solutionLetter(i, ks);
+      if (S.letters[i] === l) {
+        S.checked[i] = 1;   // already correct: confirm, never charge
+        toast('Already correct – no charge');
+        afterChange([]);
+        return;
+      }
+      S.letters[i] = l;
+      S.revealed[i] = true;
+      S.checked[i] = 0;
+      cellChanged(i);
+      // One charge per letter. A later reveal of this same cell is locked, so it can't bill again.
+      if (!chargedWord('reveal-letter', key) && !chargedWord('reveal-first', key)) deduct('reveal-letter', COST['reveal-first'], { w: key });
+      var touched = {};
+      wordsOf(i).forEach(function (wi) { touched[wi] = true; });
+      afterChange([]);
+      evaluateWords(Object.keys(touched).map(Number), false);
+    });
+  }
   function reveal(scope) {
+    if (scope === 'first' || scope === 'letter') return revealFirst();
     var cells = targetCells(scope).filter(function (i) { return !locked(i); });
     if (!cells.length) { toast('Already revealed – no charge'); return Promise.resolve(); }
     return keystream().then(function (ks) {
-      var fixed = 0;
+      var changed = 0;
       cells.forEach(function (i) {
         var l = solutionLetter(i, ks);
         if (S.letters[i] === l) { S.checked[i] = 1; }          // already right: just confirm it
-        else { S.letters[i] = l; S.revealed[i] = true; S.checked[i] = 0; fixed++; cellChanged(i); }
+        else { S.letters[i] = l; S.revealed[i] = true; S.checked[i] = 0; changed++; cellChanged(i); }
       });
       if (scope === 'grid') {
         var before = scoreOf(S);
         S.deductions.push({ t: 'reveal-grid', c: before, at: Date.now() });
         S.gaveUp = true;
         renderScore(before);
-      } else if (fixed === 0) {
-        // nothing needed filling or correcting: it only told you your letters were right
-        deduct('check-' + scope, COST['check-' + scope]);
-        toast(scope === 'letter' ? 'You already had that one – charged as a check' : 'You already had those – charged as a check');
-      } else if (scope === 'letter') {
-        deduct('reveal-letter', COST['reveal-letter']);
+      } else if (changed === 0) {
+        toast('Already correct – no charge');
       } else {
-        deduct('reveal-word', Math.min(COST['reveal-word-max'], fixed * COST['reveal-word-each']));
+        var key = wordKey(currentWord());
+        if (chargedWord('reveal-word', key)) toast('This word was already revealed – no further charge');
+        else deduct('reveal-word', COST['reveal-word'], { w: key });
       }
       var touched = {};
       cells.forEach(function (i) { wordsOf(i).forEach(function (wi) { touched[wi] = true; }); });
@@ -811,7 +993,7 @@
     fill.style.transition = '';
     fill.style.strokeDashoffset = C * (1 - sc / START_SCORE);
     countUp($('finish-score'), sc);
-    if (celebrate && !S.gaveUp && sc > 0 && !reduceMotion) startConfetti();
+    if (celebrate && !reduceMotion) startFireworks();
   }
   function countUp(el, target) {
     if (reduceMotion || target === 0) { el.textContent = target; return; }
@@ -850,53 +1032,124 @@
     } else fallback();
   }
 
-  // ---------------------------------------------------------------- confetti (canvas, no library)
-  var confettiRAF = null;
-  function startConfetti() {
-    var cv = $('confetti');
+  // ---------------------------------------------------------------- fireworks (canvas, no library)
+  // Rockets rise and burst into radial sparks. Skipped entirely when the
+  // phone asks for reduced motion.
+  var fireworksRAF = null;
+  var fireworksRan = false;
+  function startFireworks() {
+    if (reduceMotion) return;
+    var cv = $('fireworks');
+    if (!cv) return;
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
-    var W = cv.clientWidth, H = cv.clientHeight;
-    cv.width = W * dpr; cv.height = H * dpr;
+    var W = cv.clientWidth || window.innerWidth, H = cv.clientHeight || window.innerHeight;
+    if (W < 2 || H < 2) return;
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
     var ctx = cv.getContext('2d');
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    var colours = ['#ffcf4a', '#2a4a7f', '#1f9d55', '#f0703e', '#8db4ff', '#e85d8a'];
-    var parts = [];
-    for (var i = 0; i < 140; i++) {
-      var fromLeft = i % 2 === 0;
-      parts.push({
-        x: fromLeft ? -10 : W + 10,
-        y: H * (0.55 + Math.random() * 0.25),
-        vx: (fromLeft ? 1 : -1) * (3 + Math.random() * 6),
-        vy: -(8 + Math.random() * 7),
-        w: 6 + Math.random() * 6, h: 8 + Math.random() * 8,
-        r: Math.random() * Math.PI, vr: (Math.random() - .5) * .3,
-        c: colours[i % colours.length], tilt: Math.random() * 10
-      });
+    fireworksRan = true;
+    var colours = ['#ffe56a', '#ff5d7a', '#7cf0c2', '#8db4ff', '#ffb15a', '#e7d4ff', '#ffffff', '#ff8ad4'];
+    var sparks = [];
+    function burst(x, y, color, n, speed) {
+      for (var i = 0; i < n; i++) {
+        var a = (Math.PI * 2 * i) / n + (Math.random() - 0.5) * 0.12;
+        var sp = speed * (0.55 + Math.random() * 0.55);
+        sparks.push({
+          x: x, y: y,
+          vx: Math.cos(a) * sp, vy: Math.sin(a) * sp,
+          life: 0.85 + Math.random() * 0.75,
+          age: 0,
+          c: color,
+          rad: Math.random() < 0.2 ? 2.6 : 1.6,
+          trail: Math.random() < 0.7
+        });
+      }
     }
+    var plan = [
+      { delay: 0.05, x: 0.18, y: 0.16 },
+      { delay: 0.22, x: 0.82, y: 0.14 },
+      { delay: 0.48, x: 0.50, y: 0.08 },
+      { delay: 0.72, x: 0.12, y: 0.30 },
+      { delay: 1.05, x: 0.88, y: 0.28 },
+      { delay: 1.35, x: 0.36, y: 0.18 },
+      { delay: 1.7, x: 0.64, y: 0.12 }
+    ];
+    var rockets = plan.map(function (b, i) {
+      return {
+        x: W * (0.28 + (i % 3) * 0.22),
+        y: H + 6,
+        tx: W * b.x,
+        ty: H * b.y,
+        delay: b.delay,
+        c: colours[i % colours.length],
+        exploded: false
+      };
+    });
     var t0 = performance.now();
-    cancelAnimationFrame(confettiRAF);
+    cancelAnimationFrame(fireworksRAF);
     (function frame(now) {
       var t = (now - t0) / 1000;
       ctx.clearRect(0, 0, W, H);
-      parts.forEach(function (p) {
-        p.vy += 0.28; p.vx *= 0.992; p.vy *= 0.992;
-        p.x += p.vx; p.y += p.vy; p.r += p.vr; p.tilt += 0.1;
+      rockets.forEach(function (r) {
+        if (t < r.delay || r.exploded) return;
+        var u = Math.min(1, (t - r.delay) / 0.52);
+        var ease = 1 - Math.pow(1 - u, 2);
+        var x = r.x + (r.tx - r.x) * ease;
+        var y = r.y + (r.ty - r.y) * ease;
         ctx.save();
-        ctx.translate(p.x, p.y);
-        ctx.rotate(p.r);
-        ctx.globalAlpha = Math.max(0, 1 - Math.max(0, t - 2.4) / 0.8);
-        ctx.fillStyle = p.c;
-        ctx.fillRect(-p.w / 2, -p.h / 2 * Math.abs(Math.cos(p.tilt)), p.w, p.h * Math.abs(Math.cos(p.tilt)));
+        ctx.globalAlpha = 0.95;
+        ctx.strokeStyle = r.c;
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(x, y + 14);
+        ctx.lineTo(x, y);
+        ctx.stroke();
+        ctx.fillStyle = '#fff8e8';
+        ctx.beginPath();
+        ctx.arc(x, y, 2.4, 0, Math.PI * 2);
+        ctx.fill();
         ctx.restore();
+        if (u >= 1) {
+          r.exploded = true;
+          burst(r.tx, r.ty, r.c, 36, 3.1);
+          burst(r.tx, r.ty, '#fffef8', 14, 1.5);
+        }
       });
-      if (t < 3.3) confettiRAF = requestAnimationFrame(frame);
+      for (var i = sparks.length - 1; i >= 0; i--) {
+        var spk = sparks[i];
+        spk.age += 1 / 60;
+        spk.vy += 0.04;
+        spk.vx *= 0.988;
+        spk.vy *= 0.988;
+        spk.x += spk.vx;
+        spk.y += spk.vy;
+        var k = 1 - spk.age / spk.life;
+        if (k <= 0) { sparks.splice(i, 1); continue; }
+        ctx.save();
+        ctx.globalAlpha = Math.max(0, k);
+        if (spk.trail) {
+          ctx.strokeStyle = spk.c;
+          ctx.lineWidth = 1.4;
+          ctx.beginPath();
+          ctx.moveTo(spk.x, spk.y);
+          ctx.lineTo(spk.x - spk.vx * 3.2, spk.y - spk.vy * 3.2);
+          ctx.stroke();
+        }
+        ctx.fillStyle = spk.c;
+        ctx.beginPath();
+        ctx.arc(spk.x, spk.y, spk.rad * (0.35 + k), 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      }
+      if (t < 3.8) fireworksRAF = requestAnimationFrame(frame);
       else ctx.clearRect(0, 0, W, H);
     })(t0);
   }
-  function stopConfetti() {
-    cancelAnimationFrame(confettiRAF);
-    var cv = $('confetti');
-    if (cv.getContext) cv.getContext('2d').clearRect(0, 0, cv.width, cv.height);
+  function stopFireworks() {
+    cancelAnimationFrame(fireworksRAF);
+    fireworksRAF = null;
+    var cv = $('fireworks');
+    if (cv && cv.getContext) cv.getContext('2d').clearRect(0, 0, cv.width, cv.height);
   }
 
   // ---------------------------------------------------------------- small UI helpers
@@ -995,6 +1248,7 @@
     kb.addEventListener('contextmenu', function (e) { e.preventDefault(); });
   }
 
+  var archiveSeq = 0;
   function showArchive() {
     if (P && S) { syncTimer(); saveState(); }
     $('view-puzzle').hidden = true;
@@ -1009,6 +1263,16 @@
     var items = released().slice().reverse();
     var previewMode = false;
     if (!items.length && index.length) { items = [index[0]]; previewMode = true; }
+    var seq = ++archiveSeq;
+    // Re-score old saves with each puzzle's words before badges are painted, so the
+    // archive never shows the harsh pre-scoring total.
+    migrateStored(items.map(function (e) { return e.date; })).then(function () {
+      if (seq !== archiveSeq || $('view-archive').hidden) return;
+      paintArchive(list, items, previewMode);
+    });
+  }
+  function paintArchive(list, items, previewMode) {
+    list.innerHTML = '';
     var done = 0, total = 0, best = null;
     items.forEach(function (e) {
       var st = peekState(e.date);
@@ -1103,7 +1367,7 @@
     });
     $('btn-results').addEventListener('click', function () { showFinish(false); });
     $('btn-share').addEventListener('click', share);
-    $('btn-finish-grid').addEventListener('click', function () { $('finish').hidden = true; stopConfetti(); });
+    $('btn-finish-grid').addEventListener('click', function () { $('finish').hidden = true; stopFireworks(); });
     $('btn-finish-archive').addEventListener('click', function () { location.hash = '#/archive'; });
     $('menu').addEventListener('click', function (e) {
       if (e.target === $('menu')) { if (performance.now() - overlayOpenedAt > 400) $('menu').hidden = true; return; }
@@ -1135,7 +1399,7 @@
       if ($('view-puzzle').hidden || !P) return;
       var overlay = ['modal', 'menu', 'rules', 'finish'].filter(function (id) { return !$(id).hidden; });
       if (overlay.length) {
-        if (e.key === 'Escape') { overlay.forEach(function (id) { $(id).hidden = true; }); stopConfetti(); }
+        if (e.key === 'Escape') { overlay.forEach(function (id) { $(id).hidden = true; }); stopFireworks(); }
         return;
       }
       var k = e.key;
@@ -1165,6 +1429,7 @@
   // ---------------------------------------------------------------- start
   buildKeyboard();
   bind();
+  (function () { var cv = $('fireworks'); if (cv) { cv.width = 0; cv.height = 0; } })();
   fetchJSON('puzzles/index.json').then(function (idx) {
     index = (idx.puzzles || []).slice().sort(function (a, b) { return a.date < b.date ? -1 : 1; });
     route();
@@ -1174,7 +1439,7 @@
 
   // tiny hook for automated tests (never exposes answers)
   window.__crosshatch = {
-    state: function () { return { sel: sel, dir: dir, S: S, date: P && P.date, running: running(), score: scoreOf(S), good: Object.keys(goodWords).map(Number), hasPlain: hasPlain }; },
+    state: function () { return { sel: sel, dir: dir, S: S, date: P && P.date, running: running(), score: scoreOf(S), good: Object.keys(goodWords).map(Number), hasPlain: hasPlain, fireworks: fireworksRan }; },
     shareText: function () { return S ? shareText() : ''; }
   };
 })();

@@ -1,0 +1,229 @@
+{
+ "format": 1,
+ "date": "2026-10-03",
+ "title": "Crosshatch No. 3",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 9,
+ "height": 8,
+ "cells": [
+  {
+   "r": 0,
+   "c": 1,
+   "n": 1
+  },
+  {
+   "r": 0,
+   "c": 7,
+   "n": 2
+  },
+  {
+   "r": 1,
+   "c": 1
+  },
+  {
+   "r": 1,
+   "c": 7
+  },
+  {
+   "r": 2,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 2,
+   "c": 1
+  },
+  {
+   "r": 2,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 3
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 2,
+   "c": 6
+  },
+  {
+   "r": 2,
+   "c": 7
+  },
+  {
+   "r": 3,
+   "c": 1
+  },
+  {
+   "r": 3,
+   "c": 7
+  },
+  {
+   "r": 4,
+   "c": 1
+  },
+  {
+   "r": 4,
+   "c": 7
+  },
+  {
+   "r": 5,
+   "c": 1,
+   "n": 4
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 7
+  },
+  {
+   "r": 5,
+   "c": 8
+  },
+  {
+   "r": 6,
+   "c": 1
+  },
+  {
+   "r": 6,
+   "c": 7
+  },
+  {
+   "r": 7,
+   "c": 1
+  },
+  {
+   "r": 7,
+   "c": 7
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Almanac clan read, jumbled",
+    "plain": "Table of the days in a year",
+    "enum": "(8)",
+    "cells": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Set of letters dominant male wager",
+    "plain": "Ordered list of a language's letters",
+    "enum": "(8)",
+    "cells": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Clergyman in such a plain",
+    "plain": "Clergyman attached to an institution",
+    "enum": "(8)",
+    "cells": [
+     0,
+     2,
+     5,
+     12,
+     14,
+     16,
+     24,
+     26
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Stronghold for lock",
+    "plain": "Heavily fortified place",
+    "enum": "(8)",
+    "cells": [
+     1,
+     3,
+     11,
+     13,
+     15,
+     22,
+     25,
+     27
+    ]
+   }
+  ]
+ },
+ "salt": "6f939fec813aa217",
+ "check": [
+  "58642d0ea85e6443a8ddef242c5f3d6e66b003caf5a32fce9ebdc522acf87df6",
+  "d61a46b543a7d357e8bdf5c215bcf1f5d56d4fee202f9e115ed9a1500f42dba5",
+  "525273dbd495e50b37b85da2e332cb29ee21965dfde5f826c93582400651719c",
+  "7258cab42699a6d728819a481fd67e203370cb311d7ab74ebaf58c01880f204d",
+  "6ff76ab3e4ac52a22f8ff4dace7a0e9339d5a782081a5462ae4b53c0af7e8fcd",
+  "ce3426a4b0569f96ff1bb262d85765629335bf7db3089f8aecb6dc96f2a75c40",
+  "458ab9e23fc31c85cf5fa36cf8012d130361885939460671784d9cf0dbe7343d",
+  "04b915549ba0909555d795ec874d32b5bad6a867a4b99eb19c665191f0768755",
+  "69542298874d3d578f16a035a146726c73833067bfa7afb1950ea4d5524c00da",
+  "b114d36a74626bb12388f515b1f91454d2c60e8a087dc0262dcb493f26c92849",
+  "83b965cc917e15dfcc33eb8188dc862b8099e794ab2ca8bde74c89eca16e43a4",
+  "297f90b099a6bad82439b62e2ccdcb7ca8ce6f550cf821cf6e473a2ec5b829ae",
+  "47b8a0e152487736b4228112e91a7a3e158c38de81671d56d3fd2441ddf1ac14",
+  "9ebd9b819c0b96fb3dca25bfda38e927df377d4115d4310f1620c2e6538fb8c5",
+  "e6631da80a24a0318099cfedfd84adfd91cb1bef6fbb1c8aeb843ae22e6a40f4",
+  "18c88a2bed941ab3eb81827c5f03bf6e35f9ea5852967c4cac87867e2bf1cb0f",
+  "2486a14c9352fab0cdd73aca867fc74324716074f022a04b89def40e38154347",
+  "355cedea8b6f898e695492b3867e96d9394079028e5b7505e288146e8327c85c",
+  "af27e278ff736c0b8000789c87b84726dcc7f30b2a578f8bfebe4ac939ae49c8",
+  "ad3eb671ffd2158199a70a7327ba49aa62bb9bad4df7bfb2cbc6647beda79a6e",
+  "988062431e2a87bd46539da9c7a4ab0742d24b283712b0609423fb40691d4079",
+  "9dc279938df320cda37027b1406a85eafbd6281620910f20f2b03efa4245b8f4",
+  "e32a0c88b2fa5438bc8f244081bf13f5fbfd1ebf98975d71733f8e5db9c20e38",
+  "45774339b02bcbb54798157c68e93d64a82622f460b5b5148275ce905dea6a95",
+  "45306f406e92903fe7bcaf21b6a3eaa86d5b1bae4cf2055e0a969959b8e4a201",
+  "e032686de58519273e9d3348534b234f0ab42a98d4d5bb26ea3b11b672ef5396",
+  "1c58e594bd90c2aa1f9b6436450655fb3fd8a55e0eb6aaf4b9a529566e1090ab",
+  "d1801ca0320863b29e94098445307a850ca1521451ee4c2510071089ea8a79e1"
+ ],
+ "reveal": "c2e51656f90fbc83e713ef7be51ee5d9800e87b82abb481122480822"
+}
