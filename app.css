@@ -1,4 +1,4 @@
-/* Crosshatch – redesign. System fonts only; light + dark; reduced-motion aware. */
+/* Crosshatch – redesign. System fonts only; pastel light theme always; reduced-motion aware. */
 :root {
   --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --serif: ui-serif, "New York", "Iowan Old Style", "Newsreader", Georgia, "Times New Roman", serif;
@@ -49,46 +49,6 @@
   --ease: cubic-bezier(.2, .8, .2, 1);
   --spring: cubic-bezier(.34, 1.56, .64, 1);
   color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f1217;
-    --bg-glow: #171c25;
-    --surface: #1a1f28;
-    --surface-2: #232935;
-    --ink: #eef1f6;
-    --ink-2: #c9cfda;
-    --muted: #8e97a8;
-    --hairline: rgba(255, 255, 255, .08);
-
-    --tile: #242b37;
-    --tile-edge: rgba(255, 255, 255, .13);
-    --tile-shadow: 0 1px 0 rgba(255, 255, 255, .04) inset, 0 2px 8px rgba(0, 0, 0, .45);
-    --tile-ink: #f3f5f9;
-    --num: #9aa3b4;
-    --word: #26395a;
-    --word-edge: #36507d;
-    --sel: #f5bd3a;
-    --sel-edge: #f5bd3a;
-    --sel-ink: #1d1600;
-
-    --accent: #8db4ff;
-    --accent-ink: #0b1526;
-    --accent-soft: #1e2b44;
-    --good: #3ccf7a;
-    --good-soft: #173826;
-    --ok-ink: #8db4ff;
-    --bad: #ff6b6b;
-    --reveal: #ff8a57;
-
-    --kb-bg: #1c1f25;
-    --key: #474b54;
-    --key-ink: #f5f6f8;
-    --key-shadow: #0b0c0e;
-    --key-alt: #30333a;
-    --key-press: #5e636d;
-    color-scheme: dark;
-  }
 }
 
 * { box-sizing: border-box; }
@@ -201,7 +161,6 @@ svg { display: block; }
   25% { transform: scale(1.14); background: #ffe3e3; color: var(--bad); }
   100% { transform: scale(1); }
 }
-@media (prefers-color-scheme: dark) { @keyframes hit { 25% { transform: scale(1.14); background: #4a1f24; color: var(--bad); } } }
 .timer-pill { min-width: 62px; justify-content: center; }
 .timer-pill .pause-ico { width: 13px; height: 13px; fill: none; stroke: var(--muted); stroke-width: 3; stroke-linecap: round; margin-right: 1px; }
 .timer-pill.done { color: var(--good); }
@@ -472,7 +431,6 @@ svg { display: block; }
   color: var(--tile-ink);
   box-shadow: 0 0 0 1px var(--word-edge);
 }
-@media (prefers-color-scheme: dark) { #clue-bar { color: var(--ink); } }
 #clue-bar-text {
   flex: 1;
   display: flex;
