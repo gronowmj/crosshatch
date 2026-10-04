@@ -1,0 +1,265 @@
+{
+ "format": 1,
+ "date": "2026-10-04",
+ "title": "Crosshatch No. 4",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 10,
+ "height": 12,
+ "cells": [
+  {
+   "r": 0,
+   "c": 5,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 5
+  },
+  {
+   "r": 2,
+   "c": 1,
+   "n": 2
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 3,
+   "c": 1
+  },
+  {
+   "r": 3,
+   "c": 2
+  },
+  {
+   "r": 3,
+   "c": 3
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 6
+  },
+  {
+   "r": 3,
+   "c": 7
+  },
+  {
+   "r": 3,
+   "c": 8
+  },
+  {
+   "r": 3,
+   "c": 9
+  },
+  {
+   "r": 4,
+   "c": 1
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 1,
+   "n": 4
+  },
+  {
+   "r": 6,
+   "c": 2
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 7
+  },
+  {
+   "r": 6,
+   "c": 8
+  },
+  {
+   "r": 6,
+   "c": 9
+  },
+  {
+   "r": 7,
+   "c": 1
+  },
+  {
+   "r": 7,
+   "c": 5
+  },
+  {
+   "r": 8,
+   "c": 1
+  },
+  {
+   "r": 8,
+   "c": 5
+  },
+  {
+   "r": 9,
+   "c": 1
+  },
+  {
+   "r": 10,
+   "c": 1
+  },
+  {
+   "r": 11,
+   "c": 1
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Ring castrated ram for leader of the flock",
+    "plain": "Sheep that leads the flock",
+    "enum": "(10)",
+    "cells": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Glossy purple fruit being a rue, perhaps",
+    "plain": "Purple fruit eaten as a vegetable",
+    "enum": "(9)",
+    "cells": [
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Oddly grim bears' whale secretion",
+    "plain": "Waxy secretion of the sperm whale",
+    "enum": "(9)",
+    "cells": [
+     0,
+     1,
+     3,
+     9,
+     15,
+     17,
+     22,
+     28,
+     30
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Deadly nightshade in a rebel lad on narrow road",
+    "plain": "Poisonous plant called deadly nightshade",
+    "enum": "(10)",
+    "cells": [
+     2,
+     5,
+     14,
+     16,
+     18,
+     27,
+     29,
+     31,
+     32,
+     33
+    ]
+   }
+  ]
+ },
+ "salt": "91cd8ccd1b3aff63",
+ "check": [
+  "0b79bbce9680623a78ad2b45ec113945001ba3993b7491124699d317d68c083a",
+  "89affef5728d7895b7ca36a717a3e95a6ca26a9a15def0e03489437eeb6b5d55",
+  "af9699a99803d482ca369e32f0270b3538546b3a63d95c5ae5d3debbdd051efb",
+  "7cbdfef3352e1f1aae624f44686157621ce28cb04508e566aab672d2b429bbde",
+  "f72a8bb61d8227d1041c3298ccb8353f9513d930127f0be1f9b511e53ea317d0",
+  "800801c1f219ce2e45d066d4ae3b484d604f81a486f7d4216dc6882e5984c053",
+  "5b77ffc0632d33ae6ef765ab4922fbf4763c317646eb11621c1b14116690127e",
+  "7f1905e3eab08671aec4c929c0c022a67718485ca8eb3db9c39a9d10b4cd8453",
+  "3e31b142ab1f7fadffb7db9c9d69092bb8b32fef60e832340be9663ebc8c56c3",
+  "6f0d6ea48e269dd471560e903de5a20f5cc88c743c9490b1856e4b1abcb89bbf",
+  "c45a70d28c78161b95e5f517fedbac395285057a2263999864c17ff0b7e8880a",
+  "691f93a7068cfa54c824a55e895fd20483af88141f852c5954b9e82ffb685847",
+  "bd3b808ce8048dec15295c97b3d27433e1ab743a20fac36e68d820f4c2bfacd9",
+  "557b114e48a85fd39a2ce8f92cd5c31ca586484e73340e4fd5ad6b3c577b1468",
+  "eb6ea9d643ae7391ae2a67685cbe89c73f98b1f2049e476384af7c3fe0add6dc",
+  "5d1c0cfbed7c12b06003b49b75cb37f014018caa27aecea86d9c3fa7f488d958",
+  "d25454871905e46a8bcde3f7bd713a099e679e855a2bb5a2fe9835b2e1d1a0d4",
+  "2b44d06d7f7ced6b365378e28b41491ad09da421d18ce49b51d7125d1669ab4e",
+  "77803f1ea6f20856e8b4be7c3dd92a5920467d1a4ad7998801bd7acb80608a5a",
+  "8cccd7f195fcf278813f78ed14d389db7b3ad76f3abeb4884e6670ea9c338c90",
+  "ffb8ae657d692696032fa54e1b95d7ea044a5e853873e2c87aade0e8d6032a47",
+  "696617a176386df4da9de7ec2a81224dd4bd72b798f09a0652211c18dccaa322",
+  "3d45207c001e34cc81880ee265e5fc713a03e5b40c4b8abebb4feeed319fa2bf",
+  "8ea24d6066ee31e35be28f0633ec26d53122e35e1caf352d54910fc07d656746",
+  "30e2d1c16183bd4280c9eaa2c6e6e2403c3fafbb56e2a23cac4eafbf71362708",
+  "cea2e0c260107dd3558f43269736909b33eb7053db7469e464e21bec57fd4d59",
+  "2482581bed50ce3b22c1a092e31a2b22540cd4edc13c7965dbd592f9e49ab369",
+  "dbfac366d492d29aeff3b15cbb5df696402fc563f51aa5771f70f585bfb377bb",
+  "880abd5d3fd1e9522e3aa0357ba9fe2a90c45dfb3ec8873f52ef8683832b16da",
+  "b287a2172b4c1adbf6ab30be60a2f196753e904546874dc9fd4ef9c28d59edab",
+  "368c87cbdb617d3813ca5e5e4e884195b969ae7159d0b6f4ed61c5ff3a24f80e",
+  "2634f3cdb6fae49b367d58f49514fc1e2ba28a471b8a33898cb0a202461b7d7c",
+  "ed6bf2a07124913b42d9c1fd1ff2c93c09ca5f7e4fcebbdad84b1face52c94a8",
+  "492fbd460c804468b632e3c8843ca1d996a614c6317cd8af9df621c102831a4d"
+ ],
+ "reveal": "dd8b6c5579c636f29754cd0b03a86e6f0cdfddff1d15f4b17fb981008dd48dcb762c"
+}
