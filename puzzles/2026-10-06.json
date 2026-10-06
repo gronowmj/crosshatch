@@ -1,0 +1,235 @@
+{
+ "format": 1,
+ "date": "2026-10-06",
+ "title": "Crosshatch No. 6",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 9,
+ "height": 11,
+ "cells": [
+  {
+   "r": 0,
+   "c": 6,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 6
+  },
+  {
+   "r": 2,
+   "c": 6
+  },
+  {
+   "r": 3,
+   "c": 2,
+   "n": 2
+  },
+  {
+   "r": 3,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 2,
+   "n": 3
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 7
+  },
+  {
+   "r": 6,
+   "c": 8
+  },
+  {
+   "r": 7,
+   "c": 2
+  },
+  {
+   "r": 7,
+   "c": 6
+  },
+  {
+   "r": 8,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 8,
+   "c": 1
+  },
+  {
+   "r": 8,
+   "c": 2
+  },
+  {
+   "r": 8,
+   "c": 3
+  },
+  {
+   "r": 8,
+   "c": 4
+  },
+  {
+   "r": 8,
+   "c": 5
+  },
+  {
+   "r": 8,
+   "c": 6
+  },
+  {
+   "r": 8,
+   "c": 7
+  },
+  {
+   "r": 9,
+   "c": 2
+  },
+  {
+   "r": 9,
+   "c": 6
+  },
+  {
+   "r": 10,
+   "c": 2
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Standard cut for a root vegetable",
+    "plain": "Long cream-coloured root eaten roasted",
+    "enum": "(7)",
+    "cells": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Slaughterhouse mess",
+    "plain": "Scene of total disorder",
+    "enum": "(8)",
+    "cells": [
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Sole trader?",
+    "plain": "Retailer of cod, haddock and plaice",
+    "enum": "(10)",
+    "cells": [
+     0,
+     1,
+     2,
+     4,
+     6,
+     8,
+     13,
+     17,
+     24,
+     27
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Fuss over sailor's biscuit",
+    "plain": "Chewy oat and syrup bar",
+    "enum": "(8)",
+    "cells": [
+     3,
+     5,
+     7,
+     9,
+     16,
+     20,
+     26,
+     28
+    ]
+   }
+  ]
+ },
+ "salt": "7906e9ae67588ac0",
+ "check": [
+  "a2f62f87ebb38e49dd583d48e60d3db94ae6984cab6cba2af840d362e40501e2",
+  "10965804622e06b38056410dd6057b82ce9ea26599d9a07bb1f9d8c5f0d6f7c7",
+  "8923dd94550f27c56a004f90f4a40173a79091cb03e0613b6c1012317abe8f76",
+  "414ef7238c73ab391e702b504092cfb3675f060f733bf2249b7f949290c31a84",
+  "2093de41b37acea20f903a885a13d4cce86e71318d3bbc886c9ea68dae5ea3bc",
+  "852d9bf73b194da9df75e63e00ec6c8fa9d77ecc46a7d873bda8f7adfc95b66f",
+  "ce27faf2fc084d10d7890f5896a16fe9e6f7920d10eedb17aad633f6f84bb2a6",
+  "706dc05820bcb31c2c3fcdb37aac5550b0001b3051d37d2273d918fdc4d325ed",
+  "f1737e530fff95e4be6674ae1abf5ec6a55f325d01ef515c520778694a3f7f4c",
+  "7ec27667ec9eb69879f8ffb4c415b927c7913b5dde6fd73cc00e154247325db6",
+  "15c325ada9aafb4f4768cdf687380d52b6c4f8ce44c66a9b06e6ff7d8b272b5e",
+  "d5ac611d0e8ba4bca1aac28f46c76237da90db2a7856835e7e616ac26a00fd42",
+  "16b5542ca6e716d1da3a96d9974fb34ac42e08200749ad37d564f7efc210b351",
+  "a90b4faf5c781b51558c01a28e8864bdd5fee2be3d5ff75d47eb8d3550b4ee88",
+  "fddd579eba6e9b9da29c10f2da4dc604edbb179a021bee0da63e21ad8f2a3f8f",
+  "c59b8047a1d685559d3875f2b8d850a67b9190fc509aa68e695d34902ff2894b",
+  "2c13102e4f5cd0af099210f42bfc32c3d09f29e731d7dbfa8e22c5647695150e",
+  "e99ea50d35f1abd4174e147a56bd6daebac18cf26a0559ab8899906d957da7ef",
+  "f0b40f9bf5777d79c9625752b8dffa9a07d061ca71cabaa595b7a0776ada622d",
+  "55c37b4deffc3290066b86c9c3c7c27e50c3720c087764830506f7c74e69c348",
+  "f62ae2748a37ebc1fcdbcad8ddb37561f1664548752b3a5bff5175c082c91a41",
+  "d78b94b7773452c36fdd4268378cf23d347f6799512d5a4665947391d0f04f0c",
+  "daccf44e9244b898587a7b49ff07f315f5326232dc5c17e827aa50159f64e439",
+  "09bbbacdcfc39c5c9b067ab4ef531bfde23d84bbb9e9151339b76ae501e07a7d",
+  "9df6b12ade9af93430b2c18f6751855ff01901919cfa0199d18aca84a7213964",
+  "62856dfa469fcb9c69ba48c88593e3570ed7c938a27bf9cf22fd54ac0ad8f70b",
+  "ca834fa445118b5869e727a2249637e30673faa551453486f187e470cfb9737e",
+  "1fd7d84780fa3f89391eeed91b0244d8fbfbaefef3d3bd1ad3f9e171fbdc7c78",
+  "87fdc000ce2d8954ac1d281a139c0772402e2f950d6179046d4453a67e172b6e"
+ ],
+ "reveal": "9e9b73930ed60cdbf2f3afe20acc85656baae993c32a61420bbbf4e290"
+}
