@@ -5,18 +5,17 @@
   var STORE_PREFIX = 'crosshatch:v1:';   // unchanged key: older saves load and are migrated in place
   var SAVE_VERSION = 3;
   var START_SCORE = 100;
-  // A word can be checked only once it is full, for −5, and only the first time.
+  // A word can be checked only once it is full, and checking is free.
   // There is no letter check and no grid check. Reveal word is a flat −20 once
   // per word. First letter of the selected clue is −8 once. A plain clue is −10
   // once. Time never counts.
-  var COST = { 'check-word': 5, 'reveal-first': 8, 'reveal-word': 20, 'plain-clue': 10 };
+  var COST = { 'reveal-first': 8, 'reveal-word': 20, 'plain-clue': 10 };
   var LABEL = {
-    'check-word': 'Word check',
     'reveal-letter': 'First letter',
     'reveal-first': 'First letter',
     'reveal-word': 'Revealed word',
     'reveal-grid': 'Grid revealed',
-    'plain-clue': 'Plain clue'
+    'plain-clue': 'Easy clue'
   };
   var $ = function (id) { return document.getElementById(id); };
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -140,22 +139,8 @@
     revealedKeys.forEach(function (k) {
       deds.push({ t: 'reveal-word', c: COST['reveal-word'], n: 1, w: k, at: at });
     });
-    // Per-cell checked flags (and a single legacy-check total) cannot prove the player
-    // used "check word" on a completed entry rather than checking letters one by one.
-    // Only an old deduction that already names the word (t: check-word, w: "3A") counts,
-    // and not when that word was fully revealed.
-    var seenCheck = {};
-    (st.deductions || []).forEach(function (d) {
-      if (!d || d.t !== 'check-word' || !d.w || seenCheck[d.w]) return;
-      var ent = null;
-      (entries || []).forEach(function (e) { if (e.k === d.w) ent = e; });
-      if (!ent || !ent.cells.length) return;
-      var filled = ent.cells.every(function (ci) { return !!(st.letters && st.letters[ci]); });
-      var fullyRevealed = ent.cells.every(function (ci) { return !!(st.revealed && st.revealed[ci]); });
-      if (!filled || fullyRevealed) return;
-      seenCheck[d.w] = true;
-      deds.push({ t: 'check-word', c: COST['check-word'], n: 1, w: d.w, at: at });
-    });
+    // Checking a word is free, and checked letters never cost anything, so no check
+    // line is rebuilt here (freeCheckCharges below keeps a note of any old −5).
     plain.forEach(function (k) {
       deds.push({ t: 'plain-clue', c: COST['plain-clue'], n: 1, w: k, at: at });
     });
@@ -170,11 +155,37 @@
     st.v = SAVE_VERSION;
     return st;
   }
+  // Checking a word used to cost −5 once. It is free now, so a save that recorded a
+  // word check is no longer charged for it. The check-word lines are moved out of
+  // `deductions` into `freeChecks` (kept as a record, never summed), and a reveal-grid
+  // line, which stores the points that were left when the grid was revealed, is
+  // recomputed from the remaining lines in their saved order. Nothing else changes, and
+  // running it again finds nothing to do, so the save version stays at 3.
+  function hasCheckCharge(st) {
+    return Array.isArray(st.deductions) && st.deductions.some(function (d) { return d && d.t === 'check-word'; });
+  }
+  function freeCheckCharges(st) {
+    if (!hasCheckCharge(st)) return st;
+    var kept = [], freed = Array.isArray(st.freeChecks) ? st.freeChecks.slice() : [];
+    st.deductions.forEach(function (d) {
+      if (d && d.t === 'check-word') freed.push({ w: d.w || null, at: d.at || null, was: d.c || 0 });
+      else kept.push(d);
+    });
+    var sum = 0;
+    kept.forEach(function (d) {
+      if (d && d.t === 'reveal-grid') d.c = Math.max(0, START_SCORE - sum);
+      sum += (d && d.c) || 0;
+    });
+    st.deductions = kept;
+    st.freeChecks = freed;
+    return st;
+  }
   function migrate(st, n, entries) {
     if (!Array.isArray(st.revealed) || st.revealed.length !== n) st.revealed = st.letters.map(function () { return false; });
     if (!Array.isArray(st.checked) || st.checked.length !== n) st.checked = st.letters.map(function () { return 0; });
     st.elapsed = +st.elapsed || 0;
     if (!Array.isArray(st.plain)) st.plain = [];
+    freeCheckCharges(st);
     if (!needsRescore(st)) {
       st.gaveUp = !!st.gaveUp;
       st.v = SAVE_VERSION;
@@ -211,7 +222,7 @@
     var todo = dates.filter(function (d) {
       if (P && S && P.date === d) return false;
       var st = rawState(d);
-      return st && needsRescore(st);
+      return st && (needsRescore(st) || hasCheckCharge(st));
     });
     return Promise.all(todo.map(function (d) {
       var ready = entryCache[d] ? Promise.resolve() : fetchJSON('puzzles/' + d + '.json').then(function (puz) {
@@ -219,7 +230,7 @@
       });
       return ready.then(function () {
         var st = rawState(d);
-        if (!st || !needsRescore(st) || !entryCache[d]) return;
+        if (!st || !(needsRescore(st) || hasCheckCharge(st)) || !entryCache[d]) return;
         migrate(st, st.letters.length, entryCache[d]);
         st.score = scoreOf(st);
         try { localStorage.setItem(storeKey(d), JSON.stringify(st)); } catch (e) { /* ignore */ }
@@ -232,7 +243,7 @@
     if (!st) return START_SCORE;
     if (st.gaveUp) return 0;
     var sum = 0;
-    (st.deductions || []).forEach(function (d) { sum += d.c; });
+    (st.deductions || []).forEach(function (d) { if (d && d.t !== 'check-word') sum += d.c; });
     return Math.max(0, START_SCORE - sum);
   }
   function deduct(type, cost, extra) {
@@ -429,7 +440,7 @@
         b.className = 'clue';
         b.dataset.w = wi;
         b.innerHTML = '<span class="cnum"></span><span class="cbody"><span class="ctext"></span> <span class="enum"></span>' +
-          '<span class="cplain" hidden><span class="plain-tag">Plain:</span> <span class="ptext"></span> <span class="penum"></span></span></span>' + TICK;
+          '<span class="cplain" hidden><span class="plain-tag">Easy clue:</span> <span class="ptext"></span> <span class="penum"></span></span></span>' + TICK;
         b.querySelector('.cnum').textContent = w.num;
         b.querySelector('.ctext').textContent = w.text;
         b.querySelector('.enum').textContent = w.enumeration;
@@ -440,8 +451,8 @@
           h.className = 'hint-btn';
           h.dataset.w = wi;
           h.hidden = true;
-          h.innerHTML = '<span>Plain clue</span> <span class="hint-cost">· −' + COST['plain-clue'] + '</span>';
-          h.setAttribute('aria-label', 'Show a plain clue for ' + w.num + ' ' + w.dir + ' (costs ' + COST['plain-clue'] + ' points)');
+          h.innerHTML = '<span>Show an easy clue</span> <span class="hint-cost">· −' + COST['plain-clue'] + '</span>';
+          h.setAttribute('aria-label', 'Show an easy clue for ' + w.num + ' ' + w.dir + ' (costs ' + COST['plain-clue'] + ' points)');
           li.appendChild(h);
           w.hint = h;
         }
@@ -524,7 +535,7 @@
       pl.className = 'bar-plain';
       var tag = document.createElement('span');
       tag.className = 'plain-tag';
-      tag.textContent = 'Plain:';
+      tag.textContent = 'Easy clue:';
       pl.appendChild(tag);
       pl.appendChild(document.createTextNode(' ' + w.plain + ' ' + w.enumeration));
       txt.appendChild(pl);
@@ -589,14 +600,12 @@
   function wordFullyLocked(w) {
     return !!(w && w.cells.length && w.cells.every(function (ci) { return locked(ci); }));
   }
-  // incomplete | confirmed | again | ready
+  // incomplete | confirmed | ready. Checking a word is always free.
   function checkWordState(w) {
     w = w || currentWord();
-    if (!P || !S || !w) return { state: 'incomplete', reason: 'Fill the word first', cost: '−' + COST['check-word'], disabled: true };
-    if (!wordFilled(w)) return { state: 'incomplete', reason: 'Fill the word first', cost: '−' + COST['check-word'], disabled: true };
+    if (!P || !S || !w || !wordFilled(w)) return { state: 'incomplete', reason: 'Fill the word first', cost: 'free', disabled: true };
     if (wordFullyLocked(w)) return { state: 'confirmed', reason: 'Already confirmed', cost: 'free', disabled: true };
-    if (chargedWord('check-word', wordKey(w))) return { state: 'again', reason: 'Already checked', cost: 'free', disabled: false };
-    return { state: 'ready', reason: 'Word is full', cost: '−' + COST['check-word'], disabled: false };
+    return { state: 'ready', reason: 'Word is full', cost: 'free', disabled: false };
   }
   function firstLetterFree() {
     if (!P || !S) return false;
@@ -642,9 +651,9 @@
   function usePlain(wi) {
     if (!P || S.completed) return;
     var w = words[wi], st = plainStatus(wi);
-    if (st === 'none') { toast('No plain clue for this one'); return; }
-    if (st === 'solved') { toast('Already solved – no plain clue needed'); return; }
-    if (st === 'shown') { toast('Plain clue already shown – no charge'); flashPlain(); return; }
+    if (st === 'none') { toast('No easy clue for this one'); return; }
+    if (st === 'solved') { toast('Already solved – no easy clue needed'); return; }
+    if (st === 'shown') { toast('Easy clue already shown – no charge'); flashPlain(); return; }
     S.plain.push(wordKey(w));
     deduct('plain-clue', COST['plain-clue'], { w: wordKey(w) });
     render();
@@ -769,26 +778,39 @@
   function afterChange(touchedWords) {
     saveState();
     render();
-    if (touchedWords && touchedWords.length) evaluateWords(touchedWords, true);
+    // touchedWords is only passed for letters the player typed. Reveals pass [] and
+    // evaluate quietly, so a word or grid finished by a reveal never chimes.
+    var typed = !!(touchedWords && touchedWords.length);
+    var wordsDone = typed ? evaluateWords(touchedWords, true) : null;
     var full = isFull();
-    if (full && !S.completed) verifyComplete(!wasFull);
+    var gridDone = (full && !S.completed) ? verifyComplete(!wasFull) : null;
     wasFull = full;
+    if (typed) {
+      Promise.all([wordsDone, gridDone]).then(function (r) {
+        if (r[1]) Sound.play('grid');            // the fireworks moment: the fuller flourish only
+        else if (r[0] && r[0].length) Sound.play('word');
+      });
+    }
   }
   function isFull() { return S.letters.every(function (l) { return !!l; }); }
 
   // ---------------------------------------------------------------- word-complete detection (free)
+  // Resolves to the word indexes that have just become complete and correct.
   function evaluateWords(wis, animate) {
     var myGen = gen;
-    wis.forEach(function (wi) {
+    return Promise.all(wis.map(function (wi) {
       var w = words[wi];
-      if (goodWords[wi] || !w.cells.every(function (ci) { return !!S.letters[ci]; })) return;
-      Promise.all(w.cells.map(cellCorrect)).then(function (res) {
-        if (myGen !== gen || !res.every(Boolean) || goodWords[wi]) return;
+      if (goodWords[wi] || !w.cells.every(function (ci) { return !!S.letters[ci]; })) return false;
+      return Promise.all(w.cells.map(cellCorrect)).then(function (res) {
+        if (myGen !== gen || !res.every(Boolean) || goodWords[wi]) return false;
         goodWords[wi] = true;
         w.el.classList.add('good');
         renderPlain();
         if (animate) celebrateWord(w);
+        return true;
       });
+    })).then(function (flags) {
+      return wis.filter(function (_, k) { return flags[k]; });
     });
   }
   function celebrateWord(w) {
@@ -802,6 +824,107 @@
       setTimeout(function () { el.classList.remove('pop'); el.style.animationDelay = ''; }, 700 + k * 45);
     });
   }
+
+
+  // ---------------------------------------------------------------- solved-clue chime (Web Audio, no files)
+  // A soft rising bell/marimba arpeggio when a typed word becomes complete and correct,
+  // and a fuller flourish when the whole grid is finished. Synthesised, so there is
+  // nothing to download. Safari only lets audio start inside a user gesture, so the
+  // AudioContext is created (or resumed) on the first touch, pointer or key press.
+  var Sound = (function () {
+    var AC = window.AudioContext || window.webkitAudioContext;
+    var ctx = null, primed = false, pending = null;
+    var log = [];
+    // notes: [frequency Hz, start offset s, peak gain, decay s]
+    var PATTERNS = {
+      // G5 → C6 → E6, about half a second including the ring-out
+      word: [[783.99, 0.000, 0.30, 0.42], [1046.50, 0.075, 0.27, 0.42], [1318.51, 0.150, 0.25, 0.42]],
+      // C5 E5 G5 C6 E6, then a soft C-major chord that rings out (about 1.4 s)
+      grid: [[523.25, 0.000, 0.24, 0.40], [659.25, 0.085, 0.24, 0.40], [783.99, 0.170, 0.24, 0.40],
+             [1046.50, 0.255, 0.24, 0.45], [1318.51, 0.340, 0.22, 0.50],
+             [523.25, 0.470, 0.14, 0.95], [783.99, 0.470, 0.13, 0.95], [1046.50, 0.470, 0.13, 1.00], [1567.98, 0.470, 0.10, 1.00]]
+    };
+    // One bell-like note: a sine with a quieter octave and a faint high partial,
+    // a quick but soft attack and an exponential ring-out.
+    function bell(ac, out, freq, t, peak, decay) {
+      [[1, 1], [2, 0.32], [3.01, 0.08]].forEach(function (h) {
+        var o = ac.createOscillator(), g = ac.createGain();
+        var d = decay / (h[0] === 1 ? 1 : h[0] * 0.8);   // upper partials fade sooner
+        o.type = 'sine';
+        o.frequency.setValueAtTime(freq * h[0], t);
+        g.gain.setValueAtTime(0.0001, t);
+        g.gain.linearRampToValueAtTime(peak * h[1], t + 0.008);
+        g.gain.exponentialRampToValueAtTime(0.0001, t + d);
+        o.connect(g); g.connect(out);
+        o.start(t); o.stop(t + d + 0.05);
+      });
+    }
+    // Schedules a pattern on any (Offline)AudioContext; also used to render the preview file.
+    function schedule(ac, dest, kind, when) {
+      var notes = PATTERNS[kind] || PATTERNS.word;
+      var master = ac.createGain();
+      master.gain.value = 0.8;
+      var lp = ac.createBiquadFilter();       // round off the top so it never sounds harsh
+      lp.type = 'lowpass';
+      lp.frequency.value = 5200;
+      lp.Q.value = 0.4;
+      master.connect(lp); lp.connect(dest);
+      var t0 = Math.max(when || 0, ac.currentTime);
+      notes.forEach(function (n) { bell(ac, master, n[0], t0 + n[1], n[2], n[3]); });
+    }
+    function unlock() {
+      if (!AC) return;
+      // Chrome and Safari only honour activation-carrying events (touchend, click, keydown…);
+      // skip the others so no 'AudioContext was not allowed to start' warning is logged.
+      if (navigator.userActivation && !navigator.userActivation.isActive) return;
+      try {
+        if (!ctx) {
+          ctx = new AC();
+          // iOS 17+: mix with the listener's music instead of interrupting it
+          if (navigator.audioSession) { try { navigator.audioSession.type = 'ambient'; } catch (e) { /* ignore */ } }
+        }
+        if (ctx.state !== 'running' && ctx.resume) ctx.resume();
+        if (!primed) {
+          // a silent one-sample buffer, started inside the gesture, fully unlocks older iOS
+          var b = ctx.createBuffer(1, 1, 22050), src = ctx.createBufferSource();
+          src.buffer = b; src.connect(ctx.destination); src.start(0);
+          primed = true;
+        }
+      } catch (e) { /* audio unavailable: stay silent */ }
+      if (pending && performance.now() - pending.at < 1200) { var k = pending.kind; pending = null; play(k, true); }
+      pending = null;
+    }
+    ['touchstart', 'touchend', 'pointerdown', 'pointerup', 'mousedown', 'click', 'keydown'].forEach(function (ev) {
+      document.addEventListener(ev, unlock, { capture: true, passive: true });
+    });
+    // A chime that can't start within ~1 s is dropped, so a suspended context never
+    // plays a stale chime long after the solve.
+    function play(kind, retry) {
+      if (!retry) log.push(kind);
+      var at = performance.now();
+      function go() {
+        if (!ctx || ctx.state !== 'running' || performance.now() - at > 1200) return;
+        try { schedule(ctx, ctx.destination, kind, ctx.currentTime + 0.01); } catch (e) { /* ignore */ }
+      }
+      if (ctx && ctx.state === 'running') return go();
+      // not unlocked yet: the solving tap's own gesture (touchend comes after pointerdown)
+      // or the next one picks this up in unlock()
+      pending = { kind: kind, at: at };
+      if (!ctx || ctx.state === 'closed' || !ctx.resume) return;
+      try {
+        var r = ctx.resume();
+        if (r && r.then) r.then(function () {
+          if (pending && pending.at === at) { pending = null; go(); }
+        }, function () { /* still locked */ });
+      } catch (e) { /* ignore */ }
+    }
+    return {
+      play: play,
+      schedule: schedule,
+      log: function () { return log.slice(); },
+      state: function () { return ctx ? ctx.state : 'none'; }
+    };
+  })();
 
   // ---------------------------------------------------------------- check / reveal
   function cellCorrect(i) {
@@ -833,12 +956,10 @@
     if (scope !== 'word') return Promise.resolve();
     var w = currentWord();
     var stt = checkWordState(w);
-    if (stt.state === 'incomplete') { toast('Fill every letter of the word first – no charge'); return Promise.resolve(); }
-    if (stt.state === 'confirmed') { toast('Already confirmed – no charge'); return Promise.resolve(); }
+    if (stt.state === 'incomplete') { toast('Fill the word first'); return Promise.resolve(); }
+    if (stt.state === 'confirmed') { toast('Already confirmed'); return Promise.resolve(); }
     var cells = w.cells.filter(function (i) { return S.letters[i] && !locked(i); });
-    if (!cells.length) { toast('Nothing new to check – no charge'); return Promise.resolve(); }
-    if (stt.state === 'ready') deduct('check-word', COST['check-word'], { w: wordKey(w), n: 1 });
-    else toast('Already checked this word – no further charge');
+    if (!cells.length) { toast('Nothing new to check'); return Promise.resolve(); }
     return Promise.all(cells.map(cellCorrect)).then(function (res) {
       var wrong = 0;
       cells.forEach(function (ci, k) { S.checked[ci] = res[k] ? 1 : -1; if (!res[k]) wrong++; });
@@ -901,7 +1022,7 @@
   function verifyComplete(announceWrong) {
     var myGen = gen;
     return Promise.all(P.cells.map(function (_, i) { return cellCorrect(i); })).then(function (res) {
-      if (S.completed) return;
+      if (S.completed) return false;
       if (res.every(Boolean)) {
         S.elapsed = elapsed();
         timerStart = null;
@@ -921,9 +1042,11 @@
         }
         if (navigator.vibrate && !S.gaveUp) { try { navigator.vibrate([10, 60, 18]); } catch (e) { /* ignore */ } }
         setTimeout(function () { showFinish(true); }, S.gaveUp ? 250 : 950);
+        return !S.gaveUp;
       } else if (announceWrong && myGen === gen) {
         toast('Not quite – something isn’t right yet');
       }
+      return false;
     });
   }
   function clearWord() {
@@ -1187,15 +1310,6 @@
     showModal(title, body, [{ label: 'Cancel' }, { label: label, primary: true, action: fn }]);
   }
   function openRules() {
-    var el = $('rules-current');
-    el.innerHTML = '';
-    if (S) {
-      var b = document.createElement('b');
-      b.textContent = scoreOf(S);
-      el.appendChild(document.createTextNode(S.completed ? 'Your score for this puzzle: ' : 'This puzzle so far: '));
-      el.appendChild(b);
-      el.appendChild(document.createTextNode(' pts' + (helpCount(S) ? ' (' + plural(helpCount(S), 'use') + ' of help)' : ' – no help used')));
-    }
     $('rules').hidden = false;
     overlayOpenedAt = performance.now();
   }
@@ -1440,6 +1554,9 @@
   // tiny hook for automated tests (never exposes answers)
   window.__crosshatch = {
     state: function () { return { sel: sel, dir: dir, S: S, date: P && P.date, running: running(), score: scoreOf(S), good: Object.keys(goodWords).map(Number), hasPlain: hasPlain, fireworks: fireworksRan }; },
-    shareText: function () { return S ? shareText() : ''; }
+    shareText: function () { return S ? shareText() : ''; },
+    chimes: function () { return Sound.log(); },
+    audioState: function () { return Sound.state(); },
+    scheduleChime: Sound.schedule   // used to render the preview file; plays nothing by itself
   };
 })();

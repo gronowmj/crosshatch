@@ -100,14 +100,14 @@
     <div class="sheet-grabber"></div>
     <div class="sheet-head">
       <h2>Help</h2>
-      <p>Check a finished word once for 5 points. Reveals and plain clues cost more. Wrong entries are free.</p>
+      <p>Checking a finished word is free. Reveals and easy clues cost points. Wrong entries are free.</p>
     </div>
     <div class="sheet-section">
       <span class="sheet-label">Check</span>
       <div class="sheet-row">
         <button type="button" class="opt hint-opt" id="opt-check" data-action="check-word">
           <span class="hint-main"><b>Word</b><span class="hint-for" id="check-for">Fill the word first</span></span>
-          <span class="cost" id="check-cost">−5</span>
+          <span class="cost free" id="check-cost">free</span>
         </button>
       </div>
     </div>
@@ -123,7 +123,7 @@
       <span class="sheet-label">Hint</span>
       <div class="sheet-row">
         <button type="button" class="opt hint-opt" id="opt-plain" data-action="plain-clue">
-          <span class="hint-main"><b>Plain clue</b><span class="hint-for" id="plain-for"></span></span>
+          <span class="hint-main"><b>Show an easy clue</b><span class="hint-for" id="plain-for"></span></span>
           <span class="cost" id="plain-cost">−10</span>
         </button>
       </div>
@@ -147,28 +147,19 @@
     <div class="sheet-grabber"></div>
     <div class="sheet-head">
       <h2 id="rules-title">How scoring works</h2>
-      <p>Every puzzle starts at <b>100 points</b>. Help costs points; time never does.</p>
+      <p>You start on 100.</p>
     </div>
     <table class="rules-table">
+      <thead>
+        <tr><th scope="col">Action</th><th scope="col">Points</th></tr>
+      </thead>
       <tbody>
-        <tr><th>Check a word</th><td>−5 once full</td></tr>
-        <tr><th>Show a plain clue</th><td>−10 a clue</td></tr>
-        <tr><th>Reveal the first letter</th><td>−8</td></tr>
-        <tr><th>Reveal a word</th><td>−20</td></tr>
-        <tr><th>Reveal the grid</th><td>ends on 0</td></tr>
+        <tr><th scope="row">Show an easy clue</th><td>−10</td></tr>
+        <tr><th scope="row">Reveal the first letter</th><td>−8</td></tr>
+        <tr><th scope="row">Reveal a word</th><td>−20</td></tr>
+        <tr><th scope="row">Reveal the grid</th><td>Ends on 0</td></tr>
       </tbody>
     </table>
-    <ul class="rules-notes">
-      <li>There is no single-letter check, and no check for the whole grid.</li>
-      <li>You can check a word only after every letter is filled. That costs 5 points, once. An unfinished word stays disabled and is not charged.</li>
-      <li>Checking that same word again costs nothing. A word that is already fully revealed or confirmed is not charged.</li>
-      <li>Revealing a word costs 20 points once. If every letter was already right, it costs nothing and just confirms them.</li>
-      <li>Revealing the first letter of the selected clue costs 8, once. If that cell is already correct or revealed, it costs nothing.</li>
-      <li>A plain clue adds a straight, quick-crossword definition under the cryptic clue. It’s charged once per clue (−10), stays shown, and isn’t offered for a word you’ve already solved.</li>
-      <li>Wrong entries cost nothing, and neither does the glow when you complete a word correctly.</li>
-      <li>The score can’t go below 0, and clearing the grid or reloading doesn’t restore points.</li>
-    </ul>
-    <div class="rules-current" id="rules-current"></div>
     <button type="button" class="btn primary sheet-close" data-action="close">Got it</button>
   </div>
 </div>
