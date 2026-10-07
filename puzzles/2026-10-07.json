@@ -1,0 +1,205 @@
+{
+ "format": 1,
+ "date": "2026-10-07",
+ "title": "Crosshatch No. 7",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 8,
+ "height": 10,
+ "cells": [
+  {
+   "r": 0,
+   "c": 5,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 5
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 3,
+   "n": 2
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 1,
+   "n": 4
+  },
+  {
+   "r": 7,
+   "c": 2
+  },
+  {
+   "r": 7,
+   "c": 3
+  },
+  {
+   "r": 7,
+   "c": 4
+  },
+  {
+   "r": 7,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 6
+  },
+  {
+   "r": 7,
+   "c": 7
+  },
+  {
+   "r": 8,
+   "c": 3
+  },
+  {
+   "r": 9,
+   "c": 3
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Reported arrest provokes bile",
+    "plain": "Anger; yellow bile, one of the four old humours",
+    "enum": "(6)",
+    "cells": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Turn back longing for a small wood",
+    "plain": "Small clump of trees; copse",
+    "enum": "(7)",
+    "cells": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Fellow daring to ditch good Chinese",
+    "plain": "Small loose-skinned orange, or high-ranking bureaucrat",
+    "enum": "(8)",
+    "cells": [
+     0,
+     1,
+     2,
+     4,
+     6,
+     12,
+     14,
+     19
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Labour leader caught in send-up is cross",
+    "plain": "Diagonal X-shaped heraldic cross, as on Scotland's flag",
+    "enum": "(7)",
+    "cells": [
+     3,
+     5,
+     10,
+     13,
+     17,
+     22,
+     23
+    ]
+   }
+  ]
+ },
+ "salt": "0e4e8a4f2d0af8ad",
+ "check": [
+  "c662852673962d7f13771d3c320fb6ec7251df61441a84206e6bb1be1f186b2b",
+  "eb318838246227081cfb7b50ca3a370794401c42fae1c8615797e4fd046e4560",
+  "916d32c13f6fcc6c8c4b4cbbf471387ff69d209cac0451f3fb33520748ab76e0",
+  "4f920e97b4860c2cc9e6eecddeb618bb5db0f4411d04c4dcfbcbf4deb5f79615",
+  "ebaa6bad14dc5d88747f10fdac232a36a1123dc977b098106d77d4f5ad06f329",
+  "07c28c0033de3ce48b9e0e6446ba92a3da42cbd56ba455af7b1458d6479a406c",
+  "adbb9acbfc3f163a98af5d96262e4d02177ff152295306d93fa6e584d5738f12",
+  "4ea6db4f3a0ba9749ee137f8ce63ce72893b936386bc47f9d85d36da213d0eb4",
+  "9b42cb9921b117f548d827dfa77f776d3b6b39eb5c124e575f7c7f0d41011470",
+  "6ec4113874fee4614fc78ce3f3a8e4929ce7ed2e0d69dac92397191887ee16df",
+  "45012ac82a8b62debd562ddebc22e6560b636a38487050f26cf9667d9cd4de42",
+  "8ed752c610b170a4193afb9ea22ff3de5700851107ab624c27a16d58d832a518",
+  "668ce81317e84f3266f1a1c5b16582f4159ef074a6f916f76100a7f10a0bbb33",
+  "747795763fff569cff8a1464dfe65e54d455d1716e7ca6900f468b0b5df92653",
+  "8a8e631bb6b4599baf59a894ab21c431195521db7e1e42549cb178bbb353ed1a",
+  "8c0bfaa23f55de578d0aa013379c0deae1ff93b212114b80391f99c07b28788c",
+  "50afab1cbd35850b5bc64723c07e0b20dc694c9869303d44baca618c3fdc89a4",
+  "3f99f73d179f01d835d0a1bf98a1014cd88ed0ca323539b9e453cec89a8c2847",
+  "b9a61a7abe9b7ad59844e6ab6e7bf3d0059c5b9f185625e5dcc1e3e8eaa7ef93",
+  "30c6e911f005ab4c1d69a98e69e29275e590223a05e81c547716356fe4d5ba5f",
+  "7591c275a85ef6712426105438aec729c80396bc5e1f53f45dcddf83d9dbf864",
+  "3842b53f3c6f1dd2305ace321fbb688b512adaf9d0f878897ffafe02d0666db7",
+  "bf0ce769dc810d27ad9db78d63adafe875c9478bff2b620f22da945d5ee75006",
+  "dfa53e4ae29a899a7b0cd0cc90a3527fb52fa3fb4ab3c7055a866a70bd41b9e7"
+ ],
+ "reveal": "528a1b97e323014e343d3012a7532cbc1549eb4682478fdb"
+}
