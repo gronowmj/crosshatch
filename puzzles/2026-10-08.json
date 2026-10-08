@@ -1,0 +1,199 @@
+{
+ "format": 1,
+ "date": "2026-10-08",
+ "title": "Crosshatch No. 8",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 7,
+ "height": 9,
+ "cells": [
+  {
+   "r": 0,
+   "c": 5,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 0,
+   "n": 2
+  },
+  {
+   "r": 1,
+   "c": 5
+  },
+  {
+   "r": 2,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 2,
+   "c": 1
+  },
+  {
+   "r": 2,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 3
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 0
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 4,
+   "c": 1
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 0
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 0
+  },
+  {
+   "r": 7,
+   "c": 0
+  },
+  {
+   "r": 8,
+   "c": 0
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Punter who's blown a grand becomes a stroller",
+    "plain": "Leisurely walker",
+    "enum": "(6)",
+    "cells": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Ferry trip Ostend-bound includes quick return",
+    "plain": "Sharp retort; fencer's counter-thrust after a parry",
+    "enum": "(7)",
+    "cells": [
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Hook, perhaps, livid after Peter's opening",
+    "plain": "Sea robber; buccaneer",
+    "enum": "(6)",
+    "cells": [
+     0,
+     2,
+     8,
+     10,
+     16,
+     19
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Deportment coach",
+    "plain": "Way a person holds themselves; railway passenger vehicle",
+    "enum": "(8)",
+    "cells": [
+     1,
+     3,
+     9,
+     11,
+     18,
+     20,
+     21,
+     22
+    ]
+   }
+  ]
+ },
+ "salt": "ea6dac3b29918346",
+ "check": [
+  "84a51df2ed74b20a445a85adf6d3be4aaa1e6384ad11569ea34ebf543be86cfb",
+  "6efc853f0a9f39e7b305b0f38fd255cd1f8af060bec7718fa9f194959f3e7bb6",
+  "259e997b81537fff07c8903836a0eec4498373d41e1737b2d2ba737ea0d8215f",
+  "358c5da24401302edc22dc61cb88558bdc06637a44da3dd3b613e9bcd00d8506",
+  "50d834954bb5edd10866d6bcdc5e29371f656089638731f35ade82562844bf1a",
+  "3c95d96acb68a15ec5a196dbe34e149946f0eeb7e4428a6334dedd5fc769076e",
+  "98e8bf42650ebd77a00635f867a3f78d281cad9f7660d2d25eeb0b4b04d6b069",
+  "1f7a61e5e44e18ce33c28082607eabc19a1bd795518d90b8e58993fa6a53ebaf",
+  "66858468288977b83f1a8373d292a9588a527a6404196bb62b75ade9c5fc7fee",
+  "ac4e2264e95b6aaa04b3d7298ab90d30c1d6ed1edcb42452a1b0d7fd9921519d",
+  "bb17f604e2bc80b050b40801dc500daea934999332599a802b4c3a8425b3a601",
+  "51d1a7844ddb8a74cc3a47c03c1bb36965d4bda20ce2cb35907d675d9c19a1c1",
+  "dc08d9d8e2904a9bb197ef2873e3be41e05ebc0a5ed6f05831007a4a33a3d39f",
+  "882a0493087a480ffcc293ba07c376b95d43088d72b1c8b4bd4f58a1ce5e0249",
+  "e3a6c3ac9b296adb31762a3ec45daf4bf83aaca383435070887ace4d4bb7ff31",
+  "1e90dae131862b98565b24d05260fb141512d53c63275ee555981ca7e2d68c27",
+  "4a974d5ec64039c98059a313c1ef5df1df798ea0de9fa1538f0b7b75da9a734d",
+  "36f1fed4c011f6c49bd5127bb97e32a3c5ea6067d14185d95c1a6409d5066c0e",
+  "90d40bac73e908181505a8a08d3243f0db27e34f89a906e17b29527f74e353f8",
+  "03ef83235c65ae20ec51e60e7ca307ff6b23d0170e5c36936878356144e4c5d4",
+  "7a42fefe77749a610a724f28c9714708f9cc9dc7d9bce92b0e477cd7dc53df4c",
+  "a5075cdf7fd75cab6390c0bbdd13ae00b7eef318a459ba2e79cad5e570386505",
+  "f4b86d43d7a6949becac139cc3aedc1a84b659a595b8a0c25af293885b0c44f9"
+ ],
+ "reveal": "4389f43658bf86521eee8d1fbd4328c51a7aeb978c549d"
+}
