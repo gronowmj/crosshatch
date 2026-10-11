@@ -1,0 +1,211 @@
+{
+ "format": 1,
+ "date": "2026-10-11",
+ "title": "Crosshatch No. 11",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 10,
+ "height": 8,
+ "cells": [
+  {
+   "r": 0,
+   "c": 3,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 3
+  },
+  {
+   "r": 1,
+   "c": 5,
+   "n": 2
+  },
+  {
+   "r": 2,
+   "c": 3,
+   "n": 3
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 2,
+   "c": 6
+  },
+  {
+   "r": 2,
+   "c": 7
+  },
+  {
+   "r": 2,
+   "c": 8
+  },
+  {
+   "r": 2,
+   "c": 9
+  },
+  {
+   "r": 3,
+   "c": 3
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 3
+  },
+  {
+   "r": 7,
+   "c": 5
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Scorch one Bible section for Ben-Hur's ride",
+    "plain": "Two-wheeled horse-drawn vehicle of ancient racing and war",
+    "enum": "(7)",
+    "cells": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Racing trophy and gold won on high ground",
+    "plain": "Elevated tract of flat land; tableland",
+    "enum": "(7)",
+    "cells": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Bottle recanted when drunk",
+    "plain": "Ornamental glass bottle for serving wine",
+    "enum": "(8)",
+    "cells": [
+     0,
+     1,
+     3,
+     10,
+     12,
+     17,
+     21,
+     23
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Order a fellow for an evening out",
+    "plain": "Official authority or instruction given to act",
+    "enum": "(7)",
+    "cells": [
+     2,
+     5,
+     11,
+     13,
+     19,
+     22,
+     24
+    ]
+   }
+  ]
+ },
+ "salt": "d332d0e7e0373f8d",
+ "check": [
+  "f805d2cb8b4417f9ea07eb345d8a721018c011091ae87dbef3565ef9ef55ca73",
+  "6b6803290b25fbc10bb6bc12a1a4fac179b9085038ec067f44e4c4f1f178ae46",
+  "e6a7486b34fb41deb9c8dc08ba3ca954802784db975ea04e4ede1f0961496547",
+  "789b30ed7a6ce35f6f27ca6205172799380c6ae29af8e343f9fa1a66c82a89d9",
+  "a679babb584932401909b5823324e589e939a2a2fee3627e4b60fee141453218",
+  "c4881151b0aab6449efe059b549ca38aba745ecbb463aff6ffd9871b121dde25",
+  "657d7440f5bc4db1fe16ad48902d2d8b934ea76af17695bb62213860d5c5942b",
+  "7a2c86529cd9f341bfac8c6221779d2ac1eba08786f109444dbc8c90e7305f80",
+  "d02db63e0ed864125865f44c2abbe96ec18e41523920fd68229ef4eb8f84403f",
+  "eb5e939b9aa5622640352725fa1ee23658544196ffc7daba20e3d106fd94a8a4",
+  "e5ea6cfd621f43e0cb20f43d613510c407770a4e9edf81aa11352ae7ee2ee307",
+  "c6ce46dd4022a369104e73cac91b82cdf97e64b6bfee6d37aa33872044257fcc",
+  "2d862ec32808e0b8fc198395c128fbf820c322720df5a988aa65c0edd63f801a",
+  "05f505ec52f5a6b96c8c83bf291ca8b25c6584e1528d48580b166f9b205393df",
+  "97bdfd04f9812cd3f55edeab39de56b77f36b13d83b47edd373471b1c3c37c94",
+  "c3f68485acfd9bb1cb2af1b16bd3917c3b00971e45b61e31ccf1e5ea3c8e5756",
+  "a95370529c0e2ba412a95c888e787edd0b3dc9c8f736398f98a9f5a9c7991969",
+  "58719ddf75acd0d8609c6fedad6f5c5fb15b5e57acb0b0ec811cbeafd4fa91cd",
+  "c43bfe288ef5edab09d765cf9b3663fb5952dfaefd459b7ba62af0a67e07b8da",
+  "6bea3746a74e2d8e30fa1cfef4b13d660b730e164ab641e422d7e5caaa1a49bf",
+  "f2adfe122626059e626c68a7d7a69743c42953cf6886cad7335b08d46154b213",
+  "aa058745cdfac4788788ba446b6fb65ec06dc626e64d13cecb3176a3dc2d28e1",
+  "539f567d9066c646184539582b7a460eee6eb0b7d46db34ff57d7a23c1f75ba6",
+  "006003ff9f3bf93b6fff2b00552a606e3e9ee33d42366c920b95d33f6c6f221d",
+  "3e960aaa734e7939826e045f2bbcac56b0288235c49e8513c682748502e9df79"
+ ],
+ "reveal": "b798c54ca12a9a9175b9a4454daf8ccfd12ba9c3c0d036f644"
+}
