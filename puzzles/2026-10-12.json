@@ -1,0 +1,217 @@
+{
+ "format": 1,
+ "date": "2026-10-12",
+ "title": "Crosshatch No. 12",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 9,
+ "height": 10,
+ "cells": [
+  {
+   "r": 0,
+   "c": 3,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 3
+  },
+  {
+   "r": 2,
+   "c": 3
+  },
+  {
+   "r": 3,
+   "c": 3
+  },
+  {
+   "r": 3,
+   "c": 5,
+   "n": 2
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 2,
+   "n": 3
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 7
+  },
+  {
+   "r": 5,
+   "c": 8
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 7,
+   "c": 1
+  },
+  {
+   "r": 7,
+   "c": 2
+  },
+  {
+   "r": 7,
+   "c": 3
+  },
+  {
+   "r": 7,
+   "c": 4
+  },
+  {
+   "r": 7,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 6
+  },
+  {
+   "r": 7,
+   "c": 7
+  },
+  {
+   "r": 8,
+   "c": 5
+  },
+  {
+   "r": 9,
+   "c": 5
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Drawing a box with nothing inside",
+    "plain": "Humorous drawing in a newspaper",
+    "enum": "(7)",
+    "cells": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Wild flower down before stag's call",
+    "plain": "Spring woodland plant with nodding violet flowers",
+    "enum": "(8)",
+    "cells": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Admire an unusual soak for steak",
+    "plain": "Seasoned liquid in which meat is steeped before cooking",
+    "enum": "(8)",
+    "cells": [
+     0,
+     1,
+     2,
+     3,
+     5,
+     8,
+     14,
+     19
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Long-suffering case on the ward",
+    "plain": "Able to wait calmly without complaint",
+    "enum": "(7)",
+    "cells": [
+     4,
+     6,
+     10,
+     15,
+     21,
+     24,
+     25
+    ]
+   }
+  ]
+ },
+ "salt": "6dbde0ea96fa1129",
+ "check": [
+  "43e6104731161f55bdb74665059a336315b82f015008a566c3a36b7884f44542",
+  "2ce992f0c6ddb74a1838a4b97e4e8b65b7d653a79794bb4c2f760c5952ba9a1d",
+  "64617abd1049f93f6469237219ca1cd40d04fd4adfbf229a88b2dc5b56561aa7",
+  "515aa5091c9e13a39ca2cb2733a541262d1e427f93e224c12d0211dafe255058",
+  "4f8a7718073d527c4d7a516a4a98afcccd3e51139dc39e21e815d2686e3d16a4",
+  "70a07fd39a6cee6a9b7374158905315aa3305ebed83447cc84b966d5b4bace3f",
+  "b1a6493564b086bd4b04a7e1599225df20392ad44eb3f5bc72b6edcf4196d7a4",
+  "6b09c1d8b469a86ef950ede1a753f3f2335565d52eafffe30ea196db04093192",
+  "f4d753661036f5faabca34453ebd18045a1ddd382420b2d0a0e892c272e3ff91",
+  "ac2c2bf75934aecb54522cc10ad19d90ed9f055336e650661426ff22ff675f67",
+  "ce8472c53d57ab03f23d270363d51f5dabc735a5baa0ac246653a27d92fefda4",
+  "824275fd704ead5a5fca1e06117db82a81cbdf431e02e698b02e379c38e16f7f",
+  "c8df89d3e6c19da3d75143c2bdb141b86d1d4c1217fdc7582d9cfea2d18ca882",
+  "b973e3299cb369c9e095020aa0941b476045f68acfaf7bfd5b02a4a55826f536",
+  "11bf725246daba92ab9f57b170e73d086deff099fe5f42bd93c85716bb426b2f",
+  "9b4ac5dd8e9941961e70e5a618166d95a8d08057e222b5ef442db46dc0b6ce29",
+  "371b131420336f567c774a6fba32900b056dc7fe1890bfa397b69a0819e19fdc",
+  "60ab0c86323e297d576576b34604156ebcb0de29bfc0fa2c959a406d482ff52d",
+  "f43deec3f643ff12bf53eb6d7c6ea35db72ebf4f162abe277643fd99818c448a",
+  "1d887f4515d9d0e157bc50dcc6d8a1ae12f8ab3008d141d7d56ac0a843b8727d",
+  "fb21a124171d62b4d4e878ce1111df0182bef0f2187ebb6b83ac84163e1eb88c",
+  "56b5b5108740de1af138fcc827c973a9b2169931280aade989c2ab2f6bab9158",
+  "1843efe231651bed043efe70b7fb3ccdf9c38483313f86ab105795cdb88f7372",
+  "fa38254288eb1122ae9a4b8f0e3ec263b52e18621f6b5e52551340f2af708cb4",
+  "afd0df9796e4110267d310eb4900e04b2d2b8b9dd48fd29df91da007dfaaefa9",
+  "927e4fa6fa3ad7eb253aa70eb79c1e4c757fb5d307d8e6c18da13a1c38ab29b4"
+ ],
+ "reveal": "7f8291735cb90a881410262495555794e20ac9f7430f62013bc8"
+}
