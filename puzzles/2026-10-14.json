@@ -1,0 +1,211 @@
+{
+ "format": 1,
+ "date": "2026-10-14",
+ "title": "Crosshatch No. 14",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 8,
+ "height": 8,
+ "cells": [
+  {
+   "r": 0,
+   "c": 4,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 2,
+   "n": 2
+  },
+  {
+   "r": 1,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 2,
+   "c": 1
+  },
+  {
+   "r": 2,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 3
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 2,
+   "c": 6
+  },
+  {
+   "r": 2,
+   "c": 7
+  },
+  {
+   "r": 3,
+   "c": 2
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 1,
+   "n": 4
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 7
+  },
+  {
+   "r": 6,
+   "c": 2
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 7,
+   "c": 4
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Nice countryman taking on learner",
+    "plain": "Agreeable and enjoyable",
+    "enum": "(8)",
+    "cells": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Treason plotted by a politician",
+    "plain": "Member of an upper legislative house, as in ancient Rome",
+    "enum": "(7)",
+    "cells": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Herb got up beside Queen of Scots",
+    "plain": "Fragrant evergreen used to flavour lamb",
+    "enum": "(8)",
+    "cells": [
+     0,
+     2,
+     7,
+     12,
+     14,
+     18,
+     23,
+     24
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Stocking measure rolled up and held back",
+    "plain": "Pulled in, as a horse with straps",
+    "enum": "(6)",
+    "cells": [
+     1,
+     5,
+     11,
+     13,
+     16,
+     22
+    ]
+   }
+  ]
+ },
+ "salt": "0711a3f9279989bc",
+ "check": [
+  "f72112276ebe883dfa0a4478d8972f42236c5e29b89e04f0d6a4210ae6f5364a",
+  "c289751110a500e6f5e1f6deb36468b5aedbeb5fd6cd8daabf5237661cb0b5d0",
+  "53ac89746fc1b6ee2dd32b7fc6eb39800d05e0032ef69542f727430b3012d8ed",
+  "4457513d2af2a0d9a6bb485f26b0c223f1fcee789b6e11fadc3b44457fcadeea",
+  "6149520351091e7873ea23580477b53e01a3499af327f79e4ad81064b982994f",
+  "973f3aaa693ab06289366dae0e830649974ff5c34c62ce9f81a67376a6f16d1c",
+  "d8a8d5c62a03f1cf8bef0c4f0f628ff17d43a12a2513accea3982fbb6c5c2812",
+  "88d2c4f591bc0d71e6ea571b08c483cd5a313b0c4ebd5d6ffe8a1ae249500019",
+  "946c33d0d127d6823c0a8b8bc8d8fd47122a1f9523ee1dfdf3593ab050620d80",
+  "ee3ddf09ac5cefbc9b3aac5e97eb65a3c7c3a0435e276e943f8f5fc58986ac8f",
+  "cb611688acdaf359f3c3c7c46eb0f2178e15e0bc4984fdc396b6a52fa62d29e4",
+  "1f2dd85c6cfdbbf82c2c0e3d89d4c9698d710c25058dbb48049b63cb86a04d20",
+  "6ddb1e95c32745018b76f3c93fbf57988980a94ff1db0a0b7228f9be5e10c1bf",
+  "0c4782f47e5764bab463d34e62466aec197a375859ca7bd615b72c71ccfc271c",
+  "69d18cfc656d4979740ebbeae6509ea06847a3186709d291eb2f9a3128e9b367",
+  "d5f84df3fbf56934c8ae21f65c6aa37979ac51c824e6b043f7aa5757ec53ca3b",
+  "092544557e8dbc7fb5c12337dbefc2ca7a667370ca841372967e8c671714999b",
+  "2ff66ac44ad29d8a77b5a14d1d78476379d81499b173d81ad8d4271535c54c09",
+  "4d8fd6d94d6a9fcb46f657c623893b9221f9c32539692a404d21087a08dc6f92",
+  "87b2879d6baab434231c082301fbfc3c6145854ded4659a163cf21f086f22020",
+  "a3c86a2574114920e6c160bbe39fbb43a230d0d87758832007135def2dbfd619",
+  "ab34fd92aa8902a29f1b13dac579b09f3b1440eac1b4d858940a7425a89627e2",
+  "9eed754a680042d9b785376a361fc697d167525ca7f8da5204d5085b92b25ff1",
+  "4b0d088f102b48d24495de52abead78ea2627df07eb43aa2dec2177431a60dca",
+  "e4bda61794acc3afcf2a9cf366ec9d20ddc2bc88ccfb3b37cc89f32b06db5533"
+ ],
+ "reveal": "a1287df544933aaab26ae4ee67b51ce4be13c7b9d1108004de"
+}
