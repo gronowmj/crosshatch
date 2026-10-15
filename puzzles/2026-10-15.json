@@ -1,0 +1,205 @@
+{
+ "format": 1,
+ "date": "2026-10-15",
+ "title": "Crosshatch No. 15",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 7,
+ "height": 9,
+ "cells": [
+  {
+   "r": 0,
+   "c": 5,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 5
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 1,
+   "n": 2
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 4,
+   "c": 1
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 1
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 7,
+   "c": 1
+  },
+  {
+   "r": 7,
+   "c": 2
+  },
+  {
+   "r": 7,
+   "c": 3
+  },
+  {
+   "r": 7,
+   "c": 4
+  },
+  {
+   "r": 7,
+   "c": 5
+  },
+  {
+   "r": 8,
+   "c": 1
+  },
+  {
+   "r": 8,
+   "c": 5
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Government team or somewhere to keep plates",
+    "plain": "Piece of furniture with shelves or drawers, for storing things",
+    "enum": "(7)",
+    "cells": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Trader, we hear, in the basement",
+    "plain": "Underground room for storing wine or coal",
+    "enum": "(6)",
+    "cells": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Carthorse trained for a musical group",
+    "plain": "Large group of musicians playing together",
+    "enum": "(9)",
+    "cells": [
+     0,
+     1,
+     2,
+     4,
+     10,
+     13,
+     15,
+     21,
+     23
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Some bad germs pester",
+    "plain": "Nag or pester persistently",
+    "enum": "(6)",
+    "cells": [
+     3,
+     6,
+     12,
+     14,
+     17,
+     22
+    ]
+   }
+  ]
+ },
+ "salt": "f37b94bcef9965ac",
+ "check": [
+  "5e6ddb66d9619a7fae7e389bbd23e0081db57a96a12d18785fb4b37bd3ed39ed",
+  "97d6502521a6c087612380cc9b27111906ff64da874aac6db75a8bbccaa66cb1",
+  "b7cdcae5d7660e8e40208f39a34e5ec40876c74a7d392e2fd4fdd3d6b3a34b1d",
+  "56a924ed08759fd1c320dac802f3130e5b6342a183a0bebc6cc8954df9cd4f68",
+  "0ad1cb895eddc29c9b9381afd2279336a78e4e350afdf475a32134923fbd826f",
+  "56b93093105825998d494ba31d4aed0768803cade5318dcba193ec397dfabef8",
+  "20cca38f35d02ff8a7ffdee375d748aa820e1f47e00a554d6febda1c66cf5c94",
+  "439b14da5bc426c03f6cccf29b6d77f0270d483c7a5c9837e3fd2319cd15c872",
+  "b641a94d5e5deff19dfaeadd0253f369e2a87cb35f6d774d486b73814ff2aa47",
+  "5b0e679dca05782edb3b75df70c861aa2308f7c3d7765a53faba0fc0de0f46af",
+  "9d9fb2991493b5a01d1172bb596fa5a1a04dbba9f0ff3b2066b203ee145c2778",
+  "4f7b22f114811771ae9fdd472bca23d84605b394b77bb263463e590ca361befe",
+  "42ccb6ac7fabaddfc7a02d35e6a76a9341bcdc4b1ee02a3b03dcee8bf92dffd1",
+  "a631acbb4c7d809e7542c04c47e87001705f94c4b1f84fd92d7d4effa3262db0",
+  "dfade25ae0c78188dcbf95289f29e13c3c6b3b41f7185017f7b9b41915aef431",
+  "9f793df1d27e645d757876153620bce29b4936d1c3364e6179f5cffbc8ac1116",
+  "516bf50a0750a09500c5c0373a386da47724b3556ec9dca00ce072f862ae73be",
+  "f25f50ee221b91af6f46cd56f0e51228aa9a1fd26c065a4dc32be1d6508183f7",
+  "a7076cb47f407b1d382e8fc4efb4a499bbb5c1c61e5395be646304a05be8fcaf",
+  "8a693729496834837fabe8d4de41ee0ced30e7bcd4f9380a41f5fcd989249768",
+  "3af01e2efd4c457c78124d0905a486974a1f2d5704b34845bf8b0a610f464fa9",
+  "e73a8e283fb0fcb32f1cb9bae70d86a1a54c2250c28fbd57112156c7ed48ba3c",
+  "1dcf67123e52921d1585ae2d05c384907c812081fab169da77fe26c3192dd232",
+  "8844dbc53c27f4e1841a3193fd21df9b2b2399e4dd0b228fbf4ff9bd1de3371d"
+ ],
+ "reveal": "0ab4843b2d4a5cd8cbc99832a5c570733de58384029d90cd"
+}
