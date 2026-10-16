@@ -1,0 +1,229 @@
+{
+ "format": 1,
+ "date": "2026-10-16",
+ "title": "Crosshatch No. 16",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 11,
+ "height": 10,
+ "cells": [
+  {
+   "r": 0,
+   "c": 4,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 7,
+   "n": 2
+  },
+  {
+   "r": 3,
+   "c": 3,
+   "n": 3
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 6
+  },
+  {
+   "r": 3,
+   "c": 7
+  },
+  {
+   "r": 3,
+   "c": 8
+  },
+  {
+   "r": 3,
+   "c": 9
+  },
+  {
+   "r": 3,
+   "c": 10
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 7
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 7
+  },
+  {
+   "r": 6,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 6,
+   "c": 1
+  },
+  {
+   "r": 6,
+   "c": 2
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 7
+  },
+  {
+   "r": 6,
+   "c": 8
+  },
+  {
+   "r": 7,
+   "c": 7
+  },
+  {
+   "r": 8,
+   "c": 7
+  },
+  {
+   "r": 9,
+   "c": 7
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Bonnet and a peel making exotic fruit",
+    "plain": "Tropical tree whose sticky brown pods flavour chutneys and sauces",
+    "enum": "(8)",
+    "cells": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Colder sun crazily becomes a rogue",
+    "plain": "Dishonourable, villainous man",
+    "enum": "(9)",
+    "cells": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Model soldier almost gone",
+    "plain": "Peerless example of a particular quality",
+    "enum": "(7)",
+    "cells": [
+     0,
+     1,
+     2,
+     5,
+     12,
+     14,
+     20
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Brute holding ten back for dark-haired woman",
+    "plain": "Woman with dark brown hair",
+    "enum": "(8)",
+    "cells": [
+     3,
+     8,
+     13,
+     15,
+     23,
+     25,
+     26,
+     27
+    ]
+   }
+  ]
+ },
+ "salt": "ea9c79dea566538d",
+ "check": [
+  "e183db8972528058a13cfdb9344e53219653efb6d91c3a914fb0e815164da0c7",
+  "f45412a13b8608734cd1d57f015d11cea23d37727c3d5837d8e86608831be750",
+  "9640bedabeaa666801a0a870619ade8dcf05ebd6407df56b86764b2a8597388f",
+  "330a119a5b4c1211f95ec5b84596ee274d28eb4bb2898c9f383e26b8dabcb4b5",
+  "e4e8f09dc96f12a3c72b43bf3d1a2febce247da692d95184b07f5411ecdb9ec6",
+  "2a588070036fd18197c7380cb161aa4d0482a9db2b75065d3503f021a6270501",
+  "c24b09216edb6f1ea75cf5fba05b2060f44b78802cfecc9955baf3a4e9d7561d",
+  "750698cb903248a7a20537af3de72d83c4c45286dbf06e3bdd55a3f356b868e0",
+  "6ed7007d1205e54aca7cde63d1f28d091dd88e50fe2ffb4089eaefd7839efaf6",
+  "443f3e17284d6a32c10f4ff39fbd86b2abdf278afacb2348212a5550aa2b29a3",
+  "a05567b8fdd76133b245e28fec7a58cf35e2a567b97aff0b73e19d2717c9a2cc",
+  "b8d87ee981e4e62da5d718e81bb4ca4495300bb0be98a577ef8641891b060c57",
+  "ab685eb98c44930345c19e1b86208dfb4f934126893c3cca59770b906d7dadb7",
+  "864cbc4e4dab4bdc7b61a6e2435cb581200aee6c9bbcec43cde154bf92107eff",
+  "3c5ced217af204af144f02f19a1fa5eaa5f74fabd240829a6d76be3075e2dca5",
+  "2cb53c5a79d8fb2b0c5c6ec22a7b491103eacced6261b45e2427779ebc0777ce",
+  "fc6826bd21c66faaf759b537367328686ee9ddf888579302248288c501d4a9a3",
+  "a75b67b573bb9d9d17eaff936e3aef3ab04274d35c203d33f5c871c24063438a",
+  "20be7d22310a80db4b7e7b39b771d16469e8fdc7552cc1bca1f439f53eeebdfe",
+  "7b48c9b6966a99ba13b30f80b4a6f320c3ff505eb519ec9f75d9907ea89ff37a",
+  "a890e608bc7559a947597d6095a5d2567e6da6f1a4a56e229d031a12a388bd5e",
+  "d84de0398f46e794414ce7f09e5e647e933013a8f6c567b2a09c90582a09ff5c",
+  "a2fe915cc20d80618c34d81823b252fb3f2a170cb17bfa6823e69476aeb8533b",
+  "ca77de5ef90f5688711c8c7415f527d4d7ca2c1d527bd0a69fb297df5b72f68c",
+  "eb342776173a27d4addd1407cfc4362dde0b173dbc9f337f2d8da7c87db25c84",
+  "d0630f7f34e3d03f2b096c1dc7fbbbc0630f01904cb8780bd4fcb47f93981b98",
+  "1a60cb208daf7f275c2c1249e66d04721cd4be3de7db59aeada46eed6e36d161",
+  "0a76c344db8d406ee1aa515c772e66cbf9afd4797a096000709a9f1fa75c3c24"
+ ],
+ "reveal": "37ed239ca73f22dd2db5dbf861255e72b5ec0bdc19cf86fad626c5ca"
+}
