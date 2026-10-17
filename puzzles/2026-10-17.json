@@ -1,0 +1,217 @@
+{
+ "format": 1,
+ "date": "2026-10-17",
+ "title": "Crosshatch No. 17",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 10,
+ "height": 10,
+ "cells": [
+  {
+   "r": 0,
+   "c": 3,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 3
+  },
+  {
+   "r": 2,
+   "c": 3
+  },
+  {
+   "r": 3,
+   "c": 3
+  },
+  {
+   "r": 3,
+   "c": 5,
+   "n": 2
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 3,
+   "n": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 7
+  },
+  {
+   "r": 5,
+   "c": 8
+  },
+  {
+   "r": 5,
+   "c": 9
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 7,
+   "c": 1
+  },
+  {
+   "r": 7,
+   "c": 2
+  },
+  {
+   "r": 7,
+   "c": 3
+  },
+  {
+   "r": 7,
+   "c": 4
+  },
+  {
+   "r": 7,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 6
+  },
+  {
+   "r": 8,
+   "c": 3
+  },
+  {
+   "r": 8,
+   "c": 5
+  },
+  {
+   "r": 9,
+   "c": 5
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Qualm, or an apothecary's weight",
+    "plain": "Pang of conscience about doing something wrong",
+    "enum": "(7)",
+    "cells": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Neck vessel found in editor accused, returning",
+    "plain": "Major artery carrying blood up the neck to the head",
+    "enum": "(7)",
+    "cells": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Raid damages icon ruins",
+    "plain": "Sudden hostile entry into another's territory",
+    "enum": "(9)",
+    "cells": [
+     0,
+     1,
+     2,
+     3,
+     5,
+     7,
+     14,
+     19,
+     23
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Warlike officer, reportedly",
+    "plain": "Relating to war or the armed forces",
+    "enum": "(7)",
+    "cells": [
+     4,
+     6,
+     9,
+     15,
+     21,
+     24,
+     25
+    ]
+   }
+  ]
+ },
+ "salt": "a64f12abad4b6b09",
+ "check": [
+  "7413acaaee9942e447e33e6b4f80e84c1ac56cb114f01812b785e44729327a6f",
+  "ec6ecea92659ecfdf35b3e82d623b9342ec9ca0667663ec78964d188bf110f5b",
+  "e0b3ea0b225f8ef15a14e5933494de56edcf46648f87c5760f581a5d09e12976",
+  "c975640f1e2d225aae9d4ea0b0fcf37c0a2e0173e095bc25585f398781107421",
+  "d137d7f0dc09c94d27606787b5ab755d234fc0e2e6112ae0cd8d57c72a3d1d9a",
+  "a44e6b066ac56cd9c606da0a1acaff058d2f6366d07d6f5ea7ebafc2a9564db6",
+  "72c3c08da501198460ccb79e2c076ade9b56ecc176b421d40069e17ff6a96d74",
+  "89f994764998234486b1509954b6112d29cc2098ccf250b57b934f76b9cff52f",
+  "3fd1c28492668ac4d012ab6b4a18dfda7ad0a85fd34699096a34e0c0bea73660",
+  "631a2d1eadabb9cd5883356910e36319e11d3df396eb03b88693304a6e54a361",
+  "78bbe2c90fc52bdc52520c2530af3e79d956ea4ebee4bfe531b6708b9ff1530b",
+  "a19f3695269047000f1988672c100741a241601ed71f585f8b337947b20bf0d3",
+  "ee12be00fa8165b3b5789b4c128421bf69050d734faa7ef1832a40cf8da95379",
+  "ae1e9c1fc0cceb4caaccb163a7300aee452840d7aacb277ae8eeea2ba1eee04e",
+  "8fe945a5a023167ae72f5b9acc4871da71fb12a224354640cbb811e5f9394999",
+  "265ed7bb0aaecde002291aa813e067139c0d439e66be5ef7618c4f1283daf50b",
+  "57a8ec7e650f97230124512e263fd3c29bd177dede2687af92f1cf1b07f31f22",
+  "7318463a899bd8014dc854f6634d6835039c8bfe43a62463f41909770da2ffe7",
+  "50e9f8c9c5b7f213e34e21716a2b1353ce7a2ba9405dcffb1170c506ab458c57",
+  "716f92fd9ee5e9500618b8ab4da440837e38f4f8ed58f402d6579ceef9b32c3f",
+  "0fc111cf4db5223a53049608d50826defa05aa45bd1400a0b62d9ca69c14c92f",
+  "6153589560e8220565dfafc254525a8d0e7e47fbdfc8254ac9ad52000c301df8",
+  "aaa8a0e4b5d6b4d27ff5ca83817995060b233c2ae20658e81d55b56af5b50c52",
+  "83c6ea328fb271e7781f473952ea3fa276e7354e499629c22a225e5fd5da0c8f",
+  "b9a34bb6dd4d118d5c956234e7fb35fa240c7780d845b6267ae2efe64563121a",
+  "9037d5e9ffea823d95e341fabb2849be1794fcd4f01663a78a2b295be5fe4c8d"
+ ],
+ "reveal": "88877cf433d53ba844294de64262b7c530c4fedd5244dae12f7b"
+}
