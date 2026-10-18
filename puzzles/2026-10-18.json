@@ -1,0 +1,223 @@
+{
+ "format": 1,
+ "date": "2026-10-18",
+ "title": "Crosshatch No. 18",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 9,
+ "height": 10,
+ "cells": [
+  {
+   "r": 0,
+   "c": 2,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 5,
+   "n": 2
+  },
+  {
+   "r": 3,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 3,
+   "c": 1
+  },
+  {
+   "r": 3,
+   "c": 2
+  },
+  {
+   "r": 3,
+   "c": 3
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 2
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 2
+  },
+  {
+   "r": 7,
+   "c": 5
+  },
+  {
+   "r": 8,
+   "c": 2,
+   "n": 4
+  },
+  {
+   "r": 8,
+   "c": 3
+  },
+  {
+   "r": 8,
+   "c": 4
+  },
+  {
+   "r": 8,
+   "c": 5
+  },
+  {
+   "r": 8,
+   "c": 6
+  },
+  {
+   "r": 8,
+   "c": 7
+  },
+  {
+   "r": 8,
+   "c": 8
+  },
+  {
+   "r": 9,
+   "c": 5
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Adage returned, put to sea for festive drinking",
+    "plain": "Festive drinking and merrymaking, especially at Christmas",
+    "enum": "(7)",
+    "cells": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Admission interrupted by work: measure of disorder",
+    "plain": "Measure of disorder or randomness in a system",
+    "enum": "(7)",
+    "cells": [
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Debauched when old tissue disintegrates",
+    "plain": "Lacking moral restraint; given to vice",
+    "enum": "(9)",
+    "cells": [
+     0,
+     1,
+     2,
+     6,
+     11,
+     13,
+     15,
+     17,
+     19
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Tightwad, earlier, crying out for mercy",
+    "plain": "Prayer or psalm asking God for mercy",
+    "enum": "(8)",
+    "cells": [
+     3,
+     9,
+     12,
+     14,
+     16,
+     18,
+     22,
+     26
+    ]
+   }
+  ]
+ },
+ "salt": "b9d1a5a8aa466a0a",
+ "check": [
+  "278e58f553ab0036bfb2b4d81d5f74a444eebe80d9399a3cce265c23e515e3cf",
+  "70988ca56690a8a3b58f3bb890ebff03ed702b4a6042d5f6d1f65c2088c9356e",
+  "5c6dbff7c31ec6ebfb2d970ab91b84cb4b3f09d75ec2f8691ac5f7baa6dfa1fd",
+  "3a1988a65b3d75845a705faa00d41dfa7f9c96119e3977553d687d0f641721d8",
+  "077558e56fb89adac5d40e21ce864cdf2999521d497ff759504e368d09f4b8a0",
+  "601f1a8f125d922d2a6b985fadb1c75112db21489742bbb4bc4aefcaa26a9ef0",
+  "7efc8ab5495517d94c6acd143bf6289a2bee8a4800f0c78c0f2825912e42639b",
+  "a161487737c08c0f27056b4d34e86e1921752e0eed694ca3accd9c34586a3f74",
+  "50510baaedfba1d81bc0ff4d8255ed555a2a231131fd67ca88d9fb76077fd604",
+  "9f849d60c05934616addef25276e8f96b3b199cbb0fac86973b1e6d7a02fdae0",
+  "65826ae6ed785b17b888a51903810032f00243a00dad04e398532d495d8fa0bf",
+  "2330c4be317436112fffcbcc292d49f4814209e8233715efe4a17351db14f4e1",
+  "9ba1144691d812e0460d039eadd9b4ee6dd4f018fbb14af8f8062c489d11b577",
+  "ee100c8e8f45212484a818b31ab8eec95f69b23a9d3252a0198f5fa7797b642e",
+  "d934aa507888423c2dee30a2c0558dc86eafcc0ead061dc603ee4f6cbe3ccb28",
+  "fb34ebe550714dec95d04d57f520bb43e4e518dbf00f11cd559da1b3658c0214",
+  "71b91bda10920260afcc906d55e6d7f13a72988337af92c0bb21a066b68b219d",
+  "ddfcac3ddaa94b6633c213d7a27a0bac02906485c64f0ee6443535b2ef17f1ed",
+  "e01e2f44c3882b89bc55016ed917935a891c8eb23aea1b7a207f1ac83cc73873",
+  "372ff82f8aecf9d5db8b66e18f51c0fa4ac973209a91676a1392b4965c09b4eb",
+  "8bc174033cdf34be659523cfa223391a8a227d0eb7dae4c87e9c6c5a2fd16112",
+  "3b41acee98847eb5d3089c4f05d7c3549c0b6337b2b9841b4ee888a39e3c6b93",
+  "538162734220660873cdc11ca9290c3a52cb2bac80f92934364b330f06b2a4e3",
+  "51acb5d4e282f3d42a28b9424b76b4c04a5a32eb7c464f1df1aebc20663f39e7",
+  "38ef9a27f6222374fbd0904bbb0fba404812bd1af6a65516dbcb362e1212cbfc",
+  "b23a451e25ea9dace822de467c8b13a827d94ef726d51150fb8a78173ddf5cf1",
+  "384b97fc5bbcfd1a63b31507bea408ac7e72319b30231414e901f95b8d3f1527"
+ ],
+ "reveal": "123af0600c7fb9812d24c9d40122dbac176c1ea847f53d8710b97a"
+}
