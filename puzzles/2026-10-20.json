@@ -1,0 +1,199 @@
+{
+ "format": 1,
+ "date": "2026-10-20",
+ "title": "Crosshatch No. 20",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 7,
+ "height": 11,
+ "cells": [
+  {
+   "r": 0,
+   "c": 4,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 3,
+   "c": 2,
+   "n": 2
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 1,
+   "n": 3
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 6,
+   "c": 1
+  },
+  {
+   "r": 6,
+   "c": 2
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 2
+  },
+  {
+   "r": 8,
+   "c": 2
+  },
+  {
+   "r": 9,
+   "c": 2
+  },
+  {
+   "r": 10,
+   "c": 2
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Thin plate in Tibetan monk's keeping",
+    "plain": "Thin layer or scale of bone, rock or plant tissue",
+    "enum": "(6)",
+    "cells": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Wader seen amid havoc Etonians caused",
+    "plain": "Black-and-white wading bird with a slender upcurved bill",
+    "enum": "(6)",
+    "cells": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Glacial debris from crash of airmen with nothing on board",
+    "plain": "Ridge of rocks and grit dumped by a glacier",
+    "enum": "(7)",
+    "cells": [
+     0,
+     1,
+     2,
+     4,
+     8,
+     12,
+     17
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Naked, stifling a cry of pain in horse-drawn vehicle",
+    "plain": "Four-wheeled open coach with a folding hood, popular in Regency times",
+    "enum": "(8)",
+    "cells": [
+     3,
+     6,
+     11,
+     15,
+     19,
+     20,
+     21,
+     22
+    ]
+   }
+  ]
+ },
+ "salt": "ce55e1cf57a26568",
+ "check": [
+  "417f743a5ae92e84e2d1d13ab7f76478cce6362a32ba4a45168ddccc98cf8d1d",
+  "93aff707fb7c8ecea863aa9126fef2a48d9396dabcc9dad5fe0b33d8a19ce8a3",
+  "7c5a888d4a2e15f728128fa2c657f46851ae3258f7ff7f97fbf599674ada88f3",
+  "15196fa8a76d31756352601bdb68e759e9ee16a71c26620d40603eea5e8e1a82",
+  "215ce7affbf223d8cb27500e46a9c59cbf878eee782cbbb7a4e5fda02b26c9e8",
+  "763e3145d4fc05339e0aec3687007e22b29b55b1d9e90119193bf9882c07ca93",
+  "cd5df504516f37109b06de14f5ac34b8dfa3dbd035e51990f840c6b980f0429e",
+  "0258a4b235c3d8327f714561feb1c7843fccea7659a3b0e8629ab4491f7e0422",
+  "c25d3335cc5b8c6c1b0654b2f291a28857f076a5c2b63b1ef4fd298b1ef7bd67",
+  "e1b821f366a7bbaf098e998e12c6593acd8b5c7bf121b71e98d1fb9e9fc8c071",
+  "24ee26cd32c4ffdf45ff02d8dd74c438956308903e3500b14d713d65691ea258",
+  "9aaecc73a06d07c549de9d43f770ad7788c4ce16a121f43cd79f100b4ac009d6",
+  "3daa42591d825bdc25008414571aebd51107a24ebb42561e601f3d02ee082f1f",
+  "3f39c22b707eed685feb5103aa9481830793f6be5ee8d0584ac17d7b4157f9f1",
+  "d56472331fe0e3155141b08e5f201d1773bf2287bcf346340827c9cba94dbd84",
+  "15fef8d9a4d363f3dadb76812bb677091b4555dbefb898cc52f907fc323ad6c6",
+  "dafcde4ae89d9743b113beeb9b55031eb4dfd1e19864587299c671421d7b5286",
+  "311cfdc42c44e26a976c0dab8976e9b0b92a14a41cf760b76d5d46d7cc418735",
+  "b51cda9edabb30a9f058a36618f0549c856488e8f022acf6140593bd9699b986",
+  "9087624be065549c2a20fa7ce14d23025d9e4d6a1d2131b72e9b063d1ac556b9",
+  "69f7905be66c2936bb395968e6c03da28a0df12036960ee9d0ca4200ef3ce69b",
+  "a57ed127daff5aa41b45939ac5b70e545d7329923f52f4ddc6ba32486fa9e08d",
+  "22ae90e3767953303e6bba4522a61771cdf7aa9857a31d4a40f85789ce59071c"
+ ],
+ "reveal": "56044e114c39e99f1a0033b79447678a8cff46dee2c412"
+}
