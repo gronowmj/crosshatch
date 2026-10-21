@@ -1,0 +1,253 @@
+{
+ "format": 1,
+ "date": "2026-10-21",
+ "title": "Crosshatch No. 21",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 9,
+ "height": 10,
+ "cells": [
+  {
+   "r": 0,
+   "c": 2,
+   "n": 1
+  },
+  {
+   "r": 0,
+   "c": 6,
+   "n": 2
+  },
+  {
+   "r": 1,
+   "c": 2
+  },
+  {
+   "r": 1,
+   "c": 6
+  },
+  {
+   "r": 2,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 6
+  },
+  {
+   "r": 3,
+   "c": 2
+  },
+  {
+   "r": 3,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 1,
+   "n": 3
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 7
+  },
+  {
+   "r": 4,
+   "c": 8
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 2
+  },
+  {
+   "r": 6,
+   "c": 6
+  },
+  {
+   "r": 7,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 7,
+   "c": 1
+  },
+  {
+   "r": 7,
+   "c": 2
+  },
+  {
+   "r": 7,
+   "c": 3
+  },
+  {
+   "r": 7,
+   "c": 4
+  },
+  {
+   "r": 7,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 6
+  },
+  {
+   "r": 7,
+   "c": 7
+  },
+  {
+   "r": 7,
+   "c": 8
+  },
+  {
+   "r": 8,
+   "c": 2
+  },
+  {
+   "r": 8,
+   "c": 6
+  },
+  {
+   "r": 9,
+   "c": 6
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Dig with one tin to make an outer defence",
+    "plain": "Fortified outwork guarding the gateway of a castle or walled town",
+    "enum": "(8)",
+    "cells": [
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "num": 4,
+    "text": "French guard gets royal honour for old privy",
+    "plain": "Lavatory built into the wall of a medieval castle",
+    "enum": "(9)",
+    "cells": [
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Doctor interrupting deletion creates a window recess",
+    "plain": "Splayed opening in a thick wall for a window, door or gun",
+    "enum": "(9)",
+    "cells": [
+     0,
+     2,
+     4,
+     6,
+     9,
+     16,
+     18,
+     22,
+     29
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Chancy lode worked, yielding a variety of quartz",
+    "plain": "Waxy, translucent mineral of which agate and onyx are forms",
+    "enum": "(10)",
+    "cells": [
+     1,
+     3,
+     5,
+     7,
+     13,
+     17,
+     19,
+     26,
+     30,
+     31
+    ]
+   }
+  ]
+ },
+ "salt": "c3e5a271d8737fec",
+ "check": [
+  "329ec8eeee2614423dbe862a891dba6667117ec5c4dabba817a8021c5c6208b2",
+  "e31b88823b9f1f3df43ba28d20f19feea5d79262175febfe2c766f9c03f5dc7f",
+  "a4d8bda977142e43c9dc0f7aa6d0b141f5ac303a49431fed74b8b04c47c36e6f",
+  "278c634e57c7f26c1fd6c6066d4b5edd3caaa8665d318b56960acabfee453e2a",
+  "1eb9b3f2f7d92877017e4af2c60e5c2798fbf51578707acc680c960423f369f5",
+  "e0e6e311dc24f5bfc99efcf531382f18f4a784fa07f81921cda8864a04418660",
+  "3a9a2f2bf9a67e4d34ff603ae95ef8b0a25554026ab928247b428cd1d7ff95f7",
+  "811690f8ed4c5a9e7c850918d50b51dffaf97c3e7eb0bdfbc30e632109fe617f",
+  "56967fe226390b40fbe0395c933ea505fa093be86569f88a0176c727bd025155",
+  "b639148401dc8b444294450371fb64ae2a4ee4f8c455818b68bc1245df4b01a7",
+  "b0f7d0532fdd4ba1b8a1b300f36a3d65b2592fadc1cd81bdd234743d8dea2ee6",
+  "9363130374289f0d9c1111965de8a3196f28aad91e2316509940f22c748009fa",
+  "ea72d03c2587b3308bb4cde82a4963c20a07d4acc923cd2458a4762d16fe68a5",
+  "2011fcf3e3ebadc6295dc7bc042e7d5e3e42e8a5f27c79d2ef0724bbbfdeca3d",
+  "e60f9051801024d7e7190f97bb9904f76940796d7f0fb8d282fab0cf3ed25f4c",
+  "75139faa2c5a2f1398a68639cb24c06f51c811848141d24ae3852ed5ef3ba426",
+  "1eb5a245974010456f89389982fa6d34e1d50743e71a32c7a99166b9b0bf6346",
+  "c8daa87fee428d43eda426cbc0d868f53e4954be6709733f4bf0c189e9df4e02",
+  "35f55c6e374b3351974b4c6b91ce083a8c7001772536fe5b677b10aec48d75bd",
+  "1d78f4bbe193314f152838cd9e813bb7b080f3b4d2805dbf91cbd22d12e492b0",
+  "de969322962c63f100f9a1fda09791fc9e4585f4d3441bbec43651dd0e4c216f",
+  "aaf22322d9af92e376ba35c7320061a298ff66eee92397724433671586b135a9",
+  "a8d03f5c5bdc61fcf48ea6143ef3a3f26d135786ddf9642ec757792cd2e66fc6",
+  "d745bf68f7a3322177337250ec8fb68adbe2b8dd43b41a90d4193372e8e5bfd4",
+  "7698adb281fd8b313a50d998d4e97213bfeb9b376d280eab5954f0198cf631c6",
+  "b4b23f635628491902d82866fcd6dc6a74e06ab7b648444d66ea1e5972b2f76b",
+  "7570dd6c0c629b6ebfb8b5cacb0b61cee39ac73989bbb4d2cf5125122793e253",
+  "8ad5caee6e55f3031033fe7e5a3c6b9cf85ed0bb1e4a94d277f7bd3d9a4a5291",
+  "f86e60340501f9811f877da8fe870680ad5c65ba3d4ec126dbb6f4a7da71a11b",
+  "47f70a1f4ea9c77bcdccd4200aeee9fed3ee0a85925ae951e29decb592ffc723",
+  "8f693f9de8fc5a8ef732731b8e70b294c131a8e6831c20e2ffd5af6b9503a4c3",
+  "e9e01d81374ca5b1df6d6138f499864f9da6fc75dd9dc56dbe2151819eba19f4"
+ ],
+ "reveal": "9942e5aa6ca23c262d82e56efdc38bf8be14b181b7121ec01c5a900dd17e0397"
+}
