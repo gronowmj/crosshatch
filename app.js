@@ -6,10 +6,15 @@
   var SAVE_VERSION = 3;
   var START_SCORE = 100;
   // A word can be checked only once it is full, and checking is free.
-  // There is no letter check and no grid check. Reveal word is a flat −20 once
-  // per word. First letter of the selected clue is −8 once. A plain clue is −10
-  // once. Time never counts.
-  var COST = { 'reveal-first': 8, 'reveal-word': 20, 'plain-clue': 10 };
+  // There is no letter check and no grid check. Per clue: an easy clue is −10 once,
+  // the first letter is −8 once, and revealing the word takes that clue to −25 in
+  // total, whatever was already spent on it (so −15 after an easy clue, −17 after
+  // the first letter, −7 after both). No clue ever costs more than CLUE_CAP, so
+  // revealing all four words ends on 0. Reveal grid ends on 0. Time never counts.
+  var CLUE_CAP = 25;
+  var SCORE_RULES = 2;   // st.rules: 2 = per-clue cap. Completed saves without it keep their old score.
+  var COST = { 'reveal-first': 8, 'reveal-word': CLUE_CAP, 'plain-clue': 10 };
+  var OLD_REVEAL_WORD = 20;   // the flat price before the cap, kept for finished saves
   var LABEL = {
     'reveal-letter': 'First letter',
     'reveal-first': 'First letter',
@@ -73,13 +78,14 @@
   function storeKey(date) { return STORE_PREFIX + date; }
   function blankState(n) {
     var st = { v: SAVE_VERSION, letters: [], revealed: [], checked: [], elapsed: 0, completed: false, solved: false,
-      completedAt: null, deductions: [], gaveUp: false, plain: [] };
+      completedAt: null, deductions: [], gaveUp: false, plain: [], rules: SCORE_RULES };
     for (var i = 0; i < n; i++) { st.letters.push(''); st.revealed.push(false); st.checked.push(0); }
     return st;
   }
   // Saves written before v3 (no score data, or the live harsh migration of 5 per revealed
   // letter and 1 per checked letter) are re-scored ONCE from the letter flags:
-  //   each word that owns any revealed letter costs the new reveal-word price (−20), not per letter;
+  //   each word that owns any revealed letter costs one word reveal, not per letter
+  //   (−25 per clue in total if unfinished, the old flat −20 if the puzzle was finished);
   //   stray checked letters are NOT a word check (the old save cannot prove one) unless a
   //   deduction already names the word; plain clues already recorded cost −10 each.
   // First-letter (−8) did not exist, so it is not invented on top of the −20.
@@ -136,8 +142,11 @@
     });
     var deds = [];
     var revealedKeys = revealedWordKeys(st.revealed, entries);
+    // A finished puzzle keeps the old flat −20 per word (its result doesn't change after
+    // the fact); an unfinished one is priced on the per-clue cap below.
+    var newRules = !st.completed;
     revealedKeys.forEach(function (k) {
-      deds.push({ t: 'reveal-word', c: COST['reveal-word'], n: 1, w: k, at: at });
+      deds.push({ t: 'reveal-word', c: newRules ? COST['reveal-word'] : OLD_REVEAL_WORD, n: 1, w: k, at: at });
     });
     // Checking a word is free, and checked letters never cost anything, so no check
     // line is rebuilt here (freeCheckCharges below keeps a note of any old −5).
@@ -153,7 +162,54 @@
     }
     st.deductions = deds;
     st.v = SAVE_VERSION;
+    if (newRules) { st.rules = SCORE_RULES; capWordReveals(st); }
     return st;
+  }
+  // Per-clue cap (rules 2). Points spent on a clue are the lines that name it (w); a
+  // reveal-word line makes that clue cost exactly CLUE_CAP, and nothing else can take
+  // it past CLUE_CAP. Lines naming no clue (none are written today) count as they are.
+  function clueLosses(st) {
+    var by = {}, loose = 0;
+    (st.deductions || []).forEach(function (d) {
+      if (!d || d.t === 'check-word' || d.t === 'reveal-grid') return;
+      if (!d.w) { loose += d.c || 0; return; }
+      var g = by[d.w] || (by[d.w] = { spent: 0, revealed: false });
+      if (d.t === 'reveal-word') g.revealed = true; else g.spent += d.c || 0;
+    });
+    var out = { by: {}, loose: loose };
+    Object.keys(by).forEach(function (k) { out.by[k] = by[k].revealed ? CLUE_CAP : Math.min(CLUE_CAP, by[k].spent); });
+    return out;
+  }
+  function clueSpent(st, key) { return clueLosses(st).by[key] || 0; }
+  // Rewrites each reveal-word line to what it really cost under the cap (CLUE_CAP minus
+  // what the clue had already cost), so the finish breakdown adds up to the score.
+  function capWordReveals(st) {
+    var spent = {};
+    (st.deductions || []).forEach(function (d) {
+      if (!d || !d.w || d.t === 'check-word' || d.t === 'reveal-grid' || d.t === 'reveal-word') return;
+      spent[d.w] = (spent[d.w] || 0) + (d.c || 0);
+    });
+    var seen = {};
+    (st.deductions || []).forEach(function (d) {
+      if (!d || d.t !== 'reveal-word' || !d.w) return;
+      d.c = seen[d.w] ? 0 : Math.max(0, CLUE_CAP - Math.min(CLUE_CAP, spent[d.w] || 0));
+      seen[d.w] = true;
+    });
+    var sum = 0;
+    (st.deductions || []).forEach(function (d) {
+      if (d && d.t === 'reveal-grid') d.c = Math.max(0, START_SCORE - sum);
+      sum += (d && d.t !== 'check-word' && d.c) || 0;
+    });
+    return st;
+  }
+  // Saves from before the cap: an unfinished puzzle moves to the new rules (its word
+  // reveals are re-priced to −25 per clue in total). A finished puzzle keeps the score it
+  // finished on, so the archive doesn't change after the fact.
+  function needsRules(st) { return st.rules !== SCORE_RULES && !st.completed && Array.isArray(st.deductions); }
+  function applyRules(st) {
+    if (!needsRules(st)) return st;
+    st.rules = SCORE_RULES;
+    return capWordReveals(st);
   }
   // Checking a word used to cost −5 once. It is free now, so a save that recorded a
   // word check is no longer charged for it. The check-word lines are moved out of
@@ -189,7 +245,7 @@
     if (!needsRescore(st)) {
       st.gaveUp = !!st.gaveUp;
       st.v = SAVE_VERSION;
-      return st;
+      return applyRules(st);
     }
     // Without the puzzle's words a revealed crossing can't be grouped; leave the save
     // untouched (and unversioned) until the word list is available, then score it once.
@@ -222,7 +278,7 @@
     var todo = dates.filter(function (d) {
       if (P && S && P.date === d) return false;
       var st = rawState(d);
-      return st && (needsRescore(st) || hasCheckCharge(st));
+      return st && (needsRescore(st) || hasCheckCharge(st) || needsRules(st));
     });
     return Promise.all(todo.map(function (d) {
       var ready = entryCache[d] ? Promise.resolve() : fetchJSON('puzzles/' + d + '.json').then(function (puz) {
@@ -230,7 +286,7 @@
       });
       return ready.then(function () {
         var st = rawState(d);
-        if (!st || !(needsRescore(st) || hasCheckCharge(st)) || !entryCache[d]) return;
+        if (!st || !(needsRescore(st) || hasCheckCharge(st) || needsRules(st)) || !entryCache[d]) return;
         migrate(st, st.letters.length, entryCache[d]);
         st.score = scoreOf(st);
         try { localStorage.setItem(storeKey(d), JSON.stringify(st)); } catch (e) { /* ignore */ }
@@ -243,8 +299,15 @@
     if (!st) return START_SCORE;
     if (st.gaveUp) return 0;
     var sum = 0;
-    (st.deductions || []).forEach(function (d) { if (d && d.t !== 'check-word') sum += d.c; });
-    return Math.max(0, START_SCORE - sum);
+    if (st.rules === SCORE_RULES) {
+      var L = clueLosses(st);
+      Object.keys(L.by).forEach(function (k) { sum += L.by[k]; });
+      sum += L.loose;
+    } else {
+      // a finished puzzle from before the per-clue cap keeps its original score
+      (st.deductions || []).forEach(function (d) { if (d && d.t !== 'check-word') sum += d.c; });
+    }
+    return Math.max(0, Math.min(START_SCORE, START_SCORE - sum));
   }
   function deduct(type, cost, extra) {
     if (cost <= 0) return;
@@ -624,6 +687,19 @@
         fb.setAttribute('aria-disabled', free ? 'true' : 'false');
       }
     }
+    var wc = $('word-cost'), wb = document.querySelector('[data-action="reveal-word"]');
+    if (wc && P && S) {
+      var cwd = currentWord(), wkey = wordKey(cwd);
+      var wdone = S.completed || wordFullyLocked(cwd) || chargedWord('reveal-word', wkey);
+      var wcost = wdone ? 0 : wordRevealCost(wkey);
+      wc.textContent = wdone || !wcost ? 'free' : '−' + wcost;
+      wc.classList.toggle('free', wdone || !wcost);
+      if (wb) {
+        wb.classList.toggle('is-disabled', wdone);
+        wb.setAttribute('aria-disabled', wdone ? 'true' : 'false');
+        wb.setAttribute('aria-label', 'Reveal word (' + (wdone ? 'already revealed' : wcost ? 'costs ' + wcost + ' points' : 'free') + ')');
+      }
+    }
     var cb = $('opt-check');
     if (cb && P && S) {
       var cw = checkWordState();
@@ -948,6 +1024,11 @@
     if (scope === 'word') return currentWord().cells.slice();
     return P.cells.map(function (_, i) { return i; });
   }
+  // What revealing this clue's word costs now: whatever is left of its CLUE_CAP.
+  function wordRevealCost(key) {
+    if (!S || chargedWord('reveal-word', key)) return 0;
+    return Math.max(0, CLUE_CAP - clueSpent(S, key));
+  }
   function chargedWord(type, key) {
     return (S.deductions || []).some(function (d) { return d.t === type && d.w === key; });
   }
@@ -1011,7 +1092,11 @@
       } else {
         var key = wordKey(currentWord());
         if (chargedWord('reveal-word', key)) toast('This word was already revealed – no further charge');
-        else deduct('reveal-word', COST['reveal-word'], { w: key });
+        else {
+          var left = wordRevealCost(key);
+          if (left > 0) deduct('reveal-word', left, { w: key });
+          else { S.deductions.push({ t: 'reveal-word', c: 0, w: key, at: Date.now() }); saveState(); }
+        }
       }
       var touched = {};
       cells.forEach(function (i) { wordsOf(i).forEach(function (wi) { touched[wi] = true; }); });

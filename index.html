@@ -115,7 +115,7 @@
       <span class="sheet-label">Reveal</span>
       <div class="sheet-row">
         <button type="button" class="opt" data-action="reveal-first"><b>First letter</b><span class="cost" id="first-cost">−8</span></button>
-        <button type="button" class="opt" data-action="reveal-word"><b>Word</b><span class="cost">−20</span></button>
+        <button type="button" class="opt" data-action="reveal-word"><b>Word</b><span class="cost" id="word-cost">−25</span></button>
         <button type="button" class="opt danger" data-action="reveal-grid"><b>Grid</b><span class="cost">Ends on 0</span></button>
       </div>
     </div>
@@ -147,7 +147,7 @@
     <div class="sheet-grabber"></div>
     <div class="sheet-head">
       <h2 id="rules-title">How scoring works</h2>
-      <p>You start on 100.</p>
+      <p>You start on 100. A clue never costs more than 25 in total: revealing a word costs whatever is left of its 25, so −15 after an easy clue. Reveal all four words and you end on 0.</p>
     </div>
     <table class="rules-table">
       <thead>
@@ -156,7 +156,7 @@
       <tbody>
         <tr><th scope="row">Show an easy clue</th><td>−10</td></tr>
         <tr><th scope="row">Reveal the first letter</th><td>−8</td></tr>
-        <tr><th scope="row">Reveal a word</th><td>−20</td></tr>
+        <tr><th scope="row">Reveal a word</th><td>−25</td></tr>
         <tr><th scope="row">Reveal the grid</th><td>Ends on 0</td></tr>
       </tbody>
     </table>
