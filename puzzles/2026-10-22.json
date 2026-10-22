@@ -1,0 +1,199 @@
+{
+ "format": 1,
+ "date": "2026-10-22",
+ "title": "Crosshatch No. 22",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 8,
+ "height": 7,
+ "cells": [
+  {
+   "r": 0,
+   "c": 2,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 2
+  },
+  {
+   "r": 1,
+   "c": 4,
+   "n": 2
+  },
+  {
+   "r": 2,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 2,
+   "c": 1
+  },
+  {
+   "r": 2,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 3
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 2,
+   "c": 6
+  },
+  {
+   "r": 3,
+   "c": 2
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 1,
+   "n": 4
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 7
+  },
+  {
+   "r": 6,
+   "c": 2
+  },
+  {
+   "r": 6,
+   "c": 4
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Charnel house beads lose their head, holding us back",
+    "plain": "Vault or urn in which the bones of the dead are kept",
+    "enum": "(7)",
+    "cells": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Rascal following sanctimonious talk produces a spell",
+    "plain": "Witch's spell or mischievous trick, in Scots",
+    "enum": "(7)",
+    "cells": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Pompous language as unfit to be broadcast",
+    "plain": "Inflated, high-flown writing or speech; bombast",
+    "enum": "(7)",
+    "cells": [
+     0,
+     1,
+     5,
+     10,
+     12,
+     15,
+     21
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Cloak a page hid in the shed",
+    "plain": "Long hooded cloak or soldier's greatcoat",
+    "enum": "(6)",
+    "cells": [
+     2,
+     7,
+     11,
+     13,
+     17,
+     22
+    ]
+   }
+  ]
+ },
+ "salt": "386606b2c4a9160e",
+ "check": [
+  "e42fde0bc19b8a3474ae29993f540d54996c1a16e05ad531395811538f71a2b1",
+  "be37e8301abb42daa03d1cd16eaa50d7dab040187de6dd59d81f3953dc11e493",
+  "63c7b61732be380479826839799f6a9bb6028a4e4039f57abaccd2d197ff4971",
+  "0d1dc6611ac49727d47159a3f900b67f8244b37340caded00d5cbb2b53081abb",
+  "d41392701c8d3a41018d5defc96f38c48d45ebb6b5b24664fee01b3591e896f2",
+  "655cabd764f060540487dc8f20be8727ebb3b6c4965f45467b4d742301cc4fd5",
+  "eabc67db245b540fa7c3422fdec27797f285ddfc3dc836c0650819d8ded279f8",
+  "43b66022c95b3d345b7d7ca836fdeefc45636b26b7c866ba0f9d4a34e89124f7",
+  "d9d52f970cfa69ae055ba2813f9bc029a07f5d5e361feef3276d49b77b554838",
+  "2fff5be7a2169b2ac179340bff97e5dd4ad3bdeb9ca9ac8f15fc6e637d4b446e",
+  "691f605b16bc6b348c9c985f2a568a1eed74e151fc10edfe7b939c5dc8003e4b",
+  "9ef29565b5bec10e3da30c4576532059213c1d1f578a7de0d180ef5cb90508e9",
+  "518fa5261402041cb1103d1e7c4eeed87fcb153847f4de4e58a3461c503d56dc",
+  "6ff102fe2b189fdfab9f94a9168f92d89ba97dbee3eae7de6e2ac4841d22ebcf",
+  "1d871328ab76f2f966c1ed55b9be69b101dab5df3e55500ac91e2d2ab00af9c5",
+  "5a0e7c5db14c98a578269a6623875d7958f72c283bb4754bb637306262e239b7",
+  "cc1c5649f58dee524991923441e4313ab2c7f2fb1b67d1a5ea22c8f7ec4200de",
+  "6ecb9102a87fdbcf96918d8037b3f7f9332d3426d42b4f2be6c50bc2e7cdb215",
+  "ea1af2c546def6bd8aff445d03bbac93e4f03b86349283f532cf8ab24af65d4b",
+  "c35d451d4295fc76ce72b846bbab7ec0c094e10d1ee262cd1c9f60018f6256f6",
+  "f89d05a690a0ec735d8b1530fac06b5103657b5d4a8e6f4f19962b1f27ff0fc2",
+  "7d970b6ed34ff9db50e64bf0add8f2f374adcf56935bd19bbb9b74067fe0ded5",
+  "167d7990dfb51183af70d663084c1ff3908b44e46e540f4eb829ab3bfc9ca23c"
+ ],
+ "reveal": "a59fafcb1317562518a8a5d6eeb5a6b853a20828352319"
+}
