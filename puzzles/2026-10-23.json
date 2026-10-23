@@ -1,0 +1,187 @@
+{
+ "format": 1,
+ "date": "2026-10-23",
+ "title": "Crosshatch No. 23",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 7,
+ "height": 7,
+ "cells": [
+  {
+   "r": 0,
+   "c": 2,
+   "n": 1
+  },
+  {
+   "r": 0,
+   "c": 4,
+   "n": 2
+  },
+  {
+   "r": 1,
+   "c": 2
+  },
+  {
+   "r": 1,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 2,
+   "c": 1
+  },
+  {
+   "r": 2,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 3
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 2
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 1,
+   "n": 4
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 2
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "A sport played badly by the minister",
+    "plain": "Member of the clergy in charge of a congregation",
+    "enum": "(6)",
+    "cells": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Floor covering Oscar petulantly hides",
+    "plain": "Thick woven fabric fitted across a floor",
+    "enum": "(6)",
+    "cells": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Something hot for the ham, gathered on the radio",
+    "plain": "Hot yellow condiment made from ground seeds",
+    "enum": "(7)",
+    "cells": [
+     0,
+     2,
+     6,
+     10,
+     13,
+     18,
+     20
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Nosy parkers bring back some cutlery",
+    "plain": "People who pry into others' private affairs",
+    "enum": "(6)",
+    "cells": [
+     1,
+     3,
+     8,
+     11,
+     15,
+     19
+    ]
+   }
+  ]
+ },
+ "salt": "cc610b1f0da27e69",
+ "check": [
+  "59d781a43dc8c8b3a6e66f6434c410e86b89fe7b3e7d714cb512f72c970de50c",
+  "113432cf4d6f8d99cfc36a29c0c8e061cb758eb26a5d81428bb715a586db63b4",
+  "8d1503b2310c692231202b2b11d2a956a064c32b1e9d006cf191e87d9a9c6934",
+  "185aa99c85eedcebc5a242de4790aaa8ab1cad767dd5fbc9abe0f98da9852ffa",
+  "c87ee20f1135b0fd48876f9f3b7c244d30b5778a054b5b5c4d814f3b5bee1864",
+  "cb999a253133adbc8047eb1121b20772f9b81a007e4f601d1b3841592ea0345e",
+  "fe40f8244cca97d3c939a2ecf1f4720a42a407531e8c445d0ca18c5bbc90d92a",
+  "357e65e5be51e8b71a691dc431b08d915f5d4af4d28a7e54ba84a4664fa4da93",
+  "fdaeadaf3befb3a1fa7accc6cc51ae77856dcc51b005dfc60fc2d1d19dcec13a",
+  "0e402d825aeda08b050463b806329fa8e72714b3c418817553270422f44c5cf8",
+  "c4657de1654d7799db548d2b5a98fc1c17206d3950566f4f48b4cc31dca88e78",
+  "2610df94a2f5464c6ae75eede57fd7af1e5a54c66ccc83b0595ac789fd5d38ae",
+  "8a2a55790b599c8aaf54626d71e82e8c3a9b7bcc8600c5d64b0d99d507988bfe",
+  "dea695cda1661dc68fc8d8a721acccd57826c27845a92fd15caf1c4b2b9bef7d",
+  "ba048eb574839063bc310e200c48fda09193f39bf4c2b127913822cdd0887a23",
+  "5308536f4d4a48f55d79e39b9aeb5fda67d4cbc524fb9cdcb8ad1b3a50313c34",
+  "eadfba9b371976f6572961696eace8ae543a41059818cd420b3b2426703b2928",
+  "5ef61bfbb9a17820486b93d197a825963536a680daefffe2eb95950b4f3710d7",
+  "0a203e9205039f842c2f99d8ed12c8d120feca9e68b985e8744a300a2ccf301d",
+  "2ac9c3af4ce12612a4561e8163145019dd7c440c48fab1ec6eb83f0b209bb88a",
+  "67bc02b8a29311202cea5d7709ffccaf79d5593f3e3f4fec7eac329072b487f2"
+ ],
+ "reveal": "cee728fccf5bd91cc61fd11a1b4945a00e8fb6b152"
+}
