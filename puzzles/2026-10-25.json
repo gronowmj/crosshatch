@@ -1,0 +1,211 @@
+{
+ "format": 1,
+ "date": "2026-10-25",
+ "title": "Crosshatch No. 25",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 8,
+ "height": 8,
+ "cells": [
+  {
+   "r": 0,
+   "c": 1,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 1
+  },
+  {
+   "r": 1,
+   "c": 5,
+   "n": 2
+  },
+  {
+   "r": 2,
+   "c": 1
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 3,
+   "c": 1
+  },
+  {
+   "r": 3,
+   "c": 2
+  },
+  {
+   "r": 3,
+   "c": 3
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 6
+  },
+  {
+   "r": 3,
+   "c": 7
+  },
+  {
+   "r": 4,
+   "c": 1
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 1
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 5
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Careless friends go back, then sprint",
+    "plain": "Hasty and careless",
+    "enum": "(8)",
+    "cells": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Hand over part of what made Liverpool famous",
+    "plain": "Bring goods or mail to the right address",
+    "enum": "(7)",
+    "cells": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Rock that sounds more daring",
+    "plain": "Very large rock",
+    "enum": "(7)",
+    "cells": [
+     0,
+     1,
+     3,
+     6,
+     13,
+     16,
+     22
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Members of the cast chopped parsley",
+    "plain": "Actors, or members of a sports team",
+    "enum": "(7)",
+    "cells": [
+     2,
+     4,
+     10,
+     14,
+     20,
+     23,
+     24
+    ]
+   }
+  ]
+ },
+ "salt": "73c6b308464bec21",
+ "check": [
+  "aef1e5572b683fb6b352ac54fffdf4d55f66dba409a1777fac049f1f52211548",
+  "a7a9438e894f55dafe68f59dd9f8f18651f5a26c087281b680a1841777bf4a05",
+  "83ba1af3032beb6409065a7c087855c03ed3cfcdafc9b4f442a98c4fe36a49ca",
+  "30f72c83b08fb64bc83c397947e2d25c71a0dd352d161df8fd919004f3e5e51e",
+  "4837d7cb0cc3b214e68a538c0c3570ca67c30cf1f622169c4deb0d3575421781",
+  "6f9bd0fc2928f603d9608f6fb45161cfe4e9ed40a312580167f3f7331cf6a7a3",
+  "4210d8a41b4988a8d49751dd571ee26dce4510bb2781239a08c247b4841bd250",
+  "469ef9d24aa48db31b24fbb3b33b2489cda3329543d732d8abe04e5077de4de5",
+  "edd030f0f4a3f82570daf75b8cbaeff3574444d28057383ccd791eb9925d5582",
+  "32e4933a40b1ed87fcea3b627061d34d4e3132bb4c82dff71855a5fc86afede8",
+  "aed7e3a537c45022091eaf23dce55f1454edba0d6b889e87177920c5d657ecee",
+  "c480f6eb9a274ce4d8d93946e2b815792469638e893d7179073bcf8beef0b03b",
+  "56ebadd005a4b631231cb711949c38c2cf19bc5d74063b5ce4db2606ca7d2c36",
+  "24576c7eef51f5cc5513c8525e41ce22c0d8332d5e3d068c3080b6250451cd20",
+  "b3fc75fbae0500223b7aee1e58319ff408837207c13248edb31b64e4ffc79720",
+  "d5335ad9c1012ecac2e55483a69017e4f2c185731e88b844d8aecd139700dde3",
+  "45b7a0ce60dd948a9b8c95d6d9b2320de357a144cb53a56a393a88d4f8082d7d",
+  "b8d3a689bf5f48fafcd46c25bf21c298ac3463be67daf6a45fc6fc3e9a07c0e1",
+  "db8d23c675f2aefd70757e807d158ec4ee5e698dc9170b2651ff7377db80823f",
+  "46da5511df0bde39eb5d8f7047bbb30ae6852eb13ed4652aafb08f8a4e2163ba",
+  "1419d4aca08dd33c677da2ccb8736ff645ac3c6987db7fa8da3b0384b6bff60a",
+  "ca848a5a40b71bb5ebe4f6ed662c667436d5fae470e24711a94a629979aaee39",
+  "44eb1e144e99e965839447585e15ef9b6b672ac9a43a2d62f019541fc8839cc6",
+  "c63a630da910bfa2a75b6869333a0f48f495a6ee1cd62a4ea9fb1b18a00c5873",
+  "bf7fabefeb80feb81cebbf424eef61084d13df20aadf7c56f2cb7de01f081f21"
+ ],
+ "reveal": "2ac034c4062bbb9f02bd4aa2a21eac7d42d55a1a78f30a5159"
+}
