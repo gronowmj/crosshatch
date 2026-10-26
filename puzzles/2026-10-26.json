@@ -1,0 +1,205 @@
+{
+ "format": 1,
+ "date": "2026-10-26",
+ "title": "Crosshatch No. 26",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 8,
+ "height": 10,
+ "cells": [
+  {
+   "r": 0,
+   "c": 1,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 1
+  },
+  {
+   "r": 2,
+   "c": 1
+  },
+  {
+   "r": 3,
+   "c": 1
+  },
+  {
+   "r": 3,
+   "c": 5,
+   "n": 2
+  },
+  {
+   "r": 4,
+   "c": 1,
+   "n": 3
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 7
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 6,
+   "c": 1
+  },
+  {
+   "r": 6,
+   "c": 2
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 6
+  },
+  {
+   "r": 7,
+   "c": 5
+  },
+  {
+   "r": 8,
+   "c": 5
+  },
+  {
+   "r": 9,
+   "c": 5
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Big cat paroled by mistake",
+    "plain": "Spotted wild cat of Africa and Asia",
+    "enum": "(7)",
+    "cells": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Unusual stone stove",
+    "plain": "Odd or unfamiliar",
+    "enum": "(7)",
+    "cells": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Small onion everyone squeezed into the picture",
+    "plain": "Mild bulb that grows in clusters, used in cooking",
+    "enum": "(7)",
+    "cells": [
+     0,
+     1,
+     2,
+     3,
+     5,
+     12,
+     15
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Pub profit? That's a steal",
+    "plain": "Something bought for much less than it is worth",
+    "enum": "(7)",
+    "cells": [
+     4,
+     9,
+     13,
+     19,
+     21,
+     22,
+     23
+    ]
+   }
+  ]
+ },
+ "salt": "d788e194c79a0c49",
+ "check": [
+  "64d2b06afd64324e99ec06e4b10e1927ff112b83104009944d3818e40b6b073a",
+  "271d9e4bb6a7726654f23edcb0cc8e9a496570082ecec56fc919f8483dd32f39",
+  "f30af2e0695db6f3e45c37430f1bce236ee1e4d31b52897f310a089bf0e98e98",
+  "7f9f4131871081175fe24587c83fe93220db99f88a8efb25df40f06d80f253aa",
+  "0ad13d560db439685e162b84ae36b0a8bdb1e5d59f85cd832e181fc28c105533",
+  "b0793080d0f542b9ba163acd8b8eb3bb1255abc82024bae4678b41b464f2cdd3",
+  "1a6b0c4bca24f512c1cede4015d32545ca7ce256b1e3e2c7be7f5a8f1cb29561",
+  "11d79c50132b88b50a1830b62b2bd6b519263aa9616e45b17189c9897bc6e1eb",
+  "c7c10aec33cd1ea2781667736f4a05120cb6236ac760ee96c8cdd9c00effe63e",
+  "0494dea7b943fabc497603f3dc088bc5c099feaf20354dd5e4d148cbb7627d05",
+  "e9b4af52639e38a91669db63719afa4501d53248c116b18f5178477c4b2868c8",
+  "bc5f3478dea7825fd4f33be9a95282b30a6c42de5caad94b1981e5ac638d47f8",
+  "c149d6b0503c137e69b669ff8d55d39e821837972d27106e7334e89ee890ac27",
+  "4a1f952c9518ead380798a4e7efaa5f7508759699f3b51c446d80e8b6f29e024",
+  "888bdd5256909d72d3ea1c1e36ee6d352c8bb012d7fd683ecc981ba6561ed434",
+  "c6f0b32d5ca609e42afb676e850afdba9e83613c75ecb3182346e7786fa74aaf",
+  "464f3e831404da822aa7a17295c8d197a0fbe609c7f11a68bcc5998feacfa3d4",
+  "591f787f7648a79d89ab8a216fcf4c7145d92efcbb9f5099ac96a8e01f88952c",
+  "bb4facaac3115ec5b75001cd48ed7d72439d42ad8f7a008c9fcba582546f48c0",
+  "8b1db7887d39a16c0aa77733c39994effc2322c3149350a925d7b24564fde0a6",
+  "b4e7ea0d671ddab40c1802b29744c9966b90ee5fccf0b77e321af636d6bc9620",
+  "18b48aefa1400a805284066b6e2832814225714e4555f659e78e9d5ca828a0c6",
+  "c4429ef2255730e944c12fb604f2471ce0e5e606af93420d8deb8f2dae66dcc2",
+  "e01046f0a54bb48e4d32914dd61524dea36433d3b15207672617e9966b98ef69"
+ ],
+ "reveal": "3063db71b19817b97e0f1af6790f691dc4cf3ae9ad650115"
+}
