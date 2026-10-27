@@ -1,0 +1,187 @@
+{
+ "format": 1,
+ "date": "2026-10-27",
+ "title": "Crosshatch No. 27",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 6,
+ "height": 7,
+ "cells": [
+  {
+   "r": 0,
+   "c": 1,
+   "n": 1
+  },
+  {
+   "r": 0,
+   "c": 5,
+   "n": 2
+  },
+  {
+   "r": 1,
+   "c": 1
+  },
+  {
+   "r": 1,
+   "c": 5
+  },
+  {
+   "r": 2,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 2,
+   "c": 1
+  },
+  {
+   "r": 2,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 3
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 1
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 1
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 5
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Outlaw seen in suburban ditches",
+    "plain": "Armed robber, especially one of a gang in wild country",
+    "enum": "(6)",
+    "cells": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Drawer brought back a prize",
+    "plain": "Something given in return for a good deed or for information",
+    "enum": "(6)",
+    "cells": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Risk church's east end losing a pound",
+    "plain": "Possibility of something happening; an opportunity",
+    "enum": "(6)",
+    "cells": [
+     0,
+     2,
+     5,
+     10,
+     12,
+     15
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Exterior is tedious to redecorate",
+    "plain": "The external surface or part of something",
+    "enum": "(7)",
+    "cells": [
+     1,
+     3,
+     9,
+     11,
+     13,
+     19,
+     20
+    ]
+   }
+  ]
+ },
+ "salt": "1e68303744445ade",
+ "check": [
+  "62be1b9643c5d9eff9c4b99436c6edf118bb81b32f089b8e3d54bd2c2059f258",
+  "bd19ea02c70de4e617cab402cf04bda83603788b90ff422c55a43eba9eb4732e",
+  "fe8bafbc6dec777d0dfa9b357264b7601464b21882e90d51afac7947eb143ae0",
+  "911d2628830addf58289b08c7f1ac18ec960d4c682b7dba1d79d5f7e7e837b14",
+  "98ce546ae787f6fca543dab307bb4273abe32d2551e414ee44a8bdc69409a798",
+  "43d8f484bff54494121cdd28dff1eb8c1cda400dc46fcc03528de10fc4a17136",
+  "9be3cae5d16f6a9d60b21351bfea3e7b08af9ae4bff00ea38a8fc8e25dfcbafc",
+  "08e1391ce471e1f094c1f9aecabe3672dfd2b561ca02656dfe578ceff8bb1862",
+  "980f5a027a61308afc0b8795bcfc5efcc32fa9f38c8316b99539dc0a53d1e657",
+  "3149a9d7c11ac7775a98540dba5ab2f037f7b0bf8af204147f0529b214020843",
+  "06bcc18f16743d72dbfd2792803ff56075625c1a88f4ccfaf800cbece468f2ae",
+  "2104c051f0d3b755635057fdabf41610d61a1e2857f531cf407698160475e7a5",
+  "2f099655634ca38b1f9a1b11ae0feff2903e49d47169b5ff91215e15a3760b51",
+  "f0f59fc2a283c720bb300ce3b06bfaadc769ff08319fd244015dd9ea4746a66d",
+  "b57366c0cfc79742f0888d52678ec6b45c96b99444e673441d0f4196bcd3fdb7",
+  "50301cf588f8c7915b4bd177535ec6f2e220cef96b7b4691a4480c7a4adfd311",
+  "07c5157288ebdac45f4d5c5771c0c5dd0a2d9644df6fcc576ca76cb50678f007",
+  "5a1f895df00a95ebf9e411f9c7b36bf6589efc57e9aa020507e5da68f8865c1d",
+  "e86c05047160c4d1e7390d97b4f4c98762bf66d3f29f384b1dec47128f76b480",
+  "c4d8533794fb7af8be4409fbf6f0b08edd69b6bfb950696465dd7b6e300b9261",
+  "00b620b0131931bbf989726e5f3cdfb97348b0781de9cc567ba73b0d73331b21"
+ ],
+ "reveal": "f07e4bb9b2ef49ac3674cb152414e40158a2f75b2f"
+}
