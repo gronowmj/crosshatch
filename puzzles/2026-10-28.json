@@ -1,0 +1,193 @@
+{
+ "format": 1,
+ "date": "2026-10-28",
+ "title": "Crosshatch No. 28",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 8,
+ "height": 8,
+ "cells": [
+  {
+   "r": 0,
+   "c": 2,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 6,
+   "n": 2
+  },
+  {
+   "r": 3,
+   "c": 2,
+   "n": 3
+  },
+  {
+   "r": 3,
+   "c": 3
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 6
+  },
+  {
+   "r": 3,
+   "c": 7
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 6,
+   "c": 1
+  },
+  {
+   "r": 6,
+   "c": 2
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 6
+  },
+  {
+   "r": 7,
+   "c": 6
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Right stuck in mud ahead of the Queen? That's hell",
+    "plain": "The unlawful, deliberate killing of one person by another",
+    "enum": "(6)",
+    "cells": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Courageous, losing energy before a fuss, is swagger",
+    "plain": "A bold show of daring meant to impress, often hiding fear",
+    "enum": "(7)",
+    "cells": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Saint with odd mania has endurance",
+    "plain": "Physical or mental staying power",
+    "enum": "(7)",
+    "cells": [
+     0,
+     1,
+     2,
+     4,
+     10,
+     12,
+     16
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Dictator bests editor, returning",
+    "plain": "Ruler with absolute power, especially a cruel one",
+    "enum": "(6)",
+    "cells": [
+     3,
+     8,
+     11,
+     13,
+     20,
+     21
+    ]
+   }
+  ]
+ },
+ "salt": "8b99fa99d12a9a17",
+ "check": [
+  "03a03e07f7dce2b0cfe8fa92ca58c36bb5774beef87951820d615593ffa1dfc0",
+  "e4501d134b0e36071dd96bd2dd3387d717ac526fd99f8b0098c6e83508d64126",
+  "695f84eaa9c5a395369580cdb888d5283e5c0545648f6958a91c042f210e9d10",
+  "49717a0af35cedbaa5130d5e183acedd554688a43ab7c07764d4fad4a5aada10",
+  "a8404a2e3216d37ed70e5a644bee04cd7ffaf80ab74668a85e2d745043372ac1",
+  "3aa7ce838f791969074b1af2d50c228d059c244f03824cee2653b761d8c30b5e",
+  "4120242bf6ac9ab76d40d1d3948c25ad509173281d5572cb030242f70605ae3a",
+  "cfbe9c691dc1e35f5d6c620a8b880e062a04b99fa11d93acb5cbcbb8a1b70bf0",
+  "46041c10b0853e2a4d2c55d94cd6525a6f4ac9f82b0ea6f3a459bcb314c17a41",
+  "d61a23f21fe001b791091a40302276d03bcf9a1032a92292b8eb203f5a181ab2",
+  "9f1e1c064c60eb450a76187b1a006cabecbc644138f7a62f6e2bf84213d814df",
+  "e789fea434361813a510217bf8b1619fbdbf5634a51473b72538f341af3b302b",
+  "7e84178567d29d4d98f2721b65fa52efc0aa13e02abfb3d0c15b96e5a21495f2",
+  "f82b641f41b98793e7de9c04fadc6521713dba1b3e34ca15f5ad01dda5971136",
+  "05e8a2eb7d6b76e0e6bb9b8c8b2da04b9f529ccc32d6a457bedd9bb81a7d3cae",
+  "74ea9f916ff6534274377f82d9c6ddd3c08c73145d2c691bba000045d5ca813a",
+  "a7eb0ae5f88f0b48e8f78ec9ff8be6a55f280bd76f24354c95f9afd4363df0ac",
+  "d0bab8a4051a53e382e94c4fda7c34e6da31fcbc664bf0f17174f57ab6396c3e",
+  "405227f08b31cd750638a4a9a5568585750648e6f52ea49300e94d01f4dfec2a",
+  "66362257c7f388849729f227415bc8aad2587e23f0a00dedd01515aa72865446",
+  "3f5399d7206c25f112b1b8be8285495846b05fe0e93e66de42313b53351668ed",
+  "4fcadcf6ab94fb451d33ea32710b5fce8c521a3a2486b71b468ce4e0e18111b0"
+ ],
+ "reveal": "e08d6e414d21a1baf1b35cfa5aa5c09f0571a8889287"
+}
