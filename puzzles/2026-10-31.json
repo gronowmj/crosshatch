@@ -1,0 +1,211 @@
+{
+ "format": 1,
+ "date": "2026-10-31",
+ "title": "Crosshatch No. 31",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 8,
+ "height": 8,
+ "cells": [
+  {
+   "r": 0,
+   "c": 2,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 2
+  },
+  {
+   "r": 1,
+   "c": 5,
+   "n": 2
+  },
+  {
+   "r": 2,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 2,
+   "c": 1
+  },
+  {
+   "r": 2,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 3
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 2,
+   "c": 6
+  },
+  {
+   "r": 2,
+   "c": 7
+  },
+  {
+   "r": 3,
+   "c": 2
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 4,
+   "c": 1
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 2
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 5
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Draw back gown for press",
+    "plain": "Tall cupboard for hanging clothes",
+    "enum": "(8)",
+    "cells": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Bishop, twisting ankle at last, gets cover",
+    "plain": "Large woollen bed covering",
+    "enum": "(7)",
+    "cells": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Screen cut short, with new replacing line",
+    "plain": "Hanging cloth across a window or stage",
+    "enum": "(7)",
+    "cells": [
+     0,
+     1,
+     5,
+     11,
+     15,
+     20,
+     22
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Warning shouted on the links to staff boss",
+    "plain": "Supervisor of a team of workers",
+    "enum": "(7)",
+    "cells": [
+     2,
+     8,
+     12,
+     18,
+     21,
+     23,
+     24
+    ]
+   }
+  ]
+ },
+ "salt": "23173a8b00ff2ae7",
+ "check": [
+  "786cef10c6828dfdbc9578e7d149e27e69e98779fe5228650fe0eaf40bc8a897",
+  "e9886bd34d8739c76dc9e0bb9c1e5b8c70086923c57f72ca0b758abbef71b6c1",
+  "e17ac3a52cd037a33f6ea1aec236b221465873d6c9a615ca7453f38b420aa9be",
+  "f494bf335b25dcdf55534ad015b3abcee26f61c6406f9a6d04c79c22a8e2f8e4",
+  "024dc3e5fa1d4b83c72ca2a1b272147652d13c07e1d6aec515ac2029084b100a",
+  "9a53d02d371d56b1fb1cfb84a392855af59cbed4c00bba486892489a283aaa47",
+  "0704b90841b575810d01a6e2ec9b089b1c09cf857d17141ed9e0a1aa05219bc0",
+  "55c5f37040ed558d73a8c2910cf947a3d0355fdcc34c990c6a7246abcdf8f2aa",
+  "72ca7d51c98f2f53650a3f1a93de68cc8be9ffaed9aaf922b237600ba349dfd8",
+  "965744e711c1a58a9b33dff4d1a27d38f283aa60a095d544e07bfef3f880a899",
+  "bfd68299a387d3a60a92537feacd0b7fe6b0c88579222b23e9e92705aa3639be",
+  "b3e7210d445a453b9c5622342fa805a1604b0014e3d8d3e68e0db59014ea41b4",
+  "30fc3224c8aab9501d2a4f94534e7335eede0b8c23a4a4ac198a21088711ace7",
+  "322a68e867809b73cf42ef630d8410b158ba73baf234265d22f9f790c00aaf32",
+  "5bfd02a34861690dedd1e5485f7910d3eb8826ca5b34a3a149589cc5b52fdba2",
+  "d64fb5323ebaa874bdfd40d3ff47561e5bfb29711fcd6e1e1ebcb6592a4646c8",
+  "95077eb92fcc132fc4fdd0b383220cce60ff86c3e51c0f1b9e275482365ee2fb",
+  "7799773aa069de4e72e6c33dcf1f5ce9f6655a92146b6d0d6e20ea974d93ff72",
+  "0237ebf5fdcd119e3acf59e88b58039243c684568d81886b7d67d48c08b387be",
+  "086c6fe52418d5e9b8c9776425530c17f62e8e52d9f081647e58522ed50fb364",
+  "0c7c70c7e824a393c720b941965942f145638c2f47e29b840806b86c95cda133",
+  "284f29f06421828e8e7c65acc1fe112aea314f159871a8ce7f43dc72668911f0",
+  "42bf3824f39bd86ccdb8d03ba0158a3332adf4d975576ff032088adf73859b95",
+  "978b5224c448b110317f9adaffc43964858d2d98514aeaca39441de4750a9a1d",
+  "d27b9b30a3a3554013d74b12a332ca437e6b246a4206b25ea0e7324e8297f920"
+ ],
+ "reveal": "f8504c168bb1f153d573bae6779e5e659a0a40e53ca49ccee7"
+}
