@@ -1,0 +1,217 @@
+{
+ "format": 1,
+ "date": "2026-11-01",
+ "title": "Crosshatch No. 32",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 8,
+ "height": 9,
+ "cells": [
+  {
+   "r": 0,
+   "c": 7,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 7
+  },
+  {
+   "r": 2,
+   "c": 7
+  },
+  {
+   "r": 3,
+   "c": 3,
+   "n": 2
+  },
+  {
+   "r": 3,
+   "c": 7
+  },
+  {
+   "r": 4,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 4,
+   "c": 1
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 7
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 7
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 7
+  },
+  {
+   "r": 7,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 7,
+   "c": 1
+  },
+  {
+   "r": 7,
+   "c": 2
+  },
+  {
+   "r": 7,
+   "c": 3
+  },
+  {
+   "r": 7,
+   "c": 4
+  },
+  {
+   "r": 7,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 6
+  },
+  {
+   "r": 7,
+   "c": 7
+  },
+  {
+   "r": 8,
+   "c": 3
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Affected pose with English where one may pitch",
+    "plain": "Place where tents can be put up",
+    "enum": "(8)",
+    "cells": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Tea caddy, perhaps: tin is seabird docked",
+    "plain": "Cylindrical metal container for tea or coffee",
+    "enum": "(8)",
+    "cells": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Danger running wild over Queen? One working borders",
+    "plain": "Person who tends plants and lawns",
+    "enum": "(8)",
+    "cells": [
+     0,
+     1,
+     2,
+     4,
+     12,
+     14,
+     16,
+     24
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Trips take one up for a stiff drink",
+    "plain": "Distilled alcoholic drink such as gin",
+    "enum": "(6)",
+    "cells": [
+     3,
+     8,
+     13,
+     15,
+     20,
+     25
+    ]
+   }
+  ]
+ },
+ "salt": "9d714245919ad7c1",
+ "check": [
+  "05da239c054434fef3f7ac98426c2e5e17a9cae81b1d2a03b32a2c2b36d14102",
+  "1a84e87a578b95484279a31135b10cb98169c840e9a1db68af072d7e1835c79b",
+  "caf1ee8fb287950cfe0b78bda30a3cf3d335586563b552a85fec735ebc8556df",
+  "2b8d0c7ee0710b59cbe9726d1950eac8feb5a45286db6e32d3ca96aaafa2fb8d",
+  "391cb19884dbca5e72fed6819240360ee0cad029680b4ea66959bc74ccd96175",
+  "2d1b7a1fb339550e8178211858b60d21791a7a152b6e53926c55861995383397",
+  "d6fdf44d62a081905dc8894904d4e8cd8daaa5429ccd95cb2502b013f833b1f4",
+  "a7c0402cb1d502bd868fc5c578668b4a445cec4e62974956fce67fd75f220c3b",
+  "506caa43cf1ad075194f7ff7b21201a25265122866a11675409df104a08b9075",
+  "d1215630a87d65e72d793e1df411b9489fd5834fe7bd2beee952d04186d9a400",
+  "9a14f3d83b0585bbb0cc9d6bc8a02c73a976635eb028420eb165f947d4992862",
+  "1bd91ecf7dc07e47942c143ad53aff409a39756a0ed7abcb929574f2b8f25e0f",
+  "7a50488ccc51951907c7a34590fc0c761d1c32c4fa36af48700c87038f73f561",
+  "330b4778f948b25bf1e734fe9e9bcbce99be6073fdd75c59bf3f95b0b6458f71",
+  "cd9ab43e35eae310dda9503719fe1f43962639bb6076a8d4f1ccd2124d694e47",
+  "213345bdc2035f81837dd0cf5e0b4d4ed6d879774ce132c45e7cbe4465d00010",
+  "a04323a2650d8c14581c86d4386595ba6276544b61908baa00178bbc6f1986ff",
+  "4046952d8460ea858182fb7cb67457e2a90cd634446126fea654399254c20c6e",
+  "551a4ab578b8ba5642470b1e64223283c3722f4cae125bc925844c3815d482bc",
+  "c9f0fa7314f981cab5fc712f234c8bbc793ec2e3b8318892d39697fa64cad6c5",
+  "0ea43d9a82f3633f0f1b7c80cd8392275561344aa1738a25cc9f3341e0889b32",
+  "b0e289cb941a4bc0608a5476fd0e85344e2c9755fd9121bdbff5d5570582609f",
+  "bacfc50bbed01ecf5b863c821f36ad071f88e5606294a72b0ec95a66559678c5",
+  "3e64cd0628c7e4c382591b1a1696fec0d66712b9efba1e31654ae0fbb9e0d478",
+  "797140c081279e02f9805098b0e2f2e77c6ebeda406a2ba051fe03556655abb6",
+  "43a2a451e94bd519e373fad2c41af1e2f7dcd8757ca9c80948b82eb448a8e8d3"
+ ],
+ "reveal": "e5ffddcf6e531c0daf2261c1797bd789ff636b403e6a7e03d2b9"
+}
