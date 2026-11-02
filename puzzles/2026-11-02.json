@@ -1,0 +1,217 @@
+{
+ "format": 1,
+ "date": "2026-11-02",
+ "title": "Crosshatch No. 33",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 9,
+ "height": 8,
+ "cells": [
+  {
+   "r": 0,
+   "c": 6,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 4,
+   "n": 2
+  },
+  {
+   "r": 1,
+   "c": 6
+  },
+  {
+   "r": 2,
+   "c": 2,
+   "n": 3
+  },
+  {
+   "r": 2,
+   "c": 3
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 2,
+   "c": 6
+  },
+  {
+   "r": 2,
+   "c": 7
+  },
+  {
+   "r": 2,
+   "c": 8
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 3,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 7
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 6
+  },
+  {
+   "r": 7,
+   "c": 4
+  },
+  {
+   "r": 7,
+   "c": 6
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Lying low as wild tornado has male replacing love",
+    "plain": "Inactive, as if asleep",
+    "enum": "(7)",
+    "cells": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Sensual hugging four at the fair",
+    "plain": "Festival of street processions and costumes",
+    "enum": "(8)",
+    "cells": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Chief with palm raised? It may be dipped",
+    "plain": "Light on the front of a car",
+    "enum": "(8)",
+    "cells": [
+     0,
+     2,
+     7,
+     11,
+     13,
+     20,
+     23,
+     25
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Pull from sauce containing it",
+    "plain": "Force that makes objects fall to earth",
+    "enum": "(7)",
+    "cells": [
+     1,
+     5,
+     10,
+     12,
+     18,
+     22,
+     24
+    ]
+   }
+  ]
+ },
+ "salt": "943057e2fbdcfb05",
+ "check": [
+  "15f4c41ca8da4faef963227d05fbec6273bfbbdc9f18e8865c9725f59adca870",
+  "b5651f77834fff4558d446df68e1413f93ad00544faca95d980360d5d9109dbe",
+  "ea6e843d6d4a8d87a4810a5cd9f266266584e0fc02855f3f3a854293d4768ca5",
+  "931e41be5def489bbdec9c5bae1992f05d938158b9a556137393558111c896db",
+  "61d93eb8c3d4ad952f49f7394fbe9f851b83a2239f4ca618eb31489e93109de7",
+  "0753dfbb4e8402952708d5d79dc8eeb14bf931af76dae7a8ded529fadc628608",
+  "5015ecba4cc37b114da37f72196af0ea85732e73ed2f6bbec12e6899a0c48753",
+  "99a5ca8b779d3a7f7232f4a9653c4949a04ce54f2cda6fa441067ae1b830c919",
+  "256e513577e4ef606c1d750fad4b4999ed6e73f61a42bc265969d08a37e04408",
+  "3d9b4720b9ec6cf53809128884ad7d83c00326c4e4f72d37fbf01e832e2eefcd",
+  "c1cb84b90524ddfa67851fbbecccd2e693db93b6321f1a4ab989067503ea61e2",
+  "35e9e1fca960a274e8a53fc965ae0ec7218a0e2f38b05561e762f1b6d6ce1ea2",
+  "099531e8ee1e442b2664a231e5e2823ab4bfe4b3b25bf3d2963b0a853f537744",
+  "ecf6657ee4eeb6384b24bd90f90933940a396a8f1fd68cae3fe9ba70c97cbf68",
+  "02d36c82e2cc01bdaf439dec0fd0ce4521e374fd4f49dd32ac33f0a927509f03",
+  "3a91968d735cf69df8392d6f5a6fec40bbf2ded6851c53484960ed512d6f636a",
+  "9112e3279ae703562a286873737c28eb4653efcd32fc900eca740ddbfba31fef",
+  "97aa0ee236d20585e5c922645ef7178138d5334639752983e0f441a71cf3187a",
+  "b6b6c939f71fac60478440766a17105b6e889bc393cb6f224833a743a3f98c1b",
+  "4eaa3030dc320858271b390d3ddbcdc2bd8a29acf1539cea9cdf6586fcc9d35f",
+  "59d21b57cab3046601bada8f15d5611ebafb95779a4cfcca8ff03d07016df749",
+  "e92d755a582841b81a021ef1831f2d7c6abdebc0cf51ea32c7aa94bf570cc10f",
+  "7253c52caf2477c1be8790e7968eb2609f9c77113ca57680b27d222a711e33ea",
+  "7dca170746b6beee319a56c31a444a4999bdd928b9b4cd977d064f3cdd7c6107",
+  "a134deef750e83bfffceb8820df17c7030cf24a78e700d9e3f1f6eb3d84e8d36",
+  "eeec8d2637a1697c16805bb626f25a61b5521e63f1cd1105757f4722861f91c9"
+ ],
+ "reveal": "d4fac1074628767b87ed86229d4eac5662120f2d455dc0a10720"
+}
