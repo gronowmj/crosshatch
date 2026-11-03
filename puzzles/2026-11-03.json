@@ -1,0 +1,205 @@
+{
+ "format": 1,
+ "date": "2026-11-03",
+ "title": "Crosshatch No. 34",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 9,
+ "height": 7,
+ "cells": [
+  {
+   "r": 0,
+   "c": 7,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 4,
+   "n": 2
+  },
+  {
+   "r": 1,
+   "c": 7
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 7
+  },
+  {
+   "r": 3,
+   "c": 2,
+   "n": 3
+  },
+  {
+   "r": 3,
+   "c": 3
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 6
+  },
+  {
+   "r": 3,
+   "c": 7
+  },
+  {
+   "r": 3,
+   "c": 8
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 7
+  },
+  {
+   "r": 5,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 7
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 7
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Pro song makes a mint",
+    "plain": "A very large amount of money",
+    "enum": "(7)",
+    "cells": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Generous nosh made to order",
+    "plain": "Good-looking in a strong, striking way",
+    "enum": "(8)",
+    "cells": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Waffle from tart and panel once father's walked out",
+    "plain": "Soft woven woollen fabric",
+    "enum": "(7)",
+    "cells": [
+     0,
+     2,
+     4,
+     10,
+     13,
+     21,
+     23
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Stage keeps the right expression",
+    "plain": "Small group of words forming a unit within a sentence",
+    "enum": "(6)",
+    "cells": [
+     1,
+     3,
+     7,
+     12,
+     18,
+     22
+    ]
+   }
+  ]
+ },
+ "salt": "a3aceed0ff87ad82",
+ "check": [
+  "50e130770304364374ff4030f03b8bf4a74568f5919da32723464da634786f4a",
+  "bd752a7a4537da0eb8a325d706b4380b8672d1aad5821cc1a618939168aa541c",
+  "b16ae2813b2ce9e554af155c56a6920f2cec1a90987dd28858aa3ffdacc6d393",
+  "824e28f2d625451f10dab5b1f4d09a6095e52592e900ce40fce905ffb31f464f",
+  "fc49eb6881266435792ae6f7b16438a206b78f84d85ec6265618b0b0996e94e1",
+  "c8a9070060357398c2c532e8adec3a80bf4dee736e142a6a5b96542891ac9db3",
+  "780d6dc57b408d988a64fae2ecc73b5e8bc169c65fcf1e1f6b18f14711cfc990",
+  "a1bf563198f76cce5456e36d57caff7b9de1eda05fb3134e5ca69a4ca00784d8",
+  "09963d23d956440056740d56d9cfd3431f44fcc35bcd6516ab85b8c755618737",
+  "9bd2e1effc9fc4bcef00c3cd0b59d1a1a16c9cf6ef47d11f94b53d3e3f0bf2bb",
+  "366cf627c2d09e28677e285062b6d16fed03f0a63e995c078855e782b58c2409",
+  "e32affadcc83285e0cbf8d21691192685f42565f107d826873b5bdecc8dd8a70",
+  "b30d1abedd72df2cdfaed2a46934e06d5b380a11bbf9968bfc1a0846761f8c52",
+  "4704aa3422f50bdf07c91d2ba4ab63db86d094f2bd016ccc7438e2e93204f50a",
+  "3d82a8a94b42e6269aeefe76115beda5d9b80c37bb820499872a7907c9de8228",
+  "4217b18ad3306644be79dcef5f3c8cbf90c8ca02858a229c4da9a44b6f28e4f9",
+  "a465bef30e1d79e3458fcd0f37370d2b9179a205c2f41a7053161dd7ede29129",
+  "25640771122d51b4b462f4284b3a118b5d6e5ba9ef762053930391cddb0aa2d2",
+  "3758010232f6de9a097ef3f75ebfc251b3ec579b256251b3efccc95fa3a1bf9e",
+  "0fdd5b9e53143fe4d5c2cb70d85cd0e69186b9779fbc7bff758ade843967ab4e",
+  "06331f3769ccf665cb96b1f9d9f201529e3d54d59fe533d05df38cd3357307ff",
+  "15c3fb09283267c96859c4c6b22d1b160354a291cf207b31208588f8993c9370",
+  "97bf42ab935e1a12f50ef14e89df8e949266e1b7c148c928c777c25a52b69cf0",
+  "45559101b658c7b4b765a0ff334154eb09d5cd2f2ffbe864169cfd9a70fb78b6"
+ ],
+ "reveal": "75377f50c94db786137ece3467bd4a51542a68263416371f"
+}
