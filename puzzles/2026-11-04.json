@@ -1,0 +1,217 @@
+{
+ "format": 1,
+ "date": "2026-11-04",
+ "title": "Crosshatch No. 35",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 9,
+ "height": 9,
+ "cells": [
+  {
+   "r": 0,
+   "c": 7,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 1,
+   "n": 2
+  },
+  {
+   "r": 1,
+   "c": 7
+  },
+  {
+   "r": 2,
+   "c": 1,
+   "n": 3
+  },
+  {
+   "r": 2,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 3
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 2,
+   "c": 6
+  },
+  {
+   "r": 2,
+   "c": 7
+  },
+  {
+   "r": 2,
+   "c": 8
+  },
+  {
+   "r": 3,
+   "c": 1
+  },
+  {
+   "r": 3,
+   "c": 7
+  },
+  {
+   "r": 4,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 4,
+   "c": 1
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 7
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 7
+  },
+  {
+   "r": 6,
+   "c": 1
+  },
+  {
+   "r": 7,
+   "c": 1
+  },
+  {
+   "r": 8,
+   "c": 1
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Fashionable dirt by railway shows diligence",
+    "plain": "Manufacturing as a sector of the economy",
+    "enum": "(8)",
+    "cells": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Breakout holds advert for caper",
+    "plain": "Daring and rather reckless adventure",
+    "enum": "(8)",
+    "cells": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "North-East draw recalled keeper",
+    "plain": "Official in charge of a prison or hostel",
+    "enum": "(6)",
+    "cells": [
+     0,
+     2,
+     9,
+     12,
+     20,
+     22
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Entertainer's street with Merlin in a spin",
+    "plain": "Medieval travelling singer and musician",
+    "enum": "(8)",
+    "cells": [
+     1,
+     3,
+     11,
+     14,
+     21,
+     23,
+     24,
+     25
+    ]
+   }
+  ]
+ },
+ "salt": "f62b5a111c4e55ff",
+ "check": [
+  "41efdf21546b33984da22ed6ef1461e6598e347b7e235fbc939d57ce59ff0179",
+  "1d63d9375908f9ac1f07090a522d752f6766ed309290c35a81615fc731145b13",
+  "f66ce651437111f0b59cedfb9ccc3de77bf8e04cf41ebfa429f0ddbc6dec7104",
+  "7fcddb5f3de91f7bfcc84acfe32812635ee8512ff902c6d1f02341bc828fa976",
+  "df004b9f7bb23c0241ca5035af536b29f4a846b62a83f56fc41da37791b03ced",
+  "c8726243d13c9732a03cde749f203fa105560fb8192c28c7a46254c5b60d8690",
+  "2ae1861985abf32c832003b822eaf3f8c2bcf53ae672c7b59532fbdd0f1e2348",
+  "7dac140e8cf8ee3efb945e1b66fe491471729652934c8d3729ad7474fe168ba2",
+  "5171e4c67df742505ad678cf34f4bb230bc4bc0deaa9d99664d336a364df26d2",
+  "b1600e9b572af21e91a02076f3c63ffaad1c225c05f4d990aa46984191536435",
+  "aabf11b316441bc4b5ce645a9a6840f20cc6dbca68ed825b3bc7f3742900f541",
+  "3bd1589a8899739618e075b4ae18a4c043cb3de00113e4e043ff8791fd177493",
+  "08cb6e9d1e98f9bbc0781d18bc17da29c2c5c0564516b459291a93267e5c6df4",
+  "4ba9ea09057659ac9341a3564264767f9aaa22801dff8494033446e93b5f3efd",
+  "0a3642a903116854d5adaa768edd3aa5b2fe79a9dde838604b58bda98c5e40a4",
+  "44e8b5750c8cf346f747703ee3efdde80a7cda6c41ab7404e2f7677ece73d091",
+  "fdba0e2aa0ce788764d303f7f24f78a6c3462c590de16e678793734d0dee2996",
+  "430f8286a1948a0d2951c893188f133b6ac9a37cf0d5b0e45094ae542d2bc529",
+  "410b632599f12529515ec0b876d7abcb29f840f0de67732dbb12964adee79a82",
+  "cd6c2a7487adc4a1009489f99bd0e49128eae3cb95b52acc028ebc32a4762fc0",
+  "db0a7896aed53b515f78a00edf3280e7f3a61da8b9a38a2fe9d3313ae62c7dda",
+  "ac298013c4e6a9fee28e610e948318e0560caaa64a202815512838ff7ba7e658",
+  "63598131fe84f39f49ec801fd1f350f54d76817e2862dc40191246244c864761",
+  "1310dd90be8167f5ab39e46a44c715a5ed6933e4fb310144d26625b6e1baba93",
+  "f799c7becabd575bcbf91329ee2319dba09274b502b4fa59bf87c5271d948ac3",
+  "904e358f375feb5d650aa6ed1430dff5d9e082bfc8373961bb0a9a965df3f7e8"
+ ],
+ "reveal": "043bd341a229ac79e8def579d439be4106e9421895685de0e421"
+}
