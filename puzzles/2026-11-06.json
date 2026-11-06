@@ -1,0 +1,211 @@
+{
+ "format": 1,
+ "date": "2026-11-06",
+ "title": "Crosshatch No. 37",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 7,
+ "height": 10,
+ "cells": [
+  {
+   "r": 0,
+   "c": 1,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 1
+  },
+  {
+   "r": 2,
+   "c": 1
+  },
+  {
+   "r": 3,
+   "c": 1
+  },
+  {
+   "r": 3,
+   "c": 3,
+   "n": 2
+  },
+  {
+   "r": 4,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 4,
+   "c": 1
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 6,
+   "c": 1
+  },
+  {
+   "r": 6,
+   "c": 2
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 6
+  },
+  {
+   "r": 7,
+   "c": 1
+  },
+  {
+   "r": 7,
+   "c": 3
+  },
+  {
+   "r": 8,
+   "c": 3
+  },
+  {
+   "r": 9,
+   "c": 3
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Bottle of our trapped in cage",
+    "plain": "Bravery or fortitude",
+    "enum": "(7)",
+    "cells": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Skipper's a pact in disorder",
+    "plain": "Officer in charge of a ship",
+    "enum": "(7)",
+    "cells": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Private for each boy almost entirely",
+    "plain": "Belonging to a particular individual",
+    "enum": "(8)",
+    "cells": [
+     0,
+     1,
+     2,
+     3,
+     6,
+     12,
+     15,
+     21
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Defend soft learning by heart at court",
+    "plain": "Keep safe from harm or danger",
+    "enum": "(7)",
+    "cells": [
+     4,
+     8,
+     13,
+     17,
+     22,
+     23,
+     24
+    ]
+   }
+  ]
+ },
+ "salt": "87844f5213a5e85f",
+ "check": [
+  "3d022cb37ec9f076557ae6676a92e69e0113c2fd80844f0c341fa9fc31e09254",
+  "b33b552c170ca5a7ae0a5ef73c98986c2f3991e6bf8434865161b0989c7e442e",
+  "2e0acdf6ce9986719f647a0a1256e24dd4229b53c0e276430656d2727efd454f",
+  "10a4deb18f2b41b5d127854303c30aae4ac749a749389cca54c2c04c6a6fa4f1",
+  "bf97f21afb3ec456964ecd287ee6bc3a42de574bc4dc6d670a14fd2e951a2857",
+  "d25c8042a96c12bb1f9ae0a1d980b591c8b073c3e18672844665206bb7a6c7be",
+  "72dfb515bf7f685f329ac296887f8515bff5ae7862d8df4ab16fb449e8c93346",
+  "a6abf10d461507779382e3fbcb5529ca48ddd8931239b0828e3e2a9e0f7cfc74",
+  "342eaecc6e75f97309702cba67a09bdb689f81ae9345bc2b7bf11ed1885a9a12",
+  "809e0ffdd8f51659a06a021e88b1d19f104083e32e303217e70683a093777e95",
+  "1dbc8539f1353efb44d81d8a2e375441e4a71f5f37148e5696524e557c71263c",
+  "4aa2c6b7f56af8a7bd23a83f028821001511bd7576cb93ee5cf7244110b2cf84",
+  "8cb349b0ec35ded60ff252d855d77f9b1cc5097ef730da1afb3afbdc548c9d89",
+  "87729d04172be189dbdd588e02678a6799fa0f52d603e4ad37af07ec792913b6",
+  "7b820e52ae776901e0f6ed72f3844b7452ddd4bd4b287d164a2769fcccaf9531",
+  "942a56d9c435e789c058398794bc6c8a57ce59781eadd6f49ce3eba49e2ebf46",
+  "2adc76bfa3422ca24890993bc12c007dd0baa95e30968215b2c92d4af27508a6",
+  "76591bb2a2fed1f21f98d9992f69fd80bc9f71fb9350163832871a1f16525624",
+  "55687b8f107ac095a479fdd28fec912498240baa71777a1b95b285bef263f341",
+  "fee90c9cf9bf3e9455f1024f36826ff1322e936ac10929a6997444fa24127f32",
+  "99bcfd3e5e16c22794ef9b621abc13cb1875559dfb3943f4e1e148fea7a27cd1",
+  "8e4d974fc9b74919cca9b469831a7490059ff3da772f6232f2fc57ea7e899e4a",
+  "582d4a82f007d032e9344607f80757a4544e720c9d260bad39cdf6aafe559ee0",
+  "43aef0153672e6336d45a6d40c5f2170c936f34b4d8265e3b9477bb3fef20094",
+  "73bdf80c6769012f7622e694d87ced5a7f6ee011ceee46eea0f4c01b73fcaf78"
+ ],
+ "reveal": "f3f089657e641ba58555202582802895f6951871343584c94b"
+}
