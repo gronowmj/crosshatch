@@ -1,0 +1,211 @@
+{
+ "format": 1,
+ "date": "2026-11-08",
+ "title": "Crosshatch No. 39",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 8,
+ "height": 9,
+ "cells": [
+  {
+   "r": 0,
+   "c": 6,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 6
+  },
+  {
+   "r": 2,
+   "c": 2,
+   "n": 2
+  },
+  {
+   "r": 2,
+   "c": 6
+  },
+  {
+   "r": 3,
+   "c": 1,
+   "n": 3
+  },
+  {
+   "r": 3,
+   "c": 2
+  },
+  {
+   "r": 3,
+   "c": 3
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 6,
+   "c": 1
+  },
+  {
+   "r": 6,
+   "c": 2
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 7
+  },
+  {
+   "r": 7,
+   "c": 2
+  },
+  {
+   "r": 7,
+   "c": 6
+  },
+  {
+   "r": 8,
+   "c": 2
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Annual check with her old lady",
+    "plain": "Female parent",
+    "enum": "(6)",
+    "cells": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Band, be clear about time!",
+    "plain": "Ornamental band worn round the wrist",
+    "enum": "(8)",
+    "cells": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Instrument found at home in Bordeaux",
+    "plain": "Single-reed woodwind instrument",
+    "enum": "(8)",
+    "cells": [
+     0,
+     1,
+     3,
+     9,
+     11,
+     13,
+     20,
+     23
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Captive multitude grow old",
+    "plain": "Person held prisoner as security for a demand",
+    "enum": "(7)",
+    "cells": [
+     2,
+     5,
+     10,
+     12,
+     16,
+     22,
+     24
+    ]
+   }
+  ]
+ },
+ "salt": "ea497e98b8934832",
+ "check": [
+  "82bb08f7f24b7f029c48d3fe0d90528250a8cf2ecdb7345193f5ce4c3a212be2",
+  "ee005ed5b8ff8c844fa5fa4e25c31819cd3f12ba94a84b2e062fe6ee78d53212",
+  "82190963e9dedd06a177130a8147524462394aa5a6a45ec7b8d855465cc9ccb3",
+  "ec88b9b56fc4b3a0f7b40149f184c9604aa590f4e02a0e39912a55a5f14c4f05",
+  "099bd7be3264dd581db57ef3dd6decebc3c1b49c15faf3b75ab518a74e61f300",
+  "e9eb62b0596ab96561a3e9a5f4a910328315f7dcf70a0e09793e61d15f7aa714",
+  "d94ccae0f72e53566ea1803aa534785074e6ba0df6481b22933e5278cf2afa28",
+  "32c0d44ff6493d58dbb7834a6b95c3b0e7c5b267202a8d41579ef9c16530c254",
+  "1e51f29e89317dae6186f97f1c0cfff4acc89f755f2672d134b5dd9e58133b5f",
+  "413d1dabc3edde874e54002ac8f7294e98614bbd4559dcd4d2b80c7a67b64a58",
+  "ff4a3fc7ce0de06b47455e5d4eb512c29a081ac6aa528695c4f5b30ee417c3f4",
+  "3cd3a92611395213a1d4d970c936d7409632121fc37794a82eea0ddcc76ceee1",
+  "2b52d7d4d3d8b9475ac4022424655bf94ecde3c5c0f405415598eb5f200e08f4",
+  "38aed45082fd3f27b9fd2a6dd8c41e513e00d8586a651742bbebd1919092938c",
+  "4c54e1e34448a51cfa2a32afd440a4273b43942e8c9dfebc6e4870a05bddfaf1",
+  "b384f4e636454906cd69b06fd853833659d2a49fb74c63bffec48aee830f0d9e",
+  "f3ca3c80fd002da86f3f51fc9b063961c0904adb04f3124ab41d71cdc85dfea0",
+  "d2205d00a26a5c81b041ad5815ba7032103cbdf3134f89df0b2366e199e70818",
+  "0a9be5f3de98471c86d3b07e85857d8830785591c30a5ff81a69f633bfba4bb1",
+  "f61a878d90c98eeae6c336267311f0a8d12c5d66cbaad981968a323b4f47bee2",
+  "7b911b5f6fb6d89ad7da1d8d6c1d419845751a3b5629c6cfc8665dc69641faab",
+  "5662ac409370303d40815e98958a0810117dcdfedb511b124ed346df2ced995a",
+  "24359d526dc8afc6161af4fd485c0792398eccecd86a30568e5aeea1eddb505e",
+  "94d55b70f29bc8140812f960a471b386f39ec5f427e9a5ae8c1306c2fd44ec06",
+  "c463003c65dfe79bc79c62c875b8e48e877eeb5355134b3ad73dbbf6bd1354b6"
+ ],
+ "reveal": "333b4a8db558b14c15c1795c70f2c582b947fc21f5f6e407e1"
+}
