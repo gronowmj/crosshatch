@@ -1,0 +1,211 @@
+{
+ "format": 1,
+ "date": "2026-11-09",
+ "title": "Crosshatch No. 40",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 8,
+ "height": 9,
+ "cells": [
+  {
+   "r": 0,
+   "c": 2,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 6,
+   "n": 2
+  },
+  {
+   "r": 3,
+   "c": 2
+  },
+  {
+   "r": 3,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 4,
+   "c": 1
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 7
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 2,
+   "n": 4
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 7
+  },
+  {
+   "r": 7,
+   "c": 2
+  },
+  {
+   "r": 7,
+   "c": 6
+  },
+  {
+   "r": 8,
+   "c": 6
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Flourish trademark, more or less",
+    "plain": "Wave about threateningly, like a weapon",
+    "enum": "(8)",
+    "cells": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Manage a fine river crossing",
+    "plain": "Have enough money to pay for",
+    "enum": "(6)",
+    "cells": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Rickety table stocking fish proves a sell-out",
+    "plain": "Act of treachery or disloyalty",
+    "enum": "(8)",
+    "cells": [
+     0,
+     1,
+     2,
+     4,
+     8,
+     14,
+     16,
+     22
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Jam quietly dropped for a substitute",
+    "plain": "Spare player on the bench",
+    "enum": "(7)",
+    "cells": [
+     3,
+     5,
+     12,
+     15,
+     20,
+     23,
+     24
+    ]
+   }
+  ]
+ },
+ "salt": "dcd78f297cf505fb",
+ "check": [
+  "595249c0eb242b98db9ebd5fbedb48de014da7b8176feca31c60db92ee886c27",
+  "aadc5a2ce2e99dbeaedec184d591d0d0088516d445c54ad1eebee1f1bcbf5653",
+  "3221b8693145f2a5d44742a90493266b437745ec146194fdc4557caeea7dbf45",
+  "d345c4de73c491ebba583786e35193c22e5aa04523177f28e624e62227254669",
+  "dc7861832cdd1b5e524e30cb9ef6576449f77a1a32cdd525d22d9cc302f83870",
+  "2f53e77297bcb3703231920e6c344d98f2266cd5a64e45023ecb282b99658b3e",
+  "0083169d13a6ba62f966dc44f7c994656e0e26267a7de97148167b0dcceefa08",
+  "f22d4f7ccbebcc76519f1ad68ce840b0bc340099d7bd67c3b7ba04bde919b118",
+  "101445e42fef78bedc4f6ff298d009cfbe5c58dc01eef93403f0822da75a99a3",
+  "a93cce37cd2cb22a1edea37ad3c31d4d01b9c2a6771e67b55532419b4c69263b",
+  "feffa2636a657d2976376073145e6c49573a20f9ceb8b1fcfe4b5ede2ec9cf3c",
+  "75d0f4fac625e0c85cf8f10d7d40ddcbe5b2f0b73569fb2dbe981df2ca0d6522",
+  "5dabb5508d754d35413c4772107c5971fc326c7fa093dc716b0316bd70c81515",
+  "34f02174f570700a683487347bfa49d8854e0dede2ce2be84cab3c9c77953962",
+  "1099c32e55d767739872dc1731a084cb1b896a053c1fc074c375313645745fee",
+  "00654585c864351f508aca59f670b4c76a963b4532dc85eeff1fc926a0088e93",
+  "27a97f8641bdde9b416452dc345de0bb73df0ef70c0513497651995b3eaf8a76",
+  "9b1057a203bb4867a000b7704942132a84959f3dcfc4308e59317508031be28d",
+  "480ee43694fd160c974f2acde66ba241378441b18474d9474ecc631b5da3e3a0",
+  "f194464b77d3e5a212c2697ab6cb6653b626018776e65fdf236d698ca24eea87",
+  "2f770feff68e955a166c3f4c690cf5d8b1d84e1d5fdc519547c0b051d97df78d",
+  "491d99ba0e565e69c8b3ea004b8f3623a1b838b5fe2d2a49710616bbcc73a326",
+  "f0ae8da6b613c036e2a20f11005fdc0d1a2528444793a0f842f0ead3ba57e145",
+  "430603d2510d52795ba251e88a899cbda833bde0cfb51b343da042fc86fc5dec",
+  "4f24f88459e64d8f7a6a1da4b17d9eb6e992fcc1ea8a708176ee7850f4cedb6b"
+ ],
+ "reveal": "7068791f38b07b8d717757e606763dba0adf93e6ea4b3e50e5"
+}
