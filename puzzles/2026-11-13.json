@@ -1,0 +1,205 @@
+{
+ "format": 1,
+ "date": "2026-11-13",
+ "title": "Crosshatch No. 44",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 8,
+ "height": 8,
+ "cells": [
+  {
+   "r": 0,
+   "c": 6,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 4,
+   "n": 2
+  },
+  {
+   "r": 1,
+   "c": 6
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 6
+  },
+  {
+   "r": 3,
+   "c": 1,
+   "n": 3
+  },
+  {
+   "r": 3,
+   "c": 2
+  },
+  {
+   "r": 3,
+   "c": 3
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 6
+  },
+  {
+   "r": 3,
+   "c": 7
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 6
+  },
+  {
+   "r": 7,
+   "c": 6
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Red son leads cartel in disarray",
+    "plain": "Brilliant red colour",
+    "enum": "(7)",
+    "cells": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Something worn by chap concealing weapon",
+    "plain": "Article of clothing",
+    "enum": "(7)",
+    "cells": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Wall hanging records attempt",
+    "plain": "Woven picture hung on a wall",
+    "enum": "(8)",
+    "cells": [
+     0,
+     2,
+     4,
+     10,
+     13,
+     20,
+     22,
+     23
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Police seize vessel to sell",
+    "plain": "Place where goods are bought and sold",
+    "enum": "(6)",
+    "cells": [
+     1,
+     3,
+     8,
+     12,
+     18,
+     21
+    ]
+   }
+  ]
+ },
+ "salt": "b2295c4f1a13c960",
+ "check": [
+  "6f61c148dad4d56e4b2aab8c3fbaf42f83da2b6c1e36f614f81a8f2e80372d72",
+  "1332e1e2566f103870b231ab4559b115d974ce577a7d5a832ac281a00c344385",
+  "02c2b06e38a40921f764a966e2f20c1a8f5786933edbef5fba6d31a80edb8fdc",
+  "d9b2f0198a034e481f9fdb5847d49b24bbaa232014cbeb91009857e90da008eb",
+  "344067bfe82ec8e09887e459b8a3afd508957b34fc1a61a834c995ae20f982ce",
+  "ba121d58fc3d5d0bf6f321ddeea55993601031217141c331b1b8726e4f20400d",
+  "344188975c3761904c947b7828c7f52d902d8046e2b188b219558928b17d5e0e",
+  "f330bd4fb8d4ef68f59e82a25816926fc8e11b8c4b86fa43eb3f46d7fd8c2549",
+  "cc961ce8a576f471825cc2e075c4ee0add67f9c61e3bb98209d694e488914912",
+  "e02f3573d58c55314c6ef128dc4b4aa1c9b13a1c039fd15df088caa375ccf441",
+  "cb72a30fbe8321f3335a21c6266b434314b18d9b7cf749d8bdfbb63081597823",
+  "0c99a860771890a540339627d0185ffafa09ec6aa7f9de0a587cb1b4d0a4370e",
+  "e1962b05e7f3ede8d3286ecb37bf81f536e01451b4655357f48fa0b6a495da83",
+  "7f12bf549edb3835fbcc469492ea0a03d087e634e2140114b2dbffa6a2551539",
+  "55e29377fc46260c5aa56b383e0c4d3221792abcc593508f3bd1ab5fe57b4a90",
+  "3abeb3120f7a1db5e5de8b736d021dfb1cf49fb9acd7afb25d4db9ab6a4a2e9a",
+  "55edb71ea5907343dd28527eb75b3ade54fd2bdb04d81d7238b67fd3108f31dc",
+  "f180a240ecf4bc49b1f75bf3c36b0aa4a03adf5688b138877f8a1d7de2a912c6",
+  "1a845bc56e95663905aa680e5d1d16e22153677e4bd1c8098c7af269b2d3d853",
+  "2290fb56afacb7746c6a584782d56eb0f298eb96a261d79259f730a394c213d8",
+  "3088347584c7b118e0b94a15dfdc4d6bb830728bbe08bb175d38748e778bb1c7",
+  "0929b1f35875553b0a6a1d39c33481ccb4f627ddb78f08f1c8773b5ad042ba3a",
+  "a7850dc7d702fd1c1609ffd637caf8f94c9162ef9a538f4d0609024811a20446",
+  "7c0f563f0cdf260264212cb76c133a6cee8f3a089fc467e87ca74db9cabdd124"
+ ],
+ "reveal": "091dda159c7db411a62b98909a261a42bc2f2713072525a7"
+}
