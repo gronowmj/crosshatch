@@ -1,0 +1,223 @@
+{
+ "format": 1,
+ "date": "2026-11-14",
+ "title": "Crosshatch No. 45",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 9,
+ "height": 9,
+ "cells": [
+  {
+   "r": 0,
+   "c": 7,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 4,
+   "n": 2
+  },
+  {
+   "r": 1,
+   "c": 7
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 7
+  },
+  {
+   "r": 3,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 3,
+   "c": 1
+  },
+  {
+   "r": 3,
+   "c": 2
+  },
+  {
+   "r": 3,
+   "c": 3
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 6
+  },
+  {
+   "r": 3,
+   "c": 7
+  },
+  {
+   "r": 3,
+   "c": 8
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 7
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 7
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 7
+  },
+  {
+   "r": 7,
+   "c": 3,
+   "n": 4
+  },
+  {
+   "r": 7,
+   "c": 4
+  },
+  {
+   "r": 7,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 6
+  },
+  {
+   "r": 7,
+   "c": 7
+  },
+  {
+   "r": 7,
+   "c": 8
+  },
+  {
+   "r": 8,
+   "c": 4
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Locals upset sister about study",
+    "plain": "People who live in a particular place",
+    "enum": "(9)",
+    "cells": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Trouble as monk loses right",
+    "plain": "Fuss and inconvenience",
+    "enum": "(6)",
+    "cells": [
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Hothead brought up advice to sack",
+    "plain": "Fiery-tempered person",
+    "enum": "(8)",
+    "cells": [
+     0,
+     2,
+     4,
+     12,
+     15,
+     17,
+     19,
+     24
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Prevaricate, then quarrel over field boundary",
+    "plain": "Line of bushes bordering a field or lane",
+    "enum": "(8)",
+    "cells": [
+     1,
+     3,
+     9,
+     14,
+     16,
+     18,
+     21,
+     26
+    ]
+   }
+  ]
+ },
+ "salt": "59bb27c2a0d95a1a",
+ "check": [
+  "d548a34fc844d3ff17b13489cd5a4674244afa03f0b57672b6bacdf59add6b1e",
+  "4ac5473a9c8e056fd45e33f4a3fe7a3ddc64480f55cbcd72f1765e3387fe34f1",
+  "0805d59381b94757f7e422d4d04cf76b6e3cbf902518a01550d38384b8eb4841",
+  "db658e96f5710d72ac6f838bdea321ce73a7944c3e0fd781b2a4483217e6d7d5",
+  "c859b7e9e15db40152924d80270aa230c075e7d763e10c1bbf6768920eca8156",
+  "6a367605cf773b59ae077507f4f81a0013f6d46e9d0308e8660478bf43d4e611",
+  "c095351728e57bff7ffd4db4ac390410828d551add8eed6cbaf520bd3180dcc8",
+  "6913e3201c0c9f5e432252b373a73c8f5fbeeeddc2683afdfd99150c2f851907",
+  "1a714b27d93c5c1dc764ac07c9d06638dcab81c39f5590396beb232bf2a014ef",
+  "51e46d8ebe6ea668a7bd6e1b586421de137333d95ab93b948a78c2e936a1f3cf",
+  "14418cf4b27fdcfe9dc779dc72d7c87d702fee54aa603fc14a2bc594034971de",
+  "08584b479e4df961f2e639b5d137ffcbedb9c80dc8a87da4b2bfc0f6ee0c1700",
+  "fe8dd2e68d6d625f3d1700b8e0046adcd6ee450016b2e0c58630793792c7dbc3",
+  "7e2ddeb9e26c3f1593eb49e147e2e05897abb1cd5188d6252d0568ab79a07006",
+  "3fd5edd96572107f5585f72d349afc013e5bf8a03ea046c1c815bdf0101d08f3",
+  "efc1d888d0fe7e639d40cac5988718d5452d03b219e778beb7530e49d82cd627",
+  "0307ca9daaf646b0fa6e2620ba2489cc7b62dc282d4047f679a1c5fd12766783",
+  "13bc145e0f8ab9485e24db19193bbce755fb6afca7ab1ef7267a05664fc70449",
+  "92fc4efca550a483813e6be41d7729937c8baf229a4cd078f7582a75f90113fc",
+  "1c461f1cfdd08cccc1b1e4ba0918a7209a8805f538b8136fbab3b73aa75c91d0",
+  "d3c025853d8e6358489d2e04c648fde4f6201867c62c2d12610f65ad9a2e8cd1",
+  "d507bb3637e2d166ac33c07bc1f1f57a90bd7abf6692c04b88c9edd64a6947eb",
+  "fa9fbc74931cca165c72a40fbdbe143d76659d0fad8463b8a4b285428cc4f77f",
+  "bbf180703437528439fe860854f8035b5c78c0a3066a919472ae9233ff574f6b",
+  "a136278e4076ea2afa5bf7f31927b4caebfb1d20099f8d62db3683f1d0cf34d8",
+  "398b535bfe426d2d0b39f52aa3d4bc0a2baabaff78502422dc68d029a17579ef",
+  "76f773c8ea0781705ccf43f0fffd6429f56e299445dda94513fb192f4d97cc2e"
+ ],
+ "reveal": "2992d64c99c6411f68a7660ddd21e47b0a2d05b1f76436802d3642"
+}
