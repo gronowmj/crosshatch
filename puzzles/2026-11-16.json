@@ -1,0 +1,229 @@
+{
+ "format": 1,
+ "date": "2026-11-16",
+ "title": "Crosshatch No. 47",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 10,
+ "height": 11,
+ "cells": [
+  {
+   "r": 0,
+   "c": 6,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 6
+  },
+  {
+   "r": 2,
+   "c": 6
+  },
+  {
+   "r": 3,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 8,
+   "n": 2
+  },
+  {
+   "r": 5,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 5,
+   "c": 7
+  },
+  {
+   "r": 5,
+   "c": 8
+  },
+  {
+   "r": 5,
+   "c": 9
+  },
+  {
+   "r": 6,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 8
+  },
+  {
+   "r": 7,
+   "c": 2,
+   "n": 4
+  },
+  {
+   "r": 7,
+   "c": 3
+  },
+  {
+   "r": 7,
+   "c": 4
+  },
+  {
+   "r": 7,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 6
+  },
+  {
+   "r": 7,
+   "c": 7
+  },
+  {
+   "r": 7,
+   "c": 8
+  },
+  {
+   "r": 8,
+   "c": 8
+  },
+  {
+   "r": 9,
+   "c": 8
+  },
+  {
+   "r": 10,
+   "c": 8
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Flower pots sent back to battleaxe",
+    "plain": "Garden plant whose flowers open like a mouth when squeezed",
+    "enum": "(10)",
+    "cells": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Bad actor's rest disturbed by pet",
+    "plain": "Small rodent with cheek pouches, often kept by children",
+    "enum": "(7)",
+    "cells": [
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Countryman swallowing hard game bird",
+    "plain": "Long-tailed bird shot for sport and food",
+    "enum": "(8)",
+    "cells": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     12,
+     16,
+     22
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Royal hanger-on with no time for messenger",
+    "plain": "Person employed to carry urgent packages",
+    "enum": "(7)",
+    "cells": [
+     5,
+     14,
+     17,
+     24,
+     25,
+     26,
+     27
+    ]
+   }
+  ]
+ },
+ "salt": "a23c2bcde72c6f2b",
+ "check": [
+  "924bc5e44ffb6f22f832e7a321f6fd463d93bcdb01a1ad7d96487e5cf95ba42c",
+  "85ea15ca1357fc8ea935bb9dca22be4064fc3c5c0e3d86ddc0a632ace0a68ff8",
+  "53a3e611ebb43311a3dfaa93604b431e75cf5ad4ad44379acf775f606247edbb",
+  "6cc206a40cd3be26c80863b216c546541babf1f5a381ca1557fd2d35dc43bb57",
+  "e0656189b9df7c6d7868c367cc4d2aea15c4faa7ee6d1237404b559fbca8d098",
+  "a15dc8c2b3a17561ec02da134df421b7b36ec01c4cb4779bc83f4a156def8082",
+  "a78a32ebb81ba1eb22c2ace0161d15f42e5f0c4ebabfa91cee8bf8a9293fceb5",
+  "18fda67f10476c095042fb853049c7c10d4852434c7dabda3c942f7069332846",
+  "8bc62be3b2c2f06907217e5abc09463e9b9e63ffd886358d63e7cc9d59691599",
+  "920c14e5ae257a51cf0a9005b46b541f2980ea1c89ef6a82a96b6c0f1ef27f55",
+  "4f437536c25f6bc1f0237da305300230fa3803b8ed708f030f6133001fee3704",
+  "ea0b6065a3ffd18706e04847405202e8b1b475d814cf61ca9a4d27a0897437c9",
+  "d07a8956a494c8bcd3b172b853c9ee23f4c1f422849e4340fef79750eb144748",
+  "f567c0588435227623ac9b08513e75f9ea99cac42182428774d85b37f2bdc765",
+  "a30931bc5984b928a2c9e2e36f297fbd3d3b456539f55942684350a16adeeb9d",
+  "53eac647f6c848c4b6b3f5adf806d56dfd04321035e0436720dc96dbe64ca53a",
+  "5540648e95c062e69b9d5f31b6ab3a4d23e7c11018eb4cab9edea3cbcf1a614f",
+  "eabcc9d97a766fe05f4f3d7ea3424a28cfe9d689d41cf9c55756f0e8b5eb7902",
+  "c94ece14192269e6c3041d0f1e28c97943c3b2f600ab72339d50e40345bd6994",
+  "d70f722ada713db78ab7a348e06b25ea77e55f8d64c34ef406ab5fb63b8b1209",
+  "4e9e711273fd5625e4e2b1619407c1adecab7bbccfd5faf95f69f9ab68956784",
+  "3c2bc22ac08ee35e709956ae932926d8def7df434f89997b4205a0b46526a71f",
+  "801bb33486404876cb972bd833621171feb1f6b4739f8580bc3ca9feec612cbf",
+  "e8858a59bd27ca5df9a3c34440aa3ee257d8ed9cf80dadd73a5afb673a0c19b9",
+  "8f106003825fc480901933b80147590d121147aaecadee6e3abe531510dd5bd6",
+  "8b6c866f8dc581bf1fd959a7ad7392167141260da7c0deb253a3497e1cfea604",
+  "31608df3ff00047ab27397dde8885815c82d8cb73e1dc0b22cae40a2fe3529e2",
+  "e35542e37ae11b4e07b16ab51b6690b20c7559c2dd2d3def64f27dd65469dff6"
+ ],
+ "reveal": "2b19dedb17a4b9c68a84ea190e7b482fb5221ad092ca4de61e3ced4b"
+}
