@@ -1,0 +1,247 @@
+{
+ "format": 1,
+ "date": "2026-11-17",
+ "title": "Crosshatch No. 48",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 11,
+ "height": 10,
+ "cells": [
+  {
+   "r": 0,
+   "c": 7,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 7
+  },
+  {
+   "r": 2,
+   "c": 5,
+   "n": 2
+  },
+  {
+   "r": 2,
+   "c": 7
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 7
+  },
+  {
+   "r": 4,
+   "c": 2,
+   "n": 3
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 7
+  },
+  {
+   "r": 4,
+   "c": 8
+  },
+  {
+   "r": 4,
+   "c": 9
+  },
+  {
+   "r": 4,
+   "c": 10
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 7
+  },
+  {
+   "r": 6,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 6,
+   "c": 1
+  },
+  {
+   "r": 6,
+   "c": 2
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 7
+  },
+  {
+   "r": 7,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 7
+  },
+  {
+   "r": 8,
+   "c": 5
+  },
+  {
+   "r": 8,
+   "c": 7
+  },
+  {
+   "r": 9,
+   "c": 5
+  },
+  {
+   "r": 9,
+   "c": 7
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Lead actor gets on the right side",
+    "plain": "Right-hand side of a ship, facing forward",
+    "enum": "(9)",
+    "cells": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Dog I register as a boxer",
+    "plain": "Prizefighter",
+    "enum": "(8)",
+    "cells": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Dentist working round convict causes unrest",
+    "plain": "Dissatisfaction",
+    "enum": "(10)",
+    "cells": [
+     0,
+     1,
+     3,
+     5,
+     11,
+     16,
+     24,
+     26,
+     28,
+     30
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Neat craft sailing back into view",
+    "plain": "Without a bend or curve",
+    "enum": "(8)",
+    "cells": [
+     2,
+     4,
+     9,
+     15,
+     22,
+     25,
+     27,
+     29
+    ]
+   }
+  ]
+ },
+ "salt": "2c689fbddd071103",
+ "check": [
+  "694a390049d800b4fef4cd37cd90161b772e743f6e7c298a0d2381df7cc5cd44",
+  "698656bb76509ac640c3929e05f64a39bc25c7c4ac439b046339b13a5752cf24",
+  "3302c63e46602543b5607d2b097c55ad631150bb00ca3486a28fc0d51c7f5ca3",
+  "b73cf304deb5f09833ef6d087e372937882e30207dbf48633c558ae871826957",
+  "5a4ef23435e6a672bee12d19500fb87c1c47670bc038e4b8df42cf8e7dddb4f5",
+  "b7e7d030cf1db118c440606192a09d600d14f85f7ff283d7fdf69c994b7679f9",
+  "9393bdac3d930de718469499d112f6a774bcc809460be5aa5d15d2edea0fb229",
+  "c7ca1cbf68d2dfee5859dc4e1bab389e61770e5dc8942bfa40d3807c1be01822",
+  "b1723b3b7498881e26ce80a17eeb55212b3d0c6eac5182ffdd01325a9b29d026",
+  "13c88846a4af2554593de80a2ed58e78bca59687d984693d544d9343fa121f7a",
+  "ff4b5428999ee84a96df092ef535f6c3f236056886b5bd838fc19f24267be630",
+  "d762a4c85e10b9a51592a7628f8d3fbce2a219cb9a1ba759c10b642062475ae9",
+  "4dd9ad6239738040506044326c7b8f25099d33f8dd129f0bff8847b10647f9cb",
+  "acf6a2d08326ca8e8f2c591f2a73d9a4f2ad23d581bbcf5ff3b893ec53c76c80",
+  "90d76ddf334ff28652a76e21b72449758ec76c4ae29e394cd7475c5a61c90fcc",
+  "9d178ae6f54a4f881d373d38233df06d9912e5aab2e04fc781a031d6ee43444a",
+  "a8713ef13a9a71c40e0a03b635e49ce62a34237ba17baa91af6948e7b752dbec",
+  "9917210666deab3f542503255c884584c8afac1e596b1a477e6fc7e9dd63c828",
+  "03191671f1a0d4f8c6e6987c37ffeea49a7292b6d28035ffe73d771bb560ba5e",
+  "883aed181f216e1f695e111950f9b8f74237366e871880d8f916ed91748edb70",
+  "646c2b097110f3ccae87d2b5f4ab77a2d1fc60ff813442f4c5cb4812c4036c76",
+  "a808e555c16aa287d3ddfd8451adab1ca6ba1d5328a79bd286ac5f1e3f181412",
+  "7422264f06eb9860c20d42ba854ec616ca5b4380b53e8c2984018776aec9337d",
+  "c560b70b3889fe64923e0d570b90d26e21eef4e18d1befdb29e14f4366209633",
+  "97dea6e83432c50e0f86a6b4ba818a14af90f35378d9bb48d9d91a65ed5d00c9",
+  "7304db31252f6018b72215b28d807a55d49b472ade7947c4fe1f23e4015940b9",
+  "b359682fc20ff34014ec56297215ce3128c380cc6c5132775b652050391b8988",
+  "c9b597630924ab97bafe05ecde819c766f1a3680829ff0e662c387a59434ec69",
+  "d38814979f34945cde1992ac1a96fc868f3530fe712164ef7d2abf59437dc8cd",
+  "ace053084be45674ca45d412fd5c02301ef695d0be3b1da9b49393226af66e3c",
+  "3ae94996a8529f4e189f5496eefca7a7cfbd89ad3a00fd542217dfefdb5ea00d"
+ ],
+ "reveal": "60b23f54dc8f3fe26bf1a1d8c432abd7f58c41f5ba51205821e87f4209bf6a"
+}
