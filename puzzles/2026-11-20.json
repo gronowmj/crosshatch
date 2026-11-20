@@ -1,0 +1,217 @@
+{
+ "format": 1,
+ "date": "2026-11-20",
+ "title": "Crosshatch No. 51",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 8,
+ "height": 10,
+ "cells": [
+  {
+   "r": 0,
+   "c": 5,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 5
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 2,
+   "n": 2
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 4,
+   "c": 1
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 7
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 2
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 2
+  },
+  {
+   "r": 7,
+   "c": 5
+  },
+  {
+   "r": 8,
+   "c": 1,
+   "n": 4
+  },
+  {
+   "r": 8,
+   "c": 2
+  },
+  {
+   "r": 8,
+   "c": 3
+  },
+  {
+   "r": 8,
+   "c": 4
+  },
+  {
+   "r": 8,
+   "c": 5
+  },
+  {
+   "r": 8,
+   "c": 6
+  },
+  {
+   "r": 9,
+   "c": 2
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Supporter's father trains badly",
+    "plain": "Fiercely committed adherent of a cause",
+    "enum": "(8)",
+    "cells": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "num": 4,
+    "text": "World's factory consumes energy",
+    "plain": "Body such as Mars or Venus that orbits the sun",
+    "enum": "(6)",
+    "cells": [
+     19,
+     20,
+     21,
+     22,
+     23,
+     24
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Touches down at point offering a view",
+    "plain": "Scenery of a stretch of countryside",
+    "enum": "(9)",
+    "cells": [
+     0,
+     1,
+     2,
+     4,
+     10,
+     14,
+     16,
+     18,
+     23
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Sketch for column",
+    "plain": "Side view of a person's face",
+    "enum": "(7)",
+    "cells": [
+     3,
+     7,
+     13,
+     15,
+     17,
+     20,
+     25
+    ]
+   }
+  ]
+ },
+ "salt": "fedfd89eebee7afa",
+ "check": [
+  "d767e7dda02eb1b7f7f9d947534b6f13faab21591d149b946d22bf5cf2ac67ad",
+  "01885cf4b01e9d189e497300dfdefbd1c7ac106729eeb37c15e538644e160902",
+  "87a8e62b8cece77d806ecef2c2202552a08b5573fe0da9d33f36e31882d328e4",
+  "638a6786eb8ddb7737cd606a1b1a6943d890c04ff73e59f58237afd1a988400b",
+  "bad7071500ebd8f4013d2158d952b504544520c162a8672d967832b0a5d1c0bf",
+  "1c2595a2d52f276f7f7e0c29e1fa34e489fed8a09c103b34cbc73e8126ce816d",
+  "91d30398fa2c4b9f5dcadf78c66af2016def883af69ae6a08cf793a1db8c80b9",
+  "8642f1040ac95539ae17a8f4aed009b91808ec4a6638bb3dc17a3f27757ebec3",
+  "7e7680628f9941a57212169239ca8973a847ba7d82ac9c652ba4cf704a4ec533",
+  "6ba59de3bf5501717bcb62337800eae777cdedb7a36fdcf165a81348405a24f0",
+  "8c61a3acd2b14f34838805173431bc848f63e61087c2c94ca1ffaff61157df19",
+  "332200c61674313888a339e7340877ededb419425dcd66eb805c4730ad03baf0",
+  "a870c52d36e8bc7be18ffa57c51ac25d2d296875a4b6d3d033d0b5d923e40794",
+  "96c72048c36ed6bc351e092bf5f3fe9067181fcf3d83626a45ff5074c3f6fb8b",
+  "37978876c9cc9fc8e4297e1779b3461fe2e246897ab730e36a8ae6d7c4dd46b1",
+  "23837689b09a8d2ea55c9ac53f0489a94def64d53dddb7272cb93c567c80fbcd",
+  "64ef799754ed3d23433f2633c4d6fa9e95b444ee21df3f40d39e69a2607dec32",
+  "8eb9c69c27c54c4a72f55614b824c4469d3d4bb00c18245cda8fc364ea07d53d",
+  "307b2ff6883c5459eef52291ae359b32c1a6fccbba852ab8b0ceddabdb67816a",
+  "53ae6e993b7ee83f23e49dd6af4c16f60414e137883941d2b5f6307ad16d1a97",
+  "021acce1e575cd553a6537e015b38ea130b611a6e648ad54a7d7ef971d01783c",
+  "e8b53363a69af316da3027a142272d4f764a1b470965b34357f577386b730cd9",
+  "a4c88716f897b11c912592bad1e18de0fe41379a8020f08babbe3469e8895291",
+  "ca4a33f0b617e9a55bd2b14acc55bc259abde6a0ac1d6ad6e7b7a805c33dd619",
+  "103e9488839bbade023ce2a7f91fb95cccf4372b847aa0499c8817e86f48d807",
+  "c9d0e84dc6e230a8d4a716c41f0042faa07203bb3a6f311c6e8f0b64d1fb1024"
+ ],
+ "reveal": "e8e19bb995a9dfb9cf6cade18e5fbb354abfb648082d268678c8"
+}
