@@ -1,0 +1,205 @@
+{
+ "format": 1,
+ "date": "2026-11-21",
+ "title": "Crosshatch No. 52",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 7,
+ "height": 10,
+ "cells": [
+  {
+   "r": 0,
+   "c": 5,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 5
+  },
+  {
+   "r": 2,
+   "c": 2,
+   "n": 2
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 1,
+   "n": 3
+  },
+  {
+   "r": 3,
+   "c": 2
+  },
+  {
+   "r": 3,
+   "c": 3
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 6,
+   "c": 1
+  },
+  {
+   "r": 6,
+   "c": 2
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 6
+  },
+  {
+   "r": 7,
+   "c": 2
+  },
+  {
+   "r": 8,
+   "c": 2
+  },
+  {
+   "r": 9,
+   "c": 2
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Tell story backwards during religious education",
+    "plain": "Give an account of",
+    "enum": "(6)",
+    "cells": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Dad gets stern, upsetting the folks",
+    "plain": "Mum and dad",
+    "enum": "(7)",
+    "cells": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Reach agreement right away",
+    "plain": "Get in touch with",
+    "enum": "(7)",
+    "cells": [
+     0,
+     1,
+     3,
+     8,
+     11,
+     13,
+     19
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Left with a share in the exploit",
+    "plain": "Went away",
+    "enum": "(8)",
+    "cells": [
+     2,
+     5,
+     10,
+     12,
+     16,
+     21,
+     22,
+     23
+    ]
+   }
+  ]
+ },
+ "salt": "ee6ef12f77e44e60",
+ "check": [
+  "6514fe9575e2f6c2ee26943814e27cab23dddd8aa7146f42d91675d814009b18",
+  "aa1fc7d138d17fa27ab283251c256c1eaf01897571a9a4c9bb943c246b496512",
+  "651fba8d9c9e4f4e5f9a4f53cbcd63645802dd60381370bd3d78c63e7a4761bf",
+  "74b6778697ea9ebb66f83e1294b9d24901ee2c50bcbffd47fce7ea7a1d4f8d01",
+  "703f063ed183b43392d9817f02a5a5335274615d1a26174a6efe11ad0c0555dc",
+  "0bb9953ebebea4946cccb14929e0e23232f4571a2b82606fff2d1b75473f6f1d",
+  "c26b01714280462e3833a33bc910fe64d601d68c2a2793b6739101647680434f",
+  "ff2344116ba98b76208882579ecd2f4f74342b6b1faae09f6599ac0d1b2cb9e6",
+  "f4c42f6562318f9f59a557420ddb4f946cc30a6a591c04bb71e7e2c30828e6cf",
+  "711234a8d197dcbe8563fabfd812940e28f76f73c5b831cc7ddfe6eacb1feeff",
+  "97b3bb0475503427243be7824595655ae85bbb2af1d5e91c6798cf43ba52b531",
+  "6a4525a292b5b0d99129450dd2eb0bb906b7de795169df749c247b103b19e683",
+  "d0e07adc31b9c2c46530d1e125e38739ec9ad7c2f1ef1b8cdc799e2d2d826044",
+  "6915525ff7634588de8af07904e3fdc8db7ed4c8555be6182a2c8560f6b1f143",
+  "bc335834a93b7087961d82749cfa9ff8ec5afadfff168ba7ee428486e1e5d5c3",
+  "bd08cb9e4bd33f6f53605e5230091c770c65bfe8b9b833a460c7e6a743f72f2c",
+  "b1693ddaada0ec0e90f98140400a7bc0d080d10696fa8e6cb1fb627938789b47",
+  "9d01f5381d75ef78ab5adb63bee2304cb0f4e6e210c45525a7e84f929c942fcb",
+  "9892c68e6098c25a9a0580d6632c9658536fb2008947b9f85383f0d641322aa0",
+  "0c73edcd889cc21c7af77d011b665b831b4c28425a270668f0a7cad6aa0ab6be",
+  "29462ffa87de77cfcff36194abdb9ab9099aa2409e6fff1c1e567da049bc193b",
+  "e8dde90c6a52ff7911d7da15815953100e40d46e953430a7590dff7df463564b",
+  "f720bf154390ab4e406bc1766788743cd07cc3aa90a6d98c70d536b55dd188ee",
+  "d969f16d4d8373ab215d49d40c34eaca9369fb29c2c58a1093bd337a8cae6967"
+ ],
+ "reveal": "613a93fa854eb44e35af4c14eab0da863fbe35146daf38f5"
+}
