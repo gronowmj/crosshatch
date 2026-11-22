@@ -1,0 +1,205 @@
+{
+ "format": 1,
+ "date": "2026-11-22",
+ "title": "Crosshatch No. 53",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 8,
+ "height": 8,
+ "cells": [
+  {
+   "r": 0,
+   "c": 1,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 1
+  },
+  {
+   "r": 1,
+   "c": 4,
+   "n": 2
+  },
+  {
+   "r": 2,
+   "c": 1
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 3,
+   "c": 1,
+   "n": 3
+  },
+  {
+   "r": 3,
+   "c": 2
+  },
+  {
+   "r": 3,
+   "c": 3
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 6
+  },
+  {
+   "r": 3,
+   "c": 7
+  },
+  {
+   "r": 4,
+   "c": 1
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 1
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 7,
+   "c": 4
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Flip-flop concealing a hundred causes outrage",
+    "plain": "Disgraceful affair causing public anger",
+    "enum": "(7)",
+    "cells": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Rental redone with new light",
+    "plain": "Portable lamp in a case",
+    "enum": "(7)",
+    "cells": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Clear call to delay endlessly",
+    "plain": "Very clear, high-quality glass",
+    "enum": "(7)",
+    "cells": [
+     0,
+     1,
+     3,
+     5,
+     12,
+     15,
+     21
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Keep muck a very long time",
+    "plain": "Dark underground prison",
+    "enum": "(7)",
+    "cells": [
+     2,
+     4,
+     8,
+     13,
+     18,
+     22,
+     23
+    ]
+   }
+  ]
+ },
+ "salt": "44c38b03a244d0d4",
+ "check": [
+  "55b4012a73c262fcdd008728a2182562297457bb792f60a11e1f2d514a68b9d1",
+  "b9a20c8392c411bb96cf65a9f19c377348aff750460e0f7e0ab57443ff98abc9",
+  "fd6d5a2b462db6f4e1f77a08278a32d01dc0debfb5d3c3074cb1f46ceb3434f8",
+  "a1f245e18d8a19e127fd92ff8c7fa4eff6a812618c4bf0736bbac33a1a39e50d",
+  "6d89d29b51a3f8b1a2817556a7c1461f635d6e898eb196784cf8c082853df6bf",
+  "a1256f41c238010b7d8c5a499111446bcde3578d0f5f8941824c8cee47cf424c",
+  "8388f8edd900225ecf3fc3d97096a0b95b6f7bb6476f9d46d72322c8501bf829",
+  "08c1b94bf8f6733dd021d30c7914480a45aed056e21149f8997d5450bc067924",
+  "22e6e922764d682c4b3e7fdce2f40d34bc783509dc44b30253d47c232ec3fd60",
+  "48c5f7a668114c5d8f3ee311d4fb2d0707857e3d49486c82903e1e7efafd6e3d",
+  "14890272253de80a2e08c7e32c68a26cd39bd3487db3d7c039fdd7f9ae956b34",
+  "5a061d8619c0a969cea4e84d155b618857a530c995c5017084b8c5213b243db4",
+  "92267725991b9f2124a01f0d5ddf9222ec4de6dc61c78768fecb5d66589152c4",
+  "6e2dc92322feb68777fb5a9249a37edda2a54d84492f6766f7035576a9503554",
+  "5d7061dbe94de9221029edbd4f347fa811a3b698081d6040bdaeaffd30360598",
+  "0719116b0c7c8ace7dce8e0797a9aa4f970601bc03ffac0106a7c6fd0abf9d68",
+  "b85a370edae4c70d4c065274d8ec25bb5db972849ed46c7f4a5df36dd663a3fc",
+  "58f1723901988e69ffbcd38708e3f494d1b70623fd9bf80239370683b0ecf84f",
+  "926cc1ad2ae75f04242ecf2e9422643eff5d3f312c0593613fd6e55bc769beb1",
+  "cdd2803f6e306d3e6266aa2da359a22cfdfbc2e896abca3d337887d07cffef41",
+  "53f13e19b7de120e4e78a147a9b74fd58d1b25e8e78ca7b7dac0d7e5c56482e3",
+  "d7a509fba3e0e66cedaf8813b019f52c01562066b18fef14333de7cb56af1be5",
+  "23ed439b21098a7c9a4f5aa316baca47732913dae0db8c10bf8ed5a800becc79",
+  "f72e3c72a3246ac861c73df68e0fef654bf99aa3920ed6481a51ce4472576923"
+ ],
+ "reveal": "0c9d07f571b84f102807b2a2fb7944bc90f4d44bca647186"
+}
