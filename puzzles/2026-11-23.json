@@ -1,0 +1,217 @@
+{
+ "format": 1,
+ "date": "2026-11-23",
+ "title": "Crosshatch No. 54",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 8,
+ "height": 11,
+ "cells": [
+  {
+   "r": 0,
+   "c": 4,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 3,
+   "c": 6,
+   "n": 2
+  },
+  {
+   "r": 4,
+   "c": 1,
+   "n": 3
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 7
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 6,
+   "c": 1
+  },
+  {
+   "r": 6,
+   "c": 2
+  },
+  {
+   "r": 6,
+   "c": 3
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 7
+  },
+  {
+   "r": 7,
+   "c": 6
+  },
+  {
+   "r": 8,
+   "c": 6
+  },
+  {
+   "r": 9,
+   "c": 6
+  },
+  {
+   "r": 10,
+   "c": 6
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Refrain from smashing basin holding thanks",
+    "plain": "Choose not to vote",
+    "enum": "(7)",
+    "cells": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Sorry trick has worn thin",
+    "plain": "Feeling deep remorse",
+    "enum": "(8)",
+    "cells": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Cleaner admits private part of the story",
+    "plain": "Main division of a book",
+    "enum": "(7)",
+    "cells": [
+     0,
+     1,
+     2,
+     3,
+     8,
+     12,
+     18
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Booking app dropped for cream",
+    "plain": "Greasy medicinal preparation rubbed into the skin",
+    "enum": "(8)",
+    "cells": [
+     4,
+     10,
+     13,
+     20,
+     22,
+     23,
+     24,
+     25
+    ]
+   }
+  ]
+ },
+ "salt": "951e14f5407d0ff9",
+ "check": [
+  "6a071d3cef88b8be9e81298a4f70a168e3b7d9eff6d316daffccd862eeb6ef97",
+  "e069a0ffffcc1c3506db9b33687620ed45e454b17611d920e9418abed184f50c",
+  "cc5de6e7a3cd87a23bb7b12257b6bd24e51f09f13cfd6f37227b3297d0d13dd0",
+  "78f0b0b255bcc9d84ff826577e640b9d6dbc57da619e6fc314141eabb5af1425",
+  "3418fbc6a7b11deb09b917307031ff03fd3063807d6bfad000126a6aa6342c8a",
+  "9c380b02f779afbad3558617da95c081f9ae76ab347bf9d52f12498153ff1959",
+  "e5be0bcd475ae69fd4525424262f61537fb5c2e34a7c11ed71dd00dca81af9a8",
+  "ac950b7c2b9a74670d56b90f1a7b89cf4972686df4a1d3a97f5eb9fc87dc2e58",
+  "4ffb57ff4ff9bd1ef54ab90fd2b9f09dd6cd1de8d5d0ebb45498cd312ad019e9",
+  "9c88b0abbcaed3f9552abf962f62e53d5dd22b36396c3f4dbed8776ef16d156a",
+  "b539d7839f2deb19f1f440e160aa1380d54c4334c7a4488059f6ef6387c2d91e",
+  "bda6436da988ab8384c3d27da4573f3c0dc00d827c3c81c8911bea5e92062cc2",
+  "0197d26aa3c816234b3d8dc6294e823a704f366cc289a80a970c1315535d5e82",
+  "9a11de332e5d01ad974815e00449557b7952e4630be9977f8fc0b16cac143ee1",
+  "15113ce50b434bfc38ec024bdb9811cdc8b27db5de2c5aecab07c3ab806e0bd5",
+  "5c4724a5613c8798fc4497dcf374822f29f1e34ef616177a1dd67a15ebede1eb",
+  "c2f38d559d6652819e7662cf109d442377fab79d0e85952d995a6517c75b2fb2",
+  "7e4bdcb4ecfee0b45ab629b73590c9353e265f5d29e6c920498218e92549994c",
+  "98d622ce9dfbccee4125822359be6a1b8b29ccd1b2c6555cbdf50d99b4977f67",
+  "e13c3239f39b1b081c958fd61c49248fc241e62264bd91aaad48cbf34f4750fe",
+  "3706800155901cb83445ff07f88ebcf5b2c8d74172b0bd875de524360819ac68",
+  "449dfbf86e783cb480a1cef73c73d2383eb41c72e73bad294274ddafc2f37001",
+  "0cde37fc3eddf460c555a35d5c289312e210d90f8e948c6ebd178037e9bef277",
+  "c8662c2ef9a890c132dc2da8ac2f895e758eafb30a5fdaa917ede678fc15f822",
+  "3a9a7d73e2b761cff7e633b71bfc3ff4a2d214b9c34f9150fbf702b39c254c67",
+  "eb249a8b9408040e016efb43fdcbdd3a9d93cd22496e680a96e7343dbe6fd0d2"
+ ],
+ "reveal": "f249352c508aec6c9e88fb72fa8f0269a77b1c53de691adc864f"
+}
