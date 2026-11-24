@@ -1,0 +1,205 @@
+{
+ "format": 1,
+ "date": "2026-11-24",
+ "title": "Crosshatch No. 55",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 7,
+ "height": 10,
+ "cells": [
+  {
+   "r": 0,
+   "c": 1,
+   "n": 1
+  },
+  {
+   "r": 1,
+   "c": 1
+  },
+  {
+   "r": 2,
+   "c": 1
+  },
+  {
+   "r": 3,
+   "c": 1
+  },
+  {
+   "r": 3,
+   "c": 4,
+   "n": 2
+  },
+  {
+   "r": 4,
+   "c": 1
+  },
+  {
+   "r": 4,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 1
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 7,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 7,
+   "c": 1
+  },
+  {
+   "r": 7,
+   "c": 2
+  },
+  {
+   "r": 7,
+   "c": 3
+  },
+  {
+   "r": 7,
+   "c": 4
+  },
+  {
+   "r": 7,
+   "c": 5
+  },
+  {
+   "r": 8,
+   "c": 4
+  },
+  {
+   "r": 9,
+   "c": 4
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Tom hosts naked floor show",
+    "plain": "Song-and-dance entertainment at a nightclub",
+    "enum": "(7)",
+    "cells": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Allow Tim's salesman back",
+    "plain": "Give consent for; authorise",
+    "enum": "(6)",
+    "cells": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Fizzy drink? The French moaned terribly",
+    "plain": "Sweet citrus-flavoured soft drink, often carbonated",
+    "enum": "(8)",
+    "cells": [
+     0,
+     1,
+     2,
+     3,
+     5,
+     8,
+     14,
+     17
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Alien supporting rule without king",
+    "plain": "From another country",
+    "enum": "(7)",
+    "cells": [
+     4,
+     6,
+     11,
+     15,
+     20,
+     22,
+     23
+    ]
+   }
+  ]
+ },
+ "salt": "b0c452d07aaa5025",
+ "check": [
+  "83f4af66326e727158dcb56f42be90adca0e425566911240b01f1ce75b4a797e",
+  "4ca4ae90f93d486b653421245aa0195b3dabc774bb0a5aab8262cff04746478f",
+  "ee2afc3d62fdf4a0673c9f7f1c8ab83ae8ec71af110cef1930d2c5bb04dca25d",
+  "f79855ed9a8b7b009afae235346249ccee32749c3fb49b1a7989e4cf1041297f",
+  "c105d2a5751d9f98dce02e311aaccde2e9c55b9e3f1a26ec635c7fb4292293fc",
+  "e18e8db29c02b19415be76c8e5f89291df3f8c6d32b00612d9cce8057d17a3e4",
+  "b2b42f3a0b9f6be9039f9534e59876d2182750dafb087d6723ea5bd8969b31fb",
+  "0f0107e552a622c770c39dc289b4cbea04ed034e1f7d2bfa2b6aa17154b4050f",
+  "2b125134d4358e16688474354dbdec02282c58eac7290f2273cc9d78bb827868",
+  "d3c5ada39e9df7a00d55a4fa92128e653c8d12b1e7ac966ee9074dfff520e825",
+  "b3d23ea72126b145ededb1fe7f9cc4b06cdb8d0bb4d92a6f6b90e5108126900a",
+  "dce9810e7cff2ce977204f9361357c2aedc08fd4caad90b169ababc00a493f64",
+  "f520daacf1999dff5bc9d1100436230d1782d4b08328c0ac24d9444327f1e7c5",
+  "99e7d34ece3b2ea66025408f353aea19b6e4ff05d7b7f39752c3e8c98182dd54",
+  "e7c952e7f5d5c206b28067afc9118d534f415fe09d667dec461821c3ddf0a587",
+  "255220eeaa104f140eae406b68a86e93afbbf4e75a8574d2e295adc9b7c4c932",
+  "19e263c88ce8b493195496b92fcd0beb479b1ff32530316867f41b2373cb6846",
+  "853e6f1ad853d3ad1c95b44fc5d5cf422cee324b867f37a4cec0d9fc2d1e9d8f",
+  "9f5c5a48aeb429529654eea0e649ceb88fc82bb0ceadc8bfca99e5e34f9f9680",
+  "06f0ad7d6462871dbb87e9118323f81d96cb3faa4dbe6ad3842b38e85c9a3688",
+  "f14dc0a7962f8d334960f657127ab05d393a08d3fdd2bd5e83abf9da7c8725f2",
+  "36d5038f884bd31b53e5c89fd0a5a18bc170bd5dcb03c7bfe1b4275131ca13dc",
+  "7de4bf64735b70147215ff161918d13226b40f614af77eb732b6b25eb54eac73",
+  "b729a8b37b562aac5bf7840d1d30ac30a586f4a8d7028103ee14142d08774cd7"
+ ],
+ "reveal": "82d9ec8073079a0a4edfaa413e8cea4a47f6098f83002aa5"
+}
