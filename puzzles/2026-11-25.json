@@ -1,0 +1,193 @@
+{
+ "format": 1,
+ "date": "2026-11-25",
+ "title": "Crosshatch No. 56",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 7,
+ "height": 7,
+ "cells": [
+  {
+   "r": 0,
+   "c": 1,
+   "n": 1
+  },
+  {
+   "r": 0,
+   "c": 3,
+   "n": 2
+  },
+  {
+   "r": 1,
+   "c": 1
+  },
+  {
+   "r": 1,
+   "c": 3
+  },
+  {
+   "r": 2,
+   "c": 1,
+   "n": 3
+  },
+  {
+   "r": 2,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 3
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 2,
+   "c": 6
+  },
+  {
+   "r": 3,
+   "c": 1
+  },
+  {
+   "r": 3,
+   "c": 3
+  },
+  {
+   "r": 4,
+   "c": 1
+  },
+  {
+   "r": 4,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 6,
+   "c": 1
+  },
+  {
+   "r": 6,
+   "c": 3
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Newcomer leaving the street becomes a park keeper",
+    "plain": "Official who patrols and looks after a forest or national park",
+    "enum": "(6)",
+    "cells": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Cheap move before the start of term",
+    "plain": "Financial plan setting out expected income and spending",
+    "enum": "(6)",
+    "cells": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Nurse brings up support in sixty minutes",
+    "plain": "Sheltered stretch of water where ships can moor",
+    "enum": "(7)",
+    "cells": [
+     0,
+     2,
+     4,
+     10,
+     12,
+     15,
+     20
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Classic given a makeover, absorbing the cheers",
+    "plain": "Wine from a particular year's grape harvest",
+    "enum": "(7)",
+    "cells": [
+     1,
+     3,
+     6,
+     11,
+     13,
+     17,
+     21
+    ]
+   }
+  ]
+ },
+ "salt": "06748707d43059e8",
+ "check": [
+  "0c98dc6621dc13ed3549175df07f0afbf4428256b864bddcd74adf6fcea7cf96",
+  "21c40b35fdd880d427c97a899c7f23afb795fdcf82a5d5f620a27e3fc7663daa",
+  "beecdbe38aed75a704da3ee27aa31a83f57fcf43fffad8f4fe74cbe7917e4e37",
+  "ad14c97275ac5eb323114b14e74101e195d293e0d088f0f961fdfbfa3d8964b1",
+  "80c955067021de7e9f309367b40858ac7018d76b24e99e66b953bb55d32e5144",
+  "9f8c42c74cc5535fccb96eef4cb443ee6decd86065c00d350e6468a97d65528b",
+  "c504b6a81734ffc77b836c390215d6e8e772ec4bb47f38a19ab7e844e87b48e1",
+  "30501c99ed819ee3cedda2af95132e8cd8b7f38729319a88313b7b2eadab597d",
+  "ad132b2db612bde6e28c2b98852dc9543548f040b51ff1822d2c960524cc7f5c",
+  "2fbb82f3178a63fc3f7de1cbb1f6555587a4dae716dbde35e5afdde7ae425c79",
+  "da9cd615bbaf3778a66335f7365dcfdd668cea40fd1864e9fdae584da48b7e0f",
+  "d80174e67c30c885f4f9a360bf937d2f38486697678e79f6a3bc15564bc933f8",
+  "1158b3a58bd2c5978a5a58489bdc22719c2ef832ff0e102482beffbbefbed717",
+  "44c0c36c236066657c21579d70b65122e769e96528264b9cdb301e2dc5929c52",
+  "4998b86d26e440d9e4590a74ab919bfb82a43e5b0d5aff75aeaae6e219e6ea64",
+  "f00c1582fa85c0a86ba69660c4720893e8632d5384f3c34841c276afb24384b0",
+  "01e28335da26a532cf0d4b6061eacc783235dfc36ce829fc936a63c2d6b2e566",
+  "123f1b9d9cfa5ebb0979fa0c14d30992be7e944f16abddfc26abd9f7aebb699a",
+  "73d276c657551f7c1fd045c15ef5e44e0c2275dd4ec7845052d67f9e7464c439",
+  "099ab1eb3d8c5885d83d7e49d01b04dce03a85c12b37df294322678e76c1f609",
+  "68fc1153c46a559920d0cd6244749d7d99dc8c7e885db806ed7bf9f4e548f46c",
+  "c57a46a765e81aa22ffbdc1c80270df440cb8d6e26e6eb27eab45e6225d20cd5"
+ ],
+ "reveal": "b56195eb987e71ef5bd77339645a217efe17104627b5"
+}
