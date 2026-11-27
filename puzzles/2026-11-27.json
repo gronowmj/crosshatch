@@ -1,0 +1,223 @@
+{
+ "format": 1,
+ "date": "2026-11-27",
+ "title": "Crosshatch No. 58",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 11,
+ "height": 8,
+ "cells": [
+  {
+   "r": 0,
+   "c": 4,
+   "n": 1
+  },
+  {
+   "r": 0,
+   "c": 8,
+   "n": 2
+  },
+  {
+   "r": 1,
+   "c": 4
+  },
+  {
+   "r": 1,
+   "c": 8
+  },
+  {
+   "r": 2,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 2,
+   "c": 1
+  },
+  {
+   "r": 2,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 3
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 2,
+   "c": 6
+  },
+  {
+   "r": 2,
+   "c": 7
+  },
+  {
+   "r": 2,
+   "c": 8
+  },
+  {
+   "r": 3,
+   "c": 4
+  },
+  {
+   "r": 3,
+   "c": 8
+  },
+  {
+   "r": 4,
+   "c": 4,
+   "n": 4
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 6
+  },
+  {
+   "r": 4,
+   "c": 7
+  },
+  {
+   "r": 4,
+   "c": 8
+  },
+  {
+   "r": 4,
+   "c": 9
+  },
+  {
+   "r": 4,
+   "c": 10
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 8
+  },
+  {
+   "r": 6,
+   "c": 4
+  },
+  {
+   "r": 6,
+   "c": 8
+  },
+  {
+   "r": 7,
+   "c": 4
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Roguish new angle for Michael, perhaps",
+    "plain": "Celestial being of high rank, such as Gabriel",
+    "enum": "(9)",
+    "cells": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Outlaw musicians pocket fiddle",
+    "plain": "Robber who belongs to a lawless gang",
+    "enum": "(7)",
+    "cells": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Charge raised with support? There's the catch",
+    "plain": "Disadvantage or downside",
+    "enum": "(8)",
+    "cells": [
+     0,
+     2,
+     8,
+     13,
+     15,
+     22,
+     24,
+     26
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Nearly healthy food? That's good",
+    "plain": "Health and happiness of a person or group",
+    "enum": "(7)",
+    "cells": [
+     1,
+     3,
+     12,
+     14,
+     19,
+     23,
+     25
+    ]
+   }
+  ]
+ },
+ "salt": "cf7fad4bdeb07be6",
+ "check": [
+  "d4db5adecaca406bba5a8221475b52bf952bb3d4415ed2ee3981e94b1ccf3520",
+  "cde3f39b8bf34249fb7d8f90442483ba5a6763e3c7beb15bdb734ea7432e86c2",
+  "a8c09f13917ecf1442b62514c6890a3ceb3397c8a202052b46eef3c166ed833d",
+  "fef0f98f2c59efaf160b30cd5486afa8e60fcce9aa993087f273474fafdd822c",
+  "e973652d4da33fc35475690059ef4247d33b5e02975d4f37698d42a482cf1643",
+  "643ef87d212f58cbc6d5e3a4a5a50fea43bed99a73fbf3d0bc1d6eec1ec33407",
+  "0b47246e57a4fb9b97e2ec2ecbed9e7623790153f5cf526ac500b5d1a9f068a0",
+  "c1a9a511cb2685623e8d06c25bdd5d59a5223391d7d6f39db1544193148769cc",
+  "462eea4ee70c455c80ba5011b1825f9ecbafdee51fadac72c06b999a42f3795a",
+  "711e56411f126aebffdfa922db51466316f1fdbc17ea625da31d85b6125f0e5c",
+  "6d9aa547af3710a208c4f630cd11584837c04f67df364efa368fef560ac77d94",
+  "e92133284d3b6c6587c8cb0aaa40beafc9438620f1b46dafe3d5346f43a02838",
+  "b0bf3a8996311bc814e3a04604841ea35547c3fc145c4e9e4f16073a96b7f41e",
+  "626de9b557a4ea66007d6445588a7571c2907f2bfde1175b3579aa37821c2279",
+  "5a94af003c1256aa6cc6cf1574520875bfd047e1ddd5d83b7ee32fcb8cf6c7d8",
+  "5d6534412e6fce9b6d847026d0a377ac4ad84e1fdaf452ee278cb797f8d7da53",
+  "c444d2e5f58238fbc621057a2ee13a802377bef38191fbb79cd267d48dd2405d",
+  "b8b67ab0d41011b15dc7358e93aa0715b9aa942349d4950e40b548e2232684dc",
+  "b367912aa829ff7e6a3f88fcc6157e9a547f4a2f696c144196e02303f804128d",
+  "169e6425f86ab5e3537084882327aec6c93c1e514d94ca64624cc2defeb97f93",
+  "e7e9e20fee38e9ffa4dbe5804cfea4942eb86123f7829dda469939325312267f",
+  "2fcd7829ea4186cdf37d63a322ce0110c180e956ad7a5b1c98c16cfea984e9ac",
+  "9279d06089942bc0257c99899ece2dede245bf1abad0019b0e450ae2fd1b8640",
+  "20ed14e90e694be65bc66f155a5e59c725918637876660923f4ea52ad3d7a512",
+  "4cb1dafce76f9c4f059f6a942e6a469a8aafaadb4497a92deca03c2f2c45188b",
+  "9c8946692de99e892fffb286977879a71ca0144e26799a36dcfa55154ccc1546",
+  "fd98493da009fd6080fc36c5b690adffdeaab1302691ba4285b300f5878d974e"
+ ],
+ "reveal": "25bcaa6581edffe6089cecf064bf22c6578ec23bd33b36df7e88a3"
+}
