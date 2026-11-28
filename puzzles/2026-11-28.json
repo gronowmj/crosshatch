@@ -1,0 +1,199 @@
+{
+ "format": 1,
+ "date": "2026-11-28",
+ "title": "Crosshatch No. 59",
+ "difficulty": "Tough",
+ "setter": "",
+ "width": 7,
+ "height": 8,
+ "cells": [
+  {
+   "r": 0,
+   "c": 2,
+   "n": 1
+  },
+  {
+   "r": 0,
+   "c": 5,
+   "n": 2
+  },
+  {
+   "r": 1,
+   "c": 2
+  },
+  {
+   "r": 1,
+   "c": 5
+  },
+  {
+   "r": 2,
+   "c": 0,
+   "n": 3
+  },
+  {
+   "r": 2,
+   "c": 1
+  },
+  {
+   "r": 2,
+   "c": 2
+  },
+  {
+   "r": 2,
+   "c": 3
+  },
+  {
+   "r": 2,
+   "c": 4
+  },
+  {
+   "r": 2,
+   "c": 5
+  },
+  {
+   "r": 3,
+   "c": 2
+  },
+  {
+   "r": 3,
+   "c": 5
+  },
+  {
+   "r": 4,
+   "c": 2
+  },
+  {
+   "r": 4,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 0,
+   "n": 4
+  },
+  {
+   "r": 5,
+   "c": 1
+  },
+  {
+   "r": 5,
+   "c": 2
+  },
+  {
+   "r": 5,
+   "c": 3
+  },
+  {
+   "r": 5,
+   "c": 4
+  },
+  {
+   "r": 5,
+   "c": 5
+  },
+  {
+   "r": 5,
+   "c": 6
+  },
+  {
+   "r": 6,
+   "c": 5
+  },
+  {
+   "r": 7,
+   "c": 5
+  }
+ ],
+ "clues": {
+  "across": [
+   {
+    "num": 3,
+    "text": "Older Spanish gentleman houses one",
+    "plain": "Higher in rank or longer in service",
+    "enum": "(6)",
+    "cells": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "num": 4,
+    "text": "Time with mentor going haywire is agony",
+    "plain": "Extreme suffering of body or mind; anguish",
+    "enum": "(7)",
+    "cells": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   }
+  ],
+  "down": [
+   {
+    "num": 1,
+    "text": "Communist currently on the rise? A miracle",
+    "plain": "Something that causes amazement; a marvel",
+    "enum": "(6)",
+    "cells": [
+     0,
+     2,
+     6,
+     10,
+     12,
+     16
+    ]
+   },
+   {
+    "num": 2,
+    "text": "Spell in Alabama proving fatal",
+    "plain": "Leading to death, as an incurable illness",
+    "enum": "(8)",
+    "cells": [
+     1,
+     3,
+     9,
+     11,
+     13,
+     19,
+     21,
+     22
+    ]
+   }
+  ]
+ },
+ "salt": "3b467f351ca17f12",
+ "check": [
+  "b3ce8e1a1aa6a4c5bc85dbf73d957fe40e817753ca115d543ecd914f022784a4",
+  "fb8de20d708f55005080b57306c7173393c0a9da2a19deec9511a83ce7f84a43",
+  "96b4529dac62661f9f1c2612e9b8627f4df158da34e1147f2db38b7f6a731667",
+  "26661d7d7b1e2de4f57a4b2a53cdb7e9e25cb7a9a53b7bc1bb03ea90057b072c",
+  "033bcedc4987381ee65c5dddaf1a5e3ac5b90485761776b9550d6a2f8f9862fb",
+  "dc0febf1e042c77badd85e035a60b862f76c46d7a36634bf104257d6af153852",
+  "895a5cb9e6aba56fff184e6fec0736b9cae502f12d35ef695b9da977dba5d36a",
+  "1c9bf479811baa48b9da2a2ee475025b75768557cde8ff3152b3c0413d2a18cd",
+  "fb8fca7df3f3f84da6502b33e56a91f2d9c7898a1d46dd9618935457c225a42c",
+  "8bfa993424562c9f33df1560409e4d3ffb1c8e7fd970545e120f901b2a901014",
+  "bd827e7744a404b714f6b5e7c68e4192c329221319ed905b9a379b00c5987930",
+  "37dcf63b268b177486478becce00940fa5a0bc812bfd03ca0b819be661a14eee",
+  "cdc43bc76123f4d0ff151a85f103b0b76cdb0960d93a13b67017f05068704712",
+  "d9f98d5a031da7d099fd0915c3de567a97c1dbbeb30d29868542ac21a2a915d8",
+  "9637282a4d9fa95b9454c8508f932ef041e99e9771e64ce366bda9ef167f1196",
+  "445c2da1314860860db234ca5bc785ae5ca92db42801b52794db8355f9aa1733",
+  "cb772c3c6e4b53c7e12b69e49c55acad97c5280398e62814dc28b72543064478",
+  "2b58edaf000fe9ab7e0fceaa291606507a1f0e21efb16bd0118289aa4bc557a6",
+  "3520d926fe124e4bde4a21a2f030b2688ec9445cfad6a1a3286df1eb747c4aee",
+  "6006e8ea8e772b742ccef623d9cf029892af342c7bcbf881422fc650c3b51cf2",
+  "7af5e0cda3ca69fa003ddb0113c1da949f85fe8099054086cc08e5bc1e8a64e5",
+  "4d77bd68b162e3b6fb1321d9585e14f0bedce8d556c161183e366adf39d3a76d",
+  "ffd1acc5a7983cb4348499e73a813609e7dbad7f79d64f2a6ef50f7ac32b1cd5"
+ ],
+ "reveal": "19ad5ef5cb5b5b106a673d3b7a7e47a6091029eb38d88b"
+}
